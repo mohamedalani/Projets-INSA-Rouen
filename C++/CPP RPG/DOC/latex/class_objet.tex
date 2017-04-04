@@ -1,0 +1,393 @@
+\hypertarget{class_objet}{\section{Objet Class Reference}
+\label{class_objet}\index{Objet@{Objet}}
+}
+
+
+Classe représentant les objets.  
+
+
+
+
+{\ttfamily \#include $<$objet.\-hpp$>$}
+
+Inheritance diagram for Objet\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_objet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_objet_aefdd826d50085897e4894ffef4597d04}{Objet} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_objet_a6fb1713f353f5ede79c339874be7c29b}{Objet} (int acc\-Objet, int p, string nom\-Obj, int vf, int qte\-Obj)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe objet. \end{DoxyCompactList}\item 
+void \hyperlink{class_objet_a63d919b38358563e308c8fa4a6d1d1e8}{set\-Nom\-Objet} (string new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable nom\-Objet. \end{DoxyCompactList}\item 
+string \hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{get\-Nom\-Objet} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable nom\-Objet. \end{DoxyCompactList}\item 
+void \hyperlink{class_objet_a3b4253aca64e7fa3fb1303449579f3be}{set\-Prix} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable prix. \end{DoxyCompactList}\item 
+int \hyperlink{class_objet_a9b36c37091e821bc8f00d6bfd3665a66}{get\-Prix} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable prix. \end{DoxyCompactList}\item 
+void \hyperlink{class_objet_a46ff6cb720f950f6a9cc607427ae98cc}{set\-Valeur\-Force} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable valeur\-Force. \end{DoxyCompactList}\item 
+int \hyperlink{class_objet_af57c602bd00d1478cfefb8d568bad309}{get\-Valeur\-Force} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable valeur\-Force. \end{DoxyCompactList}\item 
+void \hyperlink{class_objet_a867e1cec21732464c50251d8b5abb00e}{set\-Access\-Objet} (int var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable var dans la variable access\-Objet. \end{DoxyCompactList}\item 
+int \hyperlink{class_objet_a89e96aceca5fa4ff383bec982be3e39a}{get\-Access\-Objet} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable access\-Objet. \end{DoxyCompactList}\item 
+void \hyperlink{class_objet_a667447b583f58e06a0ac8407d2fed45a}{set\-Quantite\-Objet} (int var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable var dans la variable quantite\-Objet. \end{DoxyCompactList}\item 
+int \hyperlink{class_objet_a48ed4b5205b42401520102586cfe2265}{get\-Quantite\-Objet} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable quantite\-Objet. \end{DoxyCompactList}\item 
+void \hyperlink{class_objet_a812fd7438f15ff8f5b530187affc3cc9}{initialiser\-Objet} ()
+\begin{DoxyCompactList}\small\item\em Initialise l'objet. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_objet_ab8c32a2e0b236fcf75a06a2edc1f71b6}{utiliser\-Objet} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros)
+\begin{DoxyCompactList}\small\item\em sert à utiliser un objet. C'est une méthode virtuelle qui va être redéfinie dans chacune des classes filles de \hyperlink{class_objet}{Objet}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_objet_a420bad3c2d47108539b1d93156966924}{access\-Objet}
+\begin{DoxyCompactList}\small\item\em L'âge à partir duquel on peut accèder à l'objet. \end{DoxyCompactList}\item 
+string \hyperlink{class_objet_aeae2038324beeebfdd3ef7f793ca0b21}{nom\-Objet}
+\begin{DoxyCompactList}\small\item\em Le nom de l'objet. \end{DoxyCompactList}\item 
+int \hyperlink{class_objet_abdcebe17a8c444c7e3c982d5d99930cd}{prix}
+\begin{DoxyCompactList}\small\item\em Le prix de l'objet. \end{DoxyCompactList}\item 
+int \hyperlink{class_objet_aa819b02977c333c0cc5e116575e951cc}{valeur\-Force}
+\begin{DoxyCompactList}\small\item\em La valeur de la force que l'objet permet de gagner. \end{DoxyCompactList}\item 
+int \hyperlink{class_objet_a97d1fa595a507f7c06f241d73c63bb94}{quantite\-Objet}
+\begin{DoxyCompactList}\small\item\em La qunatité de l'objet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe représentant les objets. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_objet_aefdd826d50085897e4894ffef4597d04}{\index{Objet@{Objet}!Objet@{Objet}}
+\index{Objet@{Objet}!Objet@{Objet}}
+\subsubsection[{Objet}]{\setlength{\rightskip}{0pt plus 5cm}Objet\-::\-Objet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_objet_aefdd826d50085897e4894ffef4597d04}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+18             \{
+19     \}
+\end{DoxyCode}
+\hypertarget{class_objet_a6fb1713f353f5ede79c339874be7c29b}{\index{Objet@{Objet}!Objet@{Objet}}
+\index{Objet@{Objet}!Objet@{Objet}}
+\subsubsection[{Objet}]{\setlength{\rightskip}{0pt plus 5cm}Objet\-::\-Objet (
+\begin{DoxyParamCaption}
+\item[{int}]{acc\-Objet, }
+\item[{int}]{p, }
+\item[{string}]{nom\-Obj, }
+\item[{int}]{vf, }
+\item[{int}]{qte\-Obj}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a6fb1713f353f5ede79c339874be7c29b}
+
+
+Constructeur de la classe objet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acc\-Objet} & L'accessibilité de l'objet à partir d'un certain âge. \\
+\hline
+{\em p} & Le prix de l'objet. \\
+\hline
+{\em nom\-Obj} & Le nom de l'objet. \\
+\hline
+{\em vf} & La valeur de la force que l'héros peut gagner. \\
+\hline
+{\em qte\-Obj} & La quantité de l'objet. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+11                                                                   \{
+12     \hyperlink{class_objet_a420bad3c2d47108539b1d93156966924}{accessObjet} = accObjet;
+13     \hyperlink{class_objet_aeae2038324beeebfdd3ef7f793ca0b21}{nomObjet} = nomObj;
+14     \hyperlink{class_objet_abdcebe17a8c444c7e3c982d5d99930cd}{prix} = p;
+15     \hyperlink{class_objet_aa819b02977c333c0cc5e116575e951cc}{valeurForce} = vf;
+16     \hyperlink{class_objet_a97d1fa595a507f7c06f241d73c63bb94}{quantiteObjet} = qteObj;
+17 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_objet_a89e96aceca5fa4ff383bec982be3e39a}{\index{Objet@{Objet}!get\-Access\-Objet@{get\-Access\-Objet}}
+\index{get\-Access\-Objet@{get\-Access\-Objet}!Objet@{Objet}}
+\subsubsection[{get\-Access\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}int Objet\-::get\-Access\-Objet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a89e96aceca5fa4ff383bec982be3e39a}
+
+
+Accède à la variable access\-Objet. 
+
+\begin{DoxyReturn}{Returns}
+L'âge à partir duquel l'objet sera accessible. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+49                             \{
+50     \textcolor{keywordflow}{return} \hyperlink{class_objet_a420bad3c2d47108539b1d93156966924}{accessObjet};
+51   \}
+\end{DoxyCode}
+\hypertarget{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{\index{Objet@{Objet}!get\-Nom\-Objet@{get\-Nom\-Objet}}
+\index{get\-Nom\-Objet@{get\-Nom\-Objet}!Objet@{Objet}}
+\subsubsection[{get\-Nom\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}string Objet\-::get\-Nom\-Objet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a843e99ecd1e150589f8db23f43dd27b0}
+
+
+Accède à la variable nom\-Objet. 
+
+\begin{DoxyReturn}{Returns}
+Le nom de l'objet. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+25                                \{
+26     \textcolor{keywordflow}{return} \hyperlink{class_objet_aeae2038324beeebfdd3ef7f793ca0b21}{nomObjet};
+27   \}
+\end{DoxyCode}
+\hypertarget{class_objet_a9b36c37091e821bc8f00d6bfd3665a66}{\index{Objet@{Objet}!get\-Prix@{get\-Prix}}
+\index{get\-Prix@{get\-Prix}!Objet@{Objet}}
+\subsubsection[{get\-Prix}]{\setlength{\rightskip}{0pt plus 5cm}int Objet\-::get\-Prix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a9b36c37091e821bc8f00d6bfd3665a66}
+
+
+Accède à la variable prix. 
+
+\begin{DoxyReturn}{Returns}
+Le prix de l'objet. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+33                          \{
+34     \textcolor{keywordflow}{return} \hyperlink{class_objet_abdcebe17a8c444c7e3c982d5d99930cd}{prix};
+35   \}
+\end{DoxyCode}
+\hypertarget{class_objet_a48ed4b5205b42401520102586cfe2265}{\index{Objet@{Objet}!get\-Quantite\-Objet@{get\-Quantite\-Objet}}
+\index{get\-Quantite\-Objet@{get\-Quantite\-Objet}!Objet@{Objet}}
+\subsubsection[{get\-Quantite\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}int Objet\-::get\-Quantite\-Objet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a48ed4b5205b42401520102586cfe2265}
+
+
+Accède à la variable quantite\-Objet. 
+
+\begin{DoxyReturn}{Returns}
+La quantité de l'objet. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+57                               \{
+58     \textcolor{keywordflow}{return} \hyperlink{class_objet_a97d1fa595a507f7c06f241d73c63bb94}{quantiteObjet};
+59   \}
+\end{DoxyCode}
+\hypertarget{class_objet_af57c602bd00d1478cfefb8d568bad309}{\index{Objet@{Objet}!get\-Valeur\-Force@{get\-Valeur\-Force}}
+\index{get\-Valeur\-Force@{get\-Valeur\-Force}!Objet@{Objet}}
+\subsubsection[{get\-Valeur\-Force}]{\setlength{\rightskip}{0pt plus 5cm}int Objet\-::get\-Valeur\-Force (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_objet_af57c602bd00d1478cfefb8d568bad309}
+
+
+Accède à la variable valeur\-Force. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de la force que l'héros peut gagner. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+41                                 \{
+42     \textcolor{keywordflow}{return} \hyperlink{class_objet_aa819b02977c333c0cc5e116575e951cc}{valeurForce};
+43   \}
+\end{DoxyCode}
+\hypertarget{class_objet_a812fd7438f15ff8f5b530187affc3cc9}{\index{Objet@{Objet}!initialiser\-Objet@{initialiser\-Objet}}
+\index{initialiser\-Objet@{initialiser\-Objet}!Objet@{Objet}}
+\subsubsection[{initialiser\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Objet\-::initialiser\-Objet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a812fd7438f15ff8f5b530187affc3cc9}
+
+
+Initialise l'objet. 
+
+\hypertarget{class_objet_a867e1cec21732464c50251d8b5abb00e}{\index{Objet@{Objet}!set\-Access\-Objet@{set\-Access\-Objet}}
+\index{set\-Access\-Objet@{set\-Access\-Objet}!Objet@{Objet}}
+\subsubsection[{set\-Access\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Objet\-::set\-Access\-Objet (
+\begin{DoxyParamCaption}
+\item[{int}]{var}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a867e1cec21732464c50251d8b5abb00e}
+
+
+stock la valeur de la variable var dans la variable access\-Objet. 
+
+
+\begin{DoxyCode}
+45                                    \{
+46     \hyperlink{class_objet_a420bad3c2d47108539b1d93156966924}{accessObjet} =var;
+47   \}
+\end{DoxyCode}
+\hypertarget{class_objet_a63d919b38358563e308c8fa4a6d1d1e8}{\index{Objet@{Objet}!set\-Nom\-Objet@{set\-Nom\-Objet}}
+\index{set\-Nom\-Objet@{set\-Nom\-Objet}!Objet@{Objet}}
+\subsubsection[{set\-Nom\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Objet\-::set\-Nom\-Objet (
+\begin{DoxyParamCaption}
+\item[{string}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a63d919b38358563e308c8fa4a6d1d1e8}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable nom\-Objet. 
+
+
+\begin{DoxyCode}
+21                                            \{
+22       \hyperlink{class_objet_aeae2038324beeebfdd3ef7f793ca0b21}{nomObjet} = new\_var;
+23   \}
+\end{DoxyCode}
+\hypertarget{class_objet_a3b4253aca64e7fa3fb1303449579f3be}{\index{Objet@{Objet}!set\-Prix@{set\-Prix}}
+\index{set\-Prix@{set\-Prix}!Objet@{Objet}}
+\subsubsection[{set\-Prix}]{\setlength{\rightskip}{0pt plus 5cm}void Objet\-::set\-Prix (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a3b4253aca64e7fa3fb1303449579f3be}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable prix. 
+
+
+\begin{DoxyCode}
+29                                      \{
+30       \hyperlink{class_objet_abdcebe17a8c444c7e3c982d5d99930cd}{prix} = new\_var;
+31   \}
+\end{DoxyCode}
+\hypertarget{class_objet_a667447b583f58e06a0ac8407d2fed45a}{\index{Objet@{Objet}!set\-Quantite\-Objet@{set\-Quantite\-Objet}}
+\index{set\-Quantite\-Objet@{set\-Quantite\-Objet}!Objet@{Objet}}
+\subsubsection[{set\-Quantite\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Objet\-::set\-Quantite\-Objet (
+\begin{DoxyParamCaption}
+\item[{int}]{var}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a667447b583f58e06a0ac8407d2fed45a}
+
+
+stock la valeur de la variable var dans la variable quantite\-Objet. 
+
+
+\begin{DoxyCode}
+53                                       \{
+54     \hyperlink{class_objet_a97d1fa595a507f7c06f241d73c63bb94}{quantiteObjet} = var;
+55   \}
+\end{DoxyCode}
+\hypertarget{class_objet_a46ff6cb720f950f6a9cc607427ae98cc}{\index{Objet@{Objet}!set\-Valeur\-Force@{set\-Valeur\-Force}}
+\index{set\-Valeur\-Force@{set\-Valeur\-Force}!Objet@{Objet}}
+\subsubsection[{set\-Valeur\-Force}]{\setlength{\rightskip}{0pt plus 5cm}void Objet\-::set\-Valeur\-Force (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_objet_a46ff6cb720f950f6a9cc607427ae98cc}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable valeur\-Force. 
+
+
+\begin{DoxyCode}
+37                                             \{
+38       \hyperlink{class_objet_aa819b02977c333c0cc5e116575e951cc}{valeurForce} = new\_var;
+39   \}
+\end{DoxyCode}
+\hypertarget{class_objet_ab8c32a2e0b236fcf75a06a2edc1f71b6}{\index{Objet@{Objet}!utiliser\-Objet@{utiliser\-Objet}}
+\index{utiliser\-Objet@{utiliser\-Objet}!Objet@{Objet}}
+\subsubsection[{utiliser\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Objet\-::utiliser\-Objet (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_objet_ab8c32a2e0b236fcf75a06a2edc1f71b6}
+
+
+sert à utiliser un objet. C'est une méthode virtuelle qui va être redéfinie dans chacune des classes filles de \hyperlink{class_objet}{Objet}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_consommable_ab2105902385a78cbca8496fdde262d2f}{Consommable}, and \hyperlink{class_non_consommable_acfb7cfd4a6669eaf4acb1422545ef857}{Non\-Consommable}.
+
+
+\begin{DoxyCode}
+64                                                   \{
+65 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_objet_a420bad3c2d47108539b1d93156966924}{\index{Objet@{Objet}!access\-Objet@{access\-Objet}}
+\index{access\-Objet@{access\-Objet}!Objet@{Objet}}
+\subsubsection[{access\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}int Objet\-::access\-Objet\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_objet_a420bad3c2d47108539b1d93156966924}
+
+
+L'âge à partir duquel on peut accèder à l'objet. 
+
+\hypertarget{class_objet_aeae2038324beeebfdd3ef7f793ca0b21}{\index{Objet@{Objet}!nom\-Objet@{nom\-Objet}}
+\index{nom\-Objet@{nom\-Objet}!Objet@{Objet}}
+\subsubsection[{nom\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}string Objet\-::nom\-Objet\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_objet_aeae2038324beeebfdd3ef7f793ca0b21}
+
+
+Le nom de l'objet. 
+
+\hypertarget{class_objet_abdcebe17a8c444c7e3c982d5d99930cd}{\index{Objet@{Objet}!prix@{prix}}
+\index{prix@{prix}!Objet@{Objet}}
+\subsubsection[{prix}]{\setlength{\rightskip}{0pt plus 5cm}int Objet\-::prix\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_objet_abdcebe17a8c444c7e3c982d5d99930cd}
+
+
+Le prix de l'objet. 
+
+\hypertarget{class_objet_a97d1fa595a507f7c06f241d73c63bb94}{\index{Objet@{Objet}!quantite\-Objet@{quantite\-Objet}}
+\index{quantite\-Objet@{quantite\-Objet}!Objet@{Objet}}
+\subsubsection[{quantite\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}int Objet\-::quantite\-Objet\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_objet_a97d1fa595a507f7c06f241d73c63bb94}
+
+
+La qunatité de l'objet. 
+
+\hypertarget{class_objet_aa819b02977c333c0cc5e116575e951cc}{\index{Objet@{Objet}!valeur\-Force@{valeur\-Force}}
+\index{valeur\-Force@{valeur\-Force}!Objet@{Objet}}
+\subsubsection[{valeur\-Force}]{\setlength{\rightskip}{0pt plus 5cm}int Objet\-::valeur\-Force\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_objet_aa819b02977c333c0cc5e116575e951cc}
+
+
+La valeur de la force que l'objet permet de gagner. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{objet_8hpp}{objet.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{objet_8cpp}{objet.\-cpp}\end{DoxyCompactItemize}

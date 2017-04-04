@@ -1,0 +1,198 @@
+\hypertarget{class_ville}{\section{Ville Class Reference}
+\label{class_ville}\index{Ville@{Ville}}
+}
+
+
+Classe représentant la ville.  
+
+
+
+
+{\ttfamily \#include $<$ville.\-hpp$>$}
+
+Inheritance diagram for Ville\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ville}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ville_a19a413ad16568980b527b5047399c585}{Ville} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_ville_a0d8ae3c8e779b5918fe4c76095ffa73d}{Ville} (vector$<$ \hyperlink{class_objet}{Objet} $>$ \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objets\-Dispo}, int \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cash\-Cache}, vector$<$ \hyperlink{class_p_n_j}{P\-N\-J} $>$ \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{liste\-P\-N\-J}, string \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nom\-Lieu}, vector$<$ string $>$ action\-Vec, vector$<$ \hyperlink{class_lieu}{Lieu} $\ast$ $>$ lieu\-Vec)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe ville. \end{DoxyCompactList}\item 
+void \hyperlink{class_ville_a7bfe737f37ec9a99bc1e809047ca0e2e}{executer\-Action} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_ville}{Ville} $\ast$ville)
+\begin{DoxyCompactList}\small\item\em Exécute une action parmi les actions possibles. \end{DoxyCompactList}\item 
+void \hyperlink{class_ville_a533804907c678efb9a4e6f6dd0edac58}{initialiser\-Ville} ()
+\begin{DoxyCompactList}\small\item\em Initialise la ville. \end{DoxyCompactList}\item 
+const vector$<$ \hyperlink{class_lieu}{Lieu} $\ast$ $>$ \& \hyperlink{class_ville_a2a778c77b3c4d60b414807bc350e10ec}{get\-Lieu\-Vec} () const 
+\begin{DoxyCompactList}\small\item\em Accède à la variable lieu\-Vec. \end{DoxyCompactList}\item 
+void \hyperlink{class_ville_a64a43e83e7666ca2b157aea711b3bd2f}{set\-Lieu\-Vec} (const vector$<$ \hyperlink{class_lieu}{Lieu} $\ast$ $>$ \&lieu\-Vec)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable \& lieu\-Vec dans la variable lieu\-Vec. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant la ville. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_ville_a19a413ad16568980b527b5047399c585}{\index{Ville@{Ville}!Ville@{Ville}}
+\index{Ville@{Ville}!Ville@{Ville}}
+\subsubsection[{Ville}]{\setlength{\rightskip}{0pt plus 5cm}Ville\-::\-Ville (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ville_a19a413ad16568980b527b5047399c585}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+18 \{\}
+\end{DoxyCode}
+\hypertarget{class_ville_a0d8ae3c8e779b5918fe4c76095ffa73d}{\index{Ville@{Ville}!Ville@{Ville}}
+\index{Ville@{Ville}!Ville@{Ville}}
+\subsubsection[{Ville}]{\setlength{\rightskip}{0pt plus 5cm}Ville\-::\-Ville (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Objet} $>$}]{objets\-Dispo, }
+\item[{int}]{cash\-Cache, }
+\item[{vector$<$ {\bf P\-N\-J} $>$}]{liste\-P\-N\-J, }
+\item[{string}]{nom\-Lieu, }
+\item[{vector$<$ string $>$}]{action\-Vec, }
+\item[{vector$<$ {\bf Lieu} $\ast$ $>$}]{lieu\-Vec}
+\end{DoxyParamCaption}
+)}}\label{class_ville_a0d8ae3c8e779b5918fe4c76095ffa73d}
+
+
+Constructeur de la classe ville. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lieu\-Vec} & Le vecteur des lieux possibles. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+20                                                                                                            
+                                       : \hyperlink{class_lieu_a0b3086d598fc1bfc0b4c09ae96304b3a}{Lieu}(\hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}, \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cashCache}, 
+      \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}, \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nomLieu}, actionVec)\{
+21     this->lieuVec = lieuVec;
+22 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ville_a7bfe737f37ec9a99bc1e809047ca0e2e}{\index{Ville@{Ville}!executer\-Action@{executer\-Action}}
+\index{executer\-Action@{executer\-Action}!Ville@{Ville}}
+\subsubsection[{executer\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Ville\-::executer\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf Ville} $\ast$}]{ville}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_ville_a7bfe737f37ec9a99bc1e809047ca0e2e}
+
+
+Exécute une action parmi les actions possibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Un paramètre de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & un paramètre de la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_lieu_ad5d4e14283df04f0174f090f1614225c}{Lieu}.
+
+
+\begin{DoxyCode}
+33                                                               \{
+34 
+35         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( \textcolor{stringliteral}{"\(\backslash\)nVous êtes dans le lieu suivant : "} + 
+      \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nomLieu} + \textcolor{stringliteral}{". Que voulez-vous faire ?\(\backslash\)n"} );
+36 
+37         \textcolor{keywordtype}{int} i=0 ;
+38         \textcolor{keywordflow}{for} (i=0 ; i < lieuVec.size(); i++) \{
+39             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( \hyperlink{ville_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i) + \textcolor{stringliteral}{". Se rendre au lieu suivant :"} + this->lieuVec.
+      at(i)->getNomLieu() );
+40         \}
+41         \textcolor{keywordtype}{int} entree = -1 ;
+42         \textcolor{keywordflow}{while} (entree < 0 or entree > i-1) \{
+43             entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(\textcolor{stringliteral}{"Faites votre choix :"});
+44         \}
+45 
+46         \textcolor{keywordflow}{if} ( entree >= 0 and entree < i ) \{
+47             jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(4, \textcolor{stringliteral}{"déplacement en cours..."});
+48             heros->\hyperlink{class_heros_a8decc0b04f6724de10d2e2a8d1c3395c}{setLieuActuel}(lieuVec[entree]) ;
+49         \}
+50 
+51         \textcolor{keywordflow}{else} \{\}
+52 
+53 
+54 \}
+\end{DoxyCode}
+\hypertarget{class_ville_a2a778c77b3c4d60b414807bc350e10ec}{\index{Ville@{Ville}!get\-Lieu\-Vec@{get\-Lieu\-Vec}}
+\index{get\-Lieu\-Vec@{get\-Lieu\-Vec}!Ville@{Ville}}
+\subsubsection[{get\-Lieu\-Vec}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ {\bf Lieu} $\ast$ $>$ \& Ville\-::get\-Lieu\-Vec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_ville_a2a778c77b3c4d60b414807bc350e10ec}
+
+
+Accède à la variable lieu\-Vec. 
+
+\begin{DoxyReturn}{Returns}
+le vecteur des lieux possibles. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+24                                              \{
+25     \textcolor{keywordflow}{return} lieuVec;
+26 \}
+\end{DoxyCode}
+\hypertarget{class_ville_a533804907c678efb9a4e6f6dd0edac58}{\index{Ville@{Ville}!initialiser\-Ville@{initialiser\-Ville}}
+\index{initialiser\-Ville@{initialiser\-Ville}!Ville@{Ville}}
+\subsubsection[{initialiser\-Ville}]{\setlength{\rightskip}{0pt plus 5cm}void Ville\-::initialiser\-Ville (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ville_a533804907c678efb9a4e6f6dd0edac58}
+
+
+Initialise la ville. 
+
+
+\begin{DoxyCode}
+57                             \{
+58     
+59 \}
+\end{DoxyCode}
+\hypertarget{class_ville_a64a43e83e7666ca2b157aea711b3bd2f}{\index{Ville@{Ville}!set\-Lieu\-Vec@{set\-Lieu\-Vec}}
+\index{set\-Lieu\-Vec@{set\-Lieu\-Vec}!Ville@{Ville}}
+\subsubsection[{set\-Lieu\-Vec}]{\setlength{\rightskip}{0pt plus 5cm}void Ville\-::set\-Lieu\-Vec (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ {\bf Lieu} $\ast$ $>$ \&}]{lieu\-Vec}
+\end{DoxyParamCaption}
+)}}\label{class_ville_a64a43e83e7666ca2b157aea711b3bd2f}
+
+
+stock la valeur de la variable \& lieu\-Vec dans la variable lieu\-Vec. 
+
+
+\begin{DoxyCode}
+28                                                    \{
+29     this->lieuVec = lieuVec;
+30 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{ville_8hpp}{ville.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{ville_8cpp}{ville.\-cpp}\end{DoxyCompactItemize}

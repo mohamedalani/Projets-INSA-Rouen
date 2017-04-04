@@ -1,0 +1,219 @@
+\hypertarget{class_p_n_j}{\section{P\-N\-J Class Reference}
+\label{class_p_n_j}\index{P\-N\-J@{P\-N\-J}}
+}
+
+
+Classe représentant les \hyperlink{class_p_n_j}{P\-N\-J} (personnes non joueurs).  
+
+
+
+
+{\ttfamily \#include $<$pnj.\-hpp$>$}
+
+Inheritance diagram for P\-N\-J\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_n_j}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_n_j_af47e047679a553304cd94c4f052afc9d}{P\-N\-J} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_p_n_j_a9d69e66223cac489b73561e71e0949e4}{P\-N\-J} (int intelp, int forcep, int agep, string nomp, vector$<$ \hyperlink{class_mission}{Mission} $\ast$ $>$ miss, string dpd)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_p_n_j}{P\-N\-J}. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_n_j_a519fb3ba5b692d2088c7c3a66421f72b}{set\-Missions\-P} (vector$<$ \hyperlink{class_mission}{Mission} $\ast$ $>$ new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable Missions\-P. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_mission}{Mission} $\ast$ $>$ \hyperlink{class_p_n_j_ab947fafa6afecf6640e1279ff05b7941}{get\-Missions\-P} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable Mission\-P. \end{DoxyCompactList}\item 
+string \hyperlink{class_p_n_j_ac2495e0c6580568cd6299389df128b20}{get\-Dialogue\-Par\-Defaut} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable dialogue\-Par\-Defaut. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_n_j_ae938be01cfe4befe3a86c512cb2f87e1}{set\-Dialogue\-Par\-Defaut} (string dpd)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable dpd dans la variable Dialogue\-Par\-Defaut. \end{DoxyCompactList}\item 
+string \hyperlink{class_p_n_j_a11332cced0b00f4dfb9221b2d897aba5}{get\-Nom\-P\-N\-J} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable Nom\-P\-N\-J. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_n_j_a05bc22ba955f35343d89ef3d040d5fa4}{set\-Nom\-P\-N\-J} (string nomp)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable nomp dans la variable Nom\-P\-N\-J. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant les \hyperlink{class_p_n_j}{P\-N\-J} (personnes non joueurs). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_p_n_j_af47e047679a553304cd94c4f052afc9d}{\index{P\-N\-J@{P\-N\-J}!P\-N\-J@{P\-N\-J}}
+\index{P\-N\-J@{P\-N\-J}!PNJ@{P\-N\-J}}
+\subsubsection[{P\-N\-J}]{\setlength{\rightskip}{0pt plus 5cm}P\-N\-J\-::\-P\-N\-J (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_p_n_j_af47e047679a553304cd94c4f052afc9d}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+\hypertarget{class_p_n_j_a9d69e66223cac489b73561e71e0949e4}{\index{P\-N\-J@{P\-N\-J}!P\-N\-J@{P\-N\-J}}
+\index{P\-N\-J@{P\-N\-J}!PNJ@{P\-N\-J}}
+\subsubsection[{P\-N\-J}]{\setlength{\rightskip}{0pt plus 5cm}P\-N\-J\-::\-P\-N\-J (
+\begin{DoxyParamCaption}
+\item[{int}]{intelp, }
+\item[{int}]{forcep, }
+\item[{int}]{agep, }
+\item[{string}]{nomp, }
+\item[{vector$<$ {\bf Mission} $\ast$ $>$}]{miss, }
+\item[{string}]{dpd}
+\end{DoxyParamCaption}
+)}}\label{class_p_n_j_a9d69e66223cac489b73561e71e0949e4}
+
+
+Constructeur de la classe \hyperlink{class_p_n_j}{P\-N\-J}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intelp} & La valeur de l'intelligence du \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+{\em forcep} & La valeur de la force du \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+{\em agep} & L'âge du \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+{\em nomp} & Le nom du \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+{\em miss} & Le vecteur des missions proposées par les \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+{\em dpd} & Le dialogue par défaut du \hyperlink{class_p_n_j}{P\-N\-J} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+11                                                                                          :
+      \hyperlink{class_personnage_abec36eb0310adc71f3375297fc590c65}{Personnage}(intelp,forcep,agep,nomp)\{
+12 
+13     missionsP = miss;
+14     dialogueParDefaut= dpd;
+15     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_p_n_j_ac2495e0c6580568cd6299389df128b20}{\index{P\-N\-J@{P\-N\-J}!get\-Dialogue\-Par\-Defaut@{get\-Dialogue\-Par\-Defaut}}
+\index{get\-Dialogue\-Par\-Defaut@{get\-Dialogue\-Par\-Defaut}!PNJ@{P\-N\-J}}
+\subsubsection[{get\-Dialogue\-Par\-Defaut}]{\setlength{\rightskip}{0pt plus 5cm}string P\-N\-J\-::get\-Dialogue\-Par\-Defaut (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_p_n_j_ac2495e0c6580568cd6299389df128b20}
+
+
+Accède à la variable dialogue\-Par\-Defaut. 
+
+\begin{DoxyReturn}{Returns}
+Le dialogue par défaut du \hyperlink{class_p_n_j}{P\-N\-J}. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+32                                     \{
+33     \textcolor{keywordflow}{return} dialogueParDefaut;
+34   \}
+\end{DoxyCode}
+\hypertarget{class_p_n_j_ab947fafa6afecf6640e1279ff05b7941}{\index{P\-N\-J@{P\-N\-J}!get\-Missions\-P@{get\-Missions\-P}}
+\index{get\-Missions\-P@{get\-Missions\-P}!PNJ@{P\-N\-J}}
+\subsubsection[{get\-Missions\-P}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Mission} $\ast$ $>$ P\-N\-J\-::get\-Missions\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_p_n_j_ab947fafa6afecf6640e1279ff05b7941}
+
+
+Accède à la variable Mission\-P. 
+
+\begin{DoxyReturn}{Returns}
+Un vecteur de missions. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+28                                         \{
+29     \textcolor{keywordflow}{return} missionsP;
+30   \}
+\end{DoxyCode}
+\hypertarget{class_p_n_j_a11332cced0b00f4dfb9221b2d897aba5}{\index{P\-N\-J@{P\-N\-J}!get\-Nom\-P\-N\-J@{get\-Nom\-P\-N\-J}}
+\index{get\-Nom\-P\-N\-J@{get\-Nom\-P\-N\-J}!PNJ@{P\-N\-J}}
+\subsubsection[{get\-Nom\-P\-N\-J}]{\setlength{\rightskip}{0pt plus 5cm}string P\-N\-J\-::get\-Nom\-P\-N\-J (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_p_n_j_a11332cced0b00f4dfb9221b2d897aba5}
+
+
+Accède à la variable Nom\-P\-N\-J. 
+
+\begin{DoxyReturn}{Returns}
+Le nom du \hyperlink{class_p_n_j}{P\-N\-J}. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+20                        \{
+21     \textcolor{keywordflow}{return} \hyperlink{class_personnage_acb7331b96dfc9f2aec78c60799030302}{nom};
+22 \}
+\end{DoxyCode}
+\hypertarget{class_p_n_j_ae938be01cfe4befe3a86c512cb2f87e1}{\index{P\-N\-J@{P\-N\-J}!set\-Dialogue\-Par\-Defaut@{set\-Dialogue\-Par\-Defaut}}
+\index{set\-Dialogue\-Par\-Defaut@{set\-Dialogue\-Par\-Defaut}!PNJ@{P\-N\-J}}
+\subsubsection[{set\-Dialogue\-Par\-Defaut}]{\setlength{\rightskip}{0pt plus 5cm}void P\-N\-J\-::set\-Dialogue\-Par\-Defaut (
+\begin{DoxyParamCaption}
+\item[{string}]{dpd}
+\end{DoxyParamCaption}
+)}}\label{class_p_n_j_ae938be01cfe4befe3a86c512cb2f87e1}
+
+
+stock la valeur de la variable dpd dans la variable Dialogue\-Par\-Defaut. 
+
+
+\begin{DoxyCode}
+36                                            \{
+37     dialogueParDefaut = dpd;
+38   \}
+\end{DoxyCode}
+\hypertarget{class_p_n_j_a519fb3ba5b692d2088c7c3a66421f72b}{\index{P\-N\-J@{P\-N\-J}!set\-Missions\-P@{set\-Missions\-P}}
+\index{set\-Missions\-P@{set\-Missions\-P}!PNJ@{P\-N\-J}}
+\subsubsection[{set\-Missions\-P}]{\setlength{\rightskip}{0pt plus 5cm}void P\-N\-J\-::set\-Missions\-P (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Mission} $\ast$ $>$}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_p_n_j_a519fb3ba5b692d2088c7c3a66421f72b}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable Missions\-P. 
+
+
+\begin{DoxyCode}
+24                                                     \{
+25       missionsP = new\_var;
+26   \}
+\end{DoxyCode}
+\hypertarget{class_p_n_j_a05bc22ba955f35343d89ef3d040d5fa4}{\index{P\-N\-J@{P\-N\-J}!set\-Nom\-P\-N\-J@{set\-Nom\-P\-N\-J}}
+\index{set\-Nom\-P\-N\-J@{set\-Nom\-P\-N\-J}!PNJ@{P\-N\-J}}
+\subsubsection[{set\-Nom\-P\-N\-J}]{\setlength{\rightskip}{0pt plus 5cm}void P\-N\-J\-::set\-Nom\-P\-N\-J (
+\begin{DoxyParamCaption}
+\item[{string}]{nomp}
+\end{DoxyParamCaption}
+)}}\label{class_p_n_j_a05bc22ba955f35343d89ef3d040d5fa4}
+
+
+stock la valeur de la variable nomp dans la variable Nom\-P\-N\-J. 
+
+
+\begin{DoxyCode}
+17                                 \{
+18     \hyperlink{class_personnage_acb7331b96dfc9f2aec78c60799030302}{nom} = nomp;
+19 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{pnj_8hpp}{pnj.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{pnj_8cpp}{pnj.\-cpp}\end{DoxyCompactItemize}

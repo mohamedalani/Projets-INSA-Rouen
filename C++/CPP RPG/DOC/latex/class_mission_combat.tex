@@ -1,0 +1,323 @@
+\hypertarget{class_mission_combat}{\section{Mission\-Combat Class Reference}
+\label{class_mission_combat}\index{Mission\-Combat@{Mission\-Combat}}
+}
+
+
+Classe représentant les missions de type combat.  
+
+
+
+
+{\ttfamily \#include $<$missioncombat.\-hpp$>$}
+
+Inheritance diagram for Mission\-Combat\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mission_combat}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mission_combat_a16d2c93a4366d48fb6ea6339388c76c4}{Mission\-Combat} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_mission_combat_a7599e8cb49f2e49b8a54cfbf836c2f42}{Mission\-Combat} (int acc\-Intel, int acc\-Force, int acc\-Age, int acc\-Energie, string nom, int rec\-Force, int rec\-Cash, string dialogue\-R, string dialogue\-E)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe mission combat . \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_combat_ad838e9ec99671e81fe9b0edb18b81f02}{set\-Recomp\-Force} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable recomp\-Force. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_combat_a47460faf8b07a407771f11249fbe26d1}{get\-Recomp\-Force} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable recomp\-Force. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_combat_a8d9d56b01541e6ec190a029ddb9861e3}{set\-Recomp\-Cash} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable recomp\-Cash. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_combat_ac8acd44a461561bd13f718c099bdd416}{get\-Recomp\-Cash} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable recomp\-Cash. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mission_combat_a983b1a729c2aedf312c4c61029d14294}{test\-Validite} (\hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_p_n_j}{P\-N\-J} $\ast$pnj)
+\begin{DoxyCompactList}\small\item\em Teste la validité de la mission combat. \end{DoxyCompactList}\item 
+\hyperlink{class_personnage}{Personnage} $\ast$ \hyperlink{class_mission_combat_a511ab55d291861d8c000fcba73393f44}{comparer\-Stats} (\hyperlink{class_heros}{Heros} $\ast$hero, \hyperlink{class_p_n_j}{P\-N\-J} $\ast$pnj)
+\begin{DoxyCompactList}\small\item\em Compare les statistiques du héros avec celles du \hyperlink{class_p_n_j}{P\-N\-J}. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_combat_a66b242eaa5cd9b788e9e26502d885fa7}{executer\-Mission} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_p_n_j}{P\-N\-J} $\ast$pnj)
+\begin{DoxyCompactList}\small\item\em Exécute une mission de type combat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant les missions de type combat. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mission_combat_a16d2c93a4366d48fb6ea6339388c76c4}{\index{Mission\-Combat@{Mission\-Combat}!Mission\-Combat@{Mission\-Combat}}
+\index{Mission\-Combat@{Mission\-Combat}!MissionCombat@{Mission\-Combat}}
+\subsubsection[{Mission\-Combat}]{\setlength{\rightskip}{0pt plus 5cm}Mission\-Combat\-::\-Mission\-Combat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_combat_a16d2c93a4366d48fb6ea6339388c76c4}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+16 \{\}
+\end{DoxyCode}
+\hypertarget{class_mission_combat_a7599e8cb49f2e49b8a54cfbf836c2f42}{\index{Mission\-Combat@{Mission\-Combat}!Mission\-Combat@{Mission\-Combat}}
+\index{Mission\-Combat@{Mission\-Combat}!MissionCombat@{Mission\-Combat}}
+\subsubsection[{Mission\-Combat}]{\setlength{\rightskip}{0pt plus 5cm}Mission\-Combat\-::\-Mission\-Combat (
+\begin{DoxyParamCaption}
+\item[{int}]{acc\-Intel, }
+\item[{int}]{acc\-Force, }
+\item[{int}]{acc\-Age, }
+\item[{int}]{acc\-Energie, }
+\item[{string}]{nom, }
+\item[{int}]{rec\-Force, }
+\item[{int}]{rec\-Cash, }
+\item[{string}]{dialogue\-R, }
+\item[{string}]{dialogue\-E}
+\end{DoxyParamCaption}
+)}}\label{class_mission_combat_a7599e8cb49f2e49b8a54cfbf836c2f42}
+
+
+Constructeur de la classe mission combat . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acc\-Intel} & La valeur nécessaire d'intelligence pour accéder à une mission. \\
+\hline
+{\em acc\-Force} & La valeur nécessaire de la force pour accéder à une mission. \\
+\hline
+{\em acc\-Age} & La valeur nécessaire d'âge pour accéder à une mission. \\
+\hline
+{\em access\-Energie} & La valeur nécessaire d'énergie pour accéder à une mission. \\
+\hline
+{\em nom} & le nom de la mission. \\
+\hline
+{\em rec\-Force} & La valeur de la récompense force que l'héros peut gagner. \\
+\hline
+{\em rec\-Cash} & La valeur de la récompense cash que l'héros peut gagner \\
+\hline
+{\em dialogue\-R} & Le dialogue en cas de réussite. \\
+\hline
+{\em dialogue\-E} & Le dialogue en cas d'échec. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+17                                                                                                            
+                                                      : \hyperlink{class_mission_aa5a6ff4fc779338ab01b8f6dd470f4df}{Mission}(accIntel,accForce,accAge,accEnergie,nom, 
+      dialogueR, dialogueE) \{
+18     recompForce = recForce;
+19     recompCash = recCash;
+20     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mission_combat_a511ab55d291861d8c000fcba73393f44}{\index{Mission\-Combat@{Mission\-Combat}!comparer\-Stats@{comparer\-Stats}}
+\index{comparer\-Stats@{comparer\-Stats}!MissionCombat@{Mission\-Combat}}
+\subsubsection[{comparer\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Personnage} $\ast$ Mission\-Combat\-::comparer\-Stats (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros} $\ast$}]{hero, }
+\item[{{\bf P\-N\-J} $\ast$}]{pnj}
+\end{DoxyParamCaption}
+)}}\label{class_mission_combat_a511ab55d291861d8c000fcba73393f44}
+
+
+Compare les statistiques du héros avec celles du \hyperlink{class_p_n_j}{P\-N\-J}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heros} & Un paramètre de la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+{\em pnj} & Un paramètre de la classe \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un personnage qui peut être soit l'héros soit le \hyperlink{class_p_n_j}{P\-N\-J}. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+38                                                                 \{
+39     \textcolor{keywordflow}{if}(heros->getForce() > pnj->\hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}())
+40         \textcolor{keywordflow}{return} heros;
+41     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} pnj;
+42   \}
+\end{DoxyCode}
+\hypertarget{class_mission_combat_a66b242eaa5cd9b788e9e26502d885fa7}{\index{Mission\-Combat@{Mission\-Combat}!executer\-Mission@{executer\-Mission}}
+\index{executer\-Mission@{executer\-Mission}!MissionCombat@{Mission\-Combat}}
+\subsubsection[{executer\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-Combat\-::executer\-Mission (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf P\-N\-J} $\ast$}]{pnj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mission_combat_a66b242eaa5cd9b788e9e26502d885fa7}
+
+
+Exécute une mission de type combat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & Un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+{\em pnj} & Un pointeur sur la classe \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un texte permettant de savoir si le héros a assez de force pour combattre, s'il a gagné ou perdu le combat etc. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_mission_ad4375f925eda8637d6346ef468747f44}{Mission}.
+
+
+\begin{DoxyCode}
+50                                                                          \{
+51 
+52       \textcolor{keywordflow}{if}(heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()<=\hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie})
+53           \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Vous n'avez pas assez d'énergie... C'est peut être mieux comme ça remarquez."};
+54 
+55       \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(jeu.\hyperlink{class_jeu_a3aa07b1e7a5e5d82479b8bb2a2841635}{demanderBoolUtilisateur}(\textcolor{stringliteral}{"Voulez vous combattre "}+pnj->
+      \hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" ?"})) \{
+56             \hyperlink{class_mission_a5ee38d2b67b7f860fb6a27d486200bec}{setEtatMission}(\hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7aca12092e4757cb029f1b3e1fa95ed277}{enCours});
+57             heros->\hyperlink{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{setEnergie}(heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()-
+      \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie});
+58             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Vous avez perdu "}+\hyperlink{missioncombat_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(
+      \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie})+\textcolor{stringliteral}{" d'énergie."});
+59             jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(1, pnj->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" se retrousse les manches."});
+60             jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(5, \textcolor{stringliteral}{"Des coups pleuvent dans tous les sens, le combat fait rage..."});
+61           \textcolor{keywordflow}{if} (\hyperlink{class_mission_combat_a983b1a729c2aedf312c4c61029d14294}{testValidite}(heros, pnj))\{
+62               \hyperlink{class_mission_a5ee38d2b67b7f860fb6a27d486200bec}{setEtatMission}(\hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7a9e765bd835523da043a754ce21905cb5}{achevee});
+63               heros->\hyperlink{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{setCash}(heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}()+recompCash);
+64               heros->\hyperlink{class_personnage_a6745d147720906f2c85ddce11981d71f}{setForce}(heros->\hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}()+recompForce);
+65               \textcolor{keywordflow}{return} pnj->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" : "}+\hyperlink{class_mission_adedaca4409d2abe41a36c04921440b86}{getDialogueReussite}()+\textcolor{stringliteral}{"\(\backslash\)nVous avez gagné
+       le combat, quelle musculature incroyable, je vous croquerai bien...hum. Vous gagnez : "}+
+      \hyperlink{missioncombat_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(recompCash)+\textcolor{stringliteral}{" de cash et "}+\hyperlink{missioncombat_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(recompForce)+\textcolor{stringliteral}{" de force"};
+66           \}
+67           \textcolor{keywordflow}{else} \{
+68               \textcolor{keywordflow}{if} (heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()>heros->\hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}()/3)
+69             heros->\hyperlink{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{setEnergie}(heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()-(heros->
+      \hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}()/3));
+70               \textcolor{keywordflow}{else} heros->\hyperlink{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{setEnergie}(0);
+71 
+72               \textcolor{keywordflow}{if} (heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}() > recompCash*2)
+73             heros->\hyperlink{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{setCash}(heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}()-recompCash*2);
+74               \textcolor{keywordflow}{else} heros->\hyperlink{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{setCash}(0);
+75             \textcolor{keywordflow}{return} pnj->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" : "}+\hyperlink{class_mission_af9a813bba373bcac25b42e22c8440c1c}{getDialogueEchec}()+\textcolor{stringliteral}{"\(\backslash\)nVotre échec vous a
+       épuisé, vous perdez : "}+\hyperlink{missioncombat_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}((heros->\hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}()/3))+\textcolor{stringliteral}{" points d'énergie et "}+
+      \hyperlink{missioncombat_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(recompCash*2)+\textcolor{stringliteral}{" cash"};
+76           \}
+77       \}
+78       \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{stringliteral}{"La fuite peut parfois être une sage décision... Poule mouillée."};
+79   \}
+\end{DoxyCode}
+\hypertarget{class_mission_combat_ac8acd44a461561bd13f718c099bdd416}{\index{Mission\-Combat@{Mission\-Combat}!get\-Recomp\-Cash@{get\-Recomp\-Cash}}
+\index{get\-Recomp\-Cash@{get\-Recomp\-Cash}!MissionCombat@{Mission\-Combat}}
+\subsubsection[{get\-Recomp\-Cash}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-Combat\-::get\-Recomp\-Cash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_combat_ac8acd44a461561bd13f718c099bdd416}
+
+
+Accède à la variable recomp\-Cash. 
+
+\begin{DoxyReturn}{Returns}
+la valeur de la récompense cash. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+34                                         \{
+35     \textcolor{keywordflow}{return} recompCash;
+36   \}
+\end{DoxyCode}
+\hypertarget{class_mission_combat_a47460faf8b07a407771f11249fbe26d1}{\index{Mission\-Combat@{Mission\-Combat}!get\-Recomp\-Force@{get\-Recomp\-Force}}
+\index{get\-Recomp\-Force@{get\-Recomp\-Force}!MissionCombat@{Mission\-Combat}}
+\subsubsection[{get\-Recomp\-Force}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-Combat\-::get\-Recomp\-Force (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_combat_a47460faf8b07a407771f11249fbe26d1}
+
+
+Accède à la variable recomp\-Force. 
+
+\begin{DoxyReturn}{Returns}
+la valeur de la récompense force. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+26                                          \{
+27     \textcolor{keywordflow}{return} recompForce;
+28   \}
+\end{DoxyCode}
+\hypertarget{class_mission_combat_a8d9d56b01541e6ec190a029ddb9861e3}{\index{Mission\-Combat@{Mission\-Combat}!set\-Recomp\-Cash@{set\-Recomp\-Cash}}
+\index{set\-Recomp\-Cash@{set\-Recomp\-Cash}!MissionCombat@{Mission\-Combat}}
+\subsubsection[{set\-Recomp\-Cash}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-Combat\-::set\-Recomp\-Cash (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_combat_a8d9d56b01541e6ec190a029ddb9861e3}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable recomp\-Cash. 
+
+
+\begin{DoxyCode}
+30                                                     \{
+31       recompCash = new\_var;
+32   \}
+\end{DoxyCode}
+\hypertarget{class_mission_combat_ad838e9ec99671e81fe9b0edb18b81f02}{\index{Mission\-Combat@{Mission\-Combat}!set\-Recomp\-Force@{set\-Recomp\-Force}}
+\index{set\-Recomp\-Force@{set\-Recomp\-Force}!MissionCombat@{Mission\-Combat}}
+\subsubsection[{set\-Recomp\-Force}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-Combat\-::set\-Recomp\-Force (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_combat_ad838e9ec99671e81fe9b0edb18b81f02}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable recomp\-Force. 
+
+
+\begin{DoxyCode}
+22                                                      \{
+23       recompForce = new\_var;
+24   \}
+\end{DoxyCode}
+\hypertarget{class_mission_combat_a983b1a729c2aedf312c4c61029d14294}{\index{Mission\-Combat@{Mission\-Combat}!test\-Validite@{test\-Validite}}
+\index{test\-Validite@{test\-Validite}!MissionCombat@{Mission\-Combat}}
+\subsubsection[{test\-Validite}]{\setlength{\rightskip}{0pt plus 5cm}bool Mission\-Combat\-::test\-Validite (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf P\-N\-J} $\ast$}]{pnj}
+\end{DoxyParamCaption}
+)}}\label{class_mission_combat_a983b1a729c2aedf312c4c61029d14294}
+
+
+Teste la validité de la mission combat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heros} & Un paramètre de la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+{\em pnj} & Un paramètre de la classe \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un booléen. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+44                                                          \{
+45       \textcolor{keywordflow}{if} (\hyperlink{class_mission_combat_a511ab55d291861d8c000fcba73393f44}{comparerStats}(heros,pnj)->getNom() == (heros->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()) )
+46         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+47       \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+48   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{missioncombat_8hpp}{missioncombat.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{missioncombat_8cpp}{missioncombat.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,295 @@
+\hypertarget{class_personnage}{\section{Personnage Class Reference}
+\label{class_personnage}\index{Personnage@{Personnage}}
+}
+
+
+Classe représentant les personnages.  
+
+
+
+
+{\ttfamily \#include $<$personnage.\-hpp$>$}
+
+Inheritance diagram for Personnage\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_personnage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_personnage_abec36eb0310adc71f3375297fc590c65}{Personnage} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_personnage_aee7b1cf6fb3ae9c6dd9d834fb9a7557c}{Personnage} (int intelp, int forcep, int agep, string nomp)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe personnage. \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_af8b3c4f6c0f7035678d9ecf574976650}{set\-Intelligence} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable Intelligence. \end{DoxyCompactList}\item 
+int \hyperlink{class_personnage_a250eec1aba0df7a105dd564e4cd02b0b}{get\-Intelligence} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable Intelligence. \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a6745d147720906f2c85ddce11981d71f}{set\-Force} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable Force. \end{DoxyCompactList}\item 
+int \hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{get\-Force} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable Force. \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a5d9ef278febb61a54c8d61e9eff79aa4}{set\-Age} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable Age. \end{DoxyCompactList}\item 
+int \hyperlink{class_personnage_a991d7e1cf4662e245ad72e76b9eb9d53}{get\-Age} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable Age. \end{DoxyCompactList}\item 
+void \hyperlink{class_personnage_a5071fd1a8c64b3b2653681b8a867405d}{set\-Nom} (string var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable var dans la variable Nom. \end{DoxyCompactList}\item 
+string \hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{get\-Nom} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable Nom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_personnage_a8e9bc213349fb0553d76d4da6a711231}{intelligence}
+\begin{DoxyCompactList}\small\item\em La valeur de l'intelligence du personnage. \end{DoxyCompactList}\item 
+int \hyperlink{class_personnage_a823cd88582efee2ea29d199f96dcc677}{force}
+\begin{DoxyCompactList}\small\item\em La valeur de la force du personnage. \end{DoxyCompactList}\item 
+int \hyperlink{class_personnage_a2aa943e3c255f221eb9e57e8d134641f}{age}
+\begin{DoxyCompactList}\small\item\em L'âge du personnage. \end{DoxyCompactList}\item 
+string \hyperlink{class_personnage_acb7331b96dfc9f2aec78c60799030302}{nom}
+\begin{DoxyCompactList}\small\item\em Le nom du personnage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe représentant les personnages. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_personnage_abec36eb0310adc71f3375297fc590c65}{\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\subsubsection[{Personnage}]{\setlength{\rightskip}{0pt plus 5cm}Personnage\-::\-Personnage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_abec36eb0310adc71f3375297fc590c65}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+7 \{\}
+\end{DoxyCode}
+\hypertarget{class_personnage_aee7b1cf6fb3ae9c6dd9d834fb9a7557c}{\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\subsubsection[{Personnage}]{\setlength{\rightskip}{0pt plus 5cm}Personnage\-::\-Personnage (
+\begin{DoxyParamCaption}
+\item[{int}]{intelp, }
+\item[{int}]{forcep, }
+\item[{int}]{agep, }
+\item[{string}]{nomp}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_aee7b1cf6fb3ae9c6dd9d834fb9a7557c}
+
+
+Constructeur de la classe personnage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intelp} & La valeur de l'intelligence du personnage. \\
+\hline
+{\em forcep} & La valeur de la force du personnage. \\
+\hline
+{\em agep} & L'âge du personnage. \\
+\hline
+{\em nomp} & le nom du personnage. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                    \{
+10     \hyperlink{class_personnage_a8e9bc213349fb0553d76d4da6a711231}{intelligence} = intelp;
+11     \hyperlink{class_personnage_a823cd88582efee2ea29d199f96dcc677}{force} = forcep;
+12     \hyperlink{class_personnage_a2aa943e3c255f221eb9e57e8d134641f}{age} = agep;
+13     \hyperlink{class_personnage_acb7331b96dfc9f2aec78c60799030302}{nom} = nomp;
+14     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_personnage_a991d7e1cf4662e245ad72e76b9eb9d53}{\index{Personnage@{Personnage}!get\-Age@{get\-Age}}
+\index{get\-Age@{get\-Age}!Personnage@{Personnage}}
+\subsubsection[{get\-Age}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Age (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_a991d7e1cf4662e245ad72e76b9eb9d53}
+
+
+Accède à la variable Age. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de l'âge. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+41                             \{
+42     \textcolor{keywordflow}{return} \hyperlink{class_personnage_a2aa943e3c255f221eb9e57e8d134641f}{age};
+43   \}
+\end{DoxyCode}
+\hypertarget{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{\index{Personnage@{Personnage}!get\-Force@{get\-Force}}
+\index{get\-Force@{get\-Force}!Personnage@{Personnage}}
+\subsubsection[{get\-Force}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Force (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}
+
+
+Accède à la variable Force. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de la force. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+33                               \{
+34     \textcolor{keywordflow}{return} \hyperlink{class_personnage_a823cd88582efee2ea29d199f96dcc677}{force};
+35   \}
+\end{DoxyCode}
+\hypertarget{class_personnage_a250eec1aba0df7a105dd564e4cd02b0b}{\index{Personnage@{Personnage}!get\-Intelligence@{get\-Intelligence}}
+\index{get\-Intelligence@{get\-Intelligence}!Personnage@{Personnage}}
+\subsubsection[{get\-Intelligence}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Intelligence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_a250eec1aba0df7a105dd564e4cd02b0b}
+
+
+Accède à la variable Intelligence. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de l'intelligence. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+25                                      \{
+26     \textcolor{keywordflow}{return} \hyperlink{class_personnage_a8e9bc213349fb0553d76d4da6a711231}{intelligence};
+27   \}
+\end{DoxyCode}
+\hypertarget{class_personnage_a519301399a9bee1557858aa50a04a85a}{\index{Personnage@{Personnage}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Personnage@{Personnage}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}string Personnage\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_a519301399a9bee1557858aa50a04a85a}
+
+
+Accède à la variable Nom. 
+
+\begin{DoxyReturn}{Returns}
+Le nom. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+18                           \{
+19     \textcolor{keywordflow}{return} \hyperlink{class_personnage_acb7331b96dfc9f2aec78c60799030302}{nom};
+20 \}
+\end{DoxyCode}
+\hypertarget{class_personnage_a5d9ef278febb61a54c8d61e9eff79aa4}{\index{Personnage@{Personnage}!set\-Age@{set\-Age}}
+\index{set\-Age@{set\-Age}!Personnage@{Personnage}}
+\subsubsection[{set\-Age}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Age (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_a5d9ef278febb61a54c8d61e9eff79aa4}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable Age. 
+
+
+\begin{DoxyCode}
+37                                         \{
+38       \hyperlink{class_personnage_a2aa943e3c255f221eb9e57e8d134641f}{age} = new\_var;
+39   \}
+\end{DoxyCode}
+\hypertarget{class_personnage_a6745d147720906f2c85ddce11981d71f}{\index{Personnage@{Personnage}!set\-Force@{set\-Force}}
+\index{set\-Force@{set\-Force}!Personnage@{Personnage}}
+\subsubsection[{set\-Force}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Force (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_a6745d147720906f2c85ddce11981d71f}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable Force. 
+
+
+\begin{DoxyCode}
+29                                           \{
+30       \hyperlink{class_personnage_a823cd88582efee2ea29d199f96dcc677}{force} = new\_var;
+31   \}
+\end{DoxyCode}
+\hypertarget{class_personnage_af8b3c4f6c0f7035678d9ecf574976650}{\index{Personnage@{Personnage}!set\-Intelligence@{set\-Intelligence}}
+\index{set\-Intelligence@{set\-Intelligence}!Personnage@{Personnage}}
+\subsubsection[{set\-Intelligence}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Intelligence (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_af8b3c4f6c0f7035678d9ecf574976650}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable Intelligence. 
+
+
+\begin{DoxyCode}
+21                                                  \{
+22       \hyperlink{class_personnage_a8e9bc213349fb0553d76d4da6a711231}{intelligence} = new\_var;
+23   \}
+\end{DoxyCode}
+\hypertarget{class_personnage_a5071fd1a8c64b3b2653681b8a867405d}{\index{Personnage@{Personnage}!set\-Nom@{set\-Nom}}
+\index{set\-Nom@{set\-Nom}!Personnage@{Personnage}}
+\subsubsection[{set\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Nom (
+\begin{DoxyParamCaption}
+\item[{string}]{var}
+\end{DoxyParamCaption}
+)}}\label{class_personnage_a5071fd1a8c64b3b2653681b8a867405d}
+
+
+stock la valeur de la variable var dans la variable Nom. 
+
+
+\begin{DoxyCode}
+15                                    \{
+16     \hyperlink{class_personnage_acb7331b96dfc9f2aec78c60799030302}{nom} = var;
+17 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_personnage_a2aa943e3c255f221eb9e57e8d134641f}{\index{Personnage@{Personnage}!age@{age}}
+\index{age@{age}!Personnage@{Personnage}}
+\subsubsection[{age}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::age\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_personnage_a2aa943e3c255f221eb9e57e8d134641f}
+
+
+L'âge du personnage. 
+
+\hypertarget{class_personnage_a823cd88582efee2ea29d199f96dcc677}{\index{Personnage@{Personnage}!force@{force}}
+\index{force@{force}!Personnage@{Personnage}}
+\subsubsection[{force}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::force\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_personnage_a823cd88582efee2ea29d199f96dcc677}
+
+
+La valeur de la force du personnage. 
+
+\hypertarget{class_personnage_a8e9bc213349fb0553d76d4da6a711231}{\index{Personnage@{Personnage}!intelligence@{intelligence}}
+\index{intelligence@{intelligence}!Personnage@{Personnage}}
+\subsubsection[{intelligence}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::intelligence\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_personnage_a8e9bc213349fb0553d76d4da6a711231}
+
+
+La valeur de l'intelligence du personnage. 
+
+\hypertarget{class_personnage_acb7331b96dfc9f2aec78c60799030302}{\index{Personnage@{Personnage}!nom@{nom}}
+\index{nom@{nom}!Personnage@{Personnage}}
+\subsubsection[{nom}]{\setlength{\rightskip}{0pt plus 5cm}string Personnage\-::nom\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_personnage_acb7331b96dfc9f2aec78c60799030302}
+
+
+Le nom du personnage. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{personnage_8hpp}{personnage.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{personnage_8cpp}{personnage.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,557 @@
+\hypertarget{class_mission}{\section{Mission Class Reference}
+\label{class_mission}\index{Mission@{Mission}}
+}
+
+
+Classe représentant les missions.  
+
+
+
+
+{\ttfamily \#include $<$mission.\-hpp$>$}
+
+Inheritance diagram for Mission\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mission}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mission_a7623e26167975876e1a7f483eed38d33}{Mission} (int acc\-Intel, int acc\-Force, int acc\-Age, int acc\-Energie, string nom, string dialogue\-R, string dialogue\-E)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe mission. \end{DoxyCompactList}\item 
+\hyperlink{class_mission_aa5a6ff4fc779338ab01b8f6dd470f4df}{Mission} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_mission_ad1a61b34162393ac42be5955d9772921}{$\sim$\-Mission} ()
+\begin{DoxyCompactList}\small\item\em Destructeur par défaut. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_a8fb06ed6f8b7bf29b75729548c18c5e9}{set\-Access\-Intel} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable access\-Intel. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_ab3ed2d8bde3f15489406775cec6ca3ae}{get\-Access\-Intel} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable access\-Intel. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_a23c1490b294d170c675279ee9296f1f2}{set\-Access\-Force} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable access\-Force. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_ae443e12738d9e3c52f27f3630df68bbf}{get\-Access\-Force} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable access\-Force. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_aac3bc744de87abea4e87db51616dfec5}{set\-Access\-Age} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable access\-Age. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_a3ce0c4da70204a7bd84f9acb6306e43e}{get\-Access\-Age} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable access\-Age. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_a5ee38d2b67b7f860fb6a27d486200bec}{set\-Etat\-Mission} (\hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7}{Etat\-Mission} new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable etat\-Mission. \end{DoxyCompactList}\item 
+\hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7}{Etat\-Mission} \hyperlink{class_mission_aa513084d347dc1c4c8a957258c9d3876}{get\-Etat\-Mission} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable etat\-Mission. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_afc0e70a63822f561abf3a7e832f086af}{set\-Texte\-Mission} (string new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable texte\-Mission. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_ad6b21ef20ff04bad9769f3b50a3b1218}{get\-Texte\-Mission} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable texte\-Mission. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_a3b2a2ce4cd3025d2233ff593cd87cae0}{set\-Access\-Energie} (int var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable var dans la variable access\-Energie. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_a1fd4aa1e267e0f722f6bdb8891ec053f}{get\-Access\-Energie} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable access\-Energie. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_adedaca4409d2abe41a36c04921440b86}{get\-Dialogue\-Reussite} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable dialogue\-Reussite. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_a168753922a0eaf4fc7ed0a311ac70b46}{set\-Dialogue\-Reussite} (string \hyperlink{class_mission_a75d8fc66d0ed01f1f1192e03528a2612}{dialogue\-Reussite})
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable dialogue\-Reussite dans la variable dialogue\-Reussite. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_af9a813bba373bcac25b42e22c8440c1c}{get\-Dialogue\-Echec} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable dialogue\-Echec. \end{DoxyCompactList}\item 
+virtual string \hyperlink{class_mission_ad4375f925eda8637d6346ef468747f44}{executer\-Mission} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_p_n_j}{P\-N\-J} $\ast$pnj)
+\begin{DoxyCompactList}\small\item\em Exécute une mission. C'est une méthode virtuelle qui va être redéfinie dans chacune des classes filles de \hyperlink{class_mission}{Mission}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_mission_af93302ac38548302411994e4cbf9b850}{access\-Intel}
+\begin{DoxyCompactList}\small\item\em La valeur nécessaire d'intelligence pour accéder à une mission. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_a58a62ea21f7c074d87e8592a009dec49}{access\-Force}
+\begin{DoxyCompactList}\small\item\em La valeur nécessaire de la force pour accéder à une mission. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_a78226357c57649c261115d34598f9a8e}{access\-Age}
+\begin{DoxyCompactList}\small\item\em La valeur nécessaire d'âge pour accéder à une mission. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{access\-Energie}
+\begin{DoxyCompactList}\small\item\em La valeur nécessaire d'énergie pour accéder à une mission. \end{DoxyCompactList}\item 
+\hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7}{Etat\-Mission} \hyperlink{class_mission_a7a3a8c801854fdbc1ddfb73d187e5b2e}{etat\-Mission}
+\begin{DoxyCompactList}\small\item\em L'état de chaque mission pour savoir si la mission est pas\-Entamee, en\-Cours ou achevée. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_ac289a213c14ea87ba5740be349c23419}{texte\-Mission}
+\begin{DoxyCompactList}\small\item\em Le texte envoyé à l'utilisateur afin qu'il fasse son choix. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_a75d8fc66d0ed01f1f1192e03528a2612}{dialogue\-Reussite}
+\begin{DoxyCompactList}\small\item\em Un texte renvoyé à l'utilisateur quand celui-\/ci réussit la mission. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_aeb543b4e12125834e6b8901820db243b}{dialogue\-Echec}
+\begin{DoxyCompactList}\small\item\em Un texte renvoyé à l'utilisateur quand celui-\/ci échoue la mission. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_mission_af6589a43033e50899832cc63939ecb23}{compteur\-Mission} = 1
+\begin{DoxyCompactList}\small\item\em Le compteur de la mission. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe représentant les missions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mission_a7623e26167975876e1a7f483eed38d33}{\index{Mission@{Mission}!Mission@{Mission}}
+\index{Mission@{Mission}!Mission@{Mission}}
+\subsubsection[{Mission}]{\setlength{\rightskip}{0pt plus 5cm}Mission\-::\-Mission (
+\begin{DoxyParamCaption}
+\item[{int}]{acc\-Intel, }
+\item[{int}]{acc\-Force, }
+\item[{int}]{acc\-Age, }
+\item[{int}]{acc\-Energie, }
+\item[{string}]{nom, }
+\item[{string}]{dialogue\-R, }
+\item[{string}]{dialogue\-E}
+\end{DoxyParamCaption}
+)}}\label{class_mission_a7623e26167975876e1a7f483eed38d33}
+
+
+Constructeur de la classe mission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acc\-Intel} & La valeur nécessaire d'intelligence pour accéder à une mission. \\
+\hline
+{\em acc\-Force} & La valeur nécessaire de la force pour accéder à une mission. \\
+\hline
+{\em acc\-Age} & La valeur nécessaire d'âge pour accéder à une mission. \\
+\hline
+{\em access\-Energie} & La valeur nécessaire d'énergie pour accéder à une mission. \\
+\hline
+{\em nom} & le nom de la mission. \\
+\hline
+{\em dialogue\-R} & Le dialogue en cas de réussite. \\
+\hline
+{\em dialogue\-E} & Le dialogue en cas d'échec. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+14                                                                                                            
+                 \{
+15     \hyperlink{class_mission_af93302ac38548302411994e4cbf9b850}{accessIntel} = accIntel;
+16     \hyperlink{class_mission_a58a62ea21f7c074d87e8592a009dec49}{accessForce} = accForce;
+17     \hyperlink{class_mission_a78226357c57649c261115d34598f9a8e}{accessAge} = accAge;
+18     \hyperlink{class_mission_ac289a213c14ea87ba5740be349c23419}{texteMission} = nom;
+19     \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie} = accEnergie;
+20     \hyperlink{class_mission_a7a3a8c801854fdbc1ddfb73d187e5b2e}{etatMission} = \hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7a008dce2c823a7fc5afc3b4233e8da8d9}{pasEntamee};
+21     \hyperlink{class_mission_a75d8fc66d0ed01f1f1192e03528a2612}{dialogueReussite} = dialogueR;
+22     \hyperlink{class_mission_aeb543b4e12125834e6b8901820db243b}{dialogueEchec} = dialogueE;
+23 
+24 \}
+\end{DoxyCode}
+\hypertarget{class_mission_aa5a6ff4fc779338ab01b8f6dd470f4df}{\index{Mission@{Mission}!Mission@{Mission}}
+\index{Mission@{Mission}!Mission@{Mission}}
+\subsubsection[{Mission}]{\setlength{\rightskip}{0pt plus 5cm}Mission\-::\-Mission (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_aa5a6ff4fc779338ab01b8f6dd470f4df}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+27 \{\};
+\end{DoxyCode}
+\hypertarget{class_mission_ad1a61b34162393ac42be5955d9772921}{\index{Mission@{Mission}!$\sim$\-Mission@{$\sim$\-Mission}}
+\index{$\sim$\-Mission@{$\sim$\-Mission}!Mission@{Mission}}
+\subsubsection[{$\sim$\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}Mission\-::$\sim$\-Mission (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_ad1a61b34162393ac42be5955d9772921}
+
+
+Destructeur par défaut. 
+
+
+\begin{DoxyCode}
+29 \{\};
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mission_ad4375f925eda8637d6346ef468747f44}{\index{Mission@{Mission}!executer\-Mission@{executer\-Mission}}
+\index{executer\-Mission@{executer\-Mission}!Mission@{Mission}}
+\subsubsection[{executer\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-::executer\-Mission (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf P\-N\-J} $\ast$}]{pnj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mission_ad4375f925eda8637d6346ef468747f44}
+
+
+Exécute une mission. C'est une méthode virtuelle qui va être redéfinie dans chacune des classes filles de \hyperlink{class_mission}{Mission}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & Un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+{\em pnj} & Un pointeur sur la classe \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+erreur si la mission n'a pas été exécutée. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_mission_maths_aec614bc24cbe313c5ce6d5d76119a041}{Mission\-Maths}, \hyperlink{class_mission_combat_a66b242eaa5cd9b788e9e26502d885fa7}{Mission\-Combat}, and \hyperlink{class_mission_objet_a49547f2e562b288a9abd640641964f78}{Mission\-Objet}.
+
+
+\begin{DoxyCode}
+94                                                                 \{
+95       \textcolor{keywordflow}{return} \textcolor{stringliteral}{"erreur"};
+96   \}
+\end{DoxyCode}
+\hypertarget{class_mission_a3ce0c4da70204a7bd84f9acb6306e43e}{\index{Mission@{Mission}!get\-Access\-Age@{get\-Access\-Age}}
+\index{get\-Access\-Age@{get\-Access\-Age}!Mission@{Mission}}
+\subsubsection[{get\-Access\-Age}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-::get\-Access\-Age (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_a3ce0c4da70204a7bd84f9acb6306e43e}
+
+
+Accède à la variable access\-Age. 
+
+\begin{DoxyReturn}{Returns}
+la valeur de l'âge nécessaire pour accèder à une mission. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+53                                  \{
+54     \textcolor{keywordflow}{return} \hyperlink{class_mission_a78226357c57649c261115d34598f9a8e}{accessAge};
+55   \}
+\end{DoxyCode}
+\hypertarget{class_mission_a1fd4aa1e267e0f722f6bdb8891ec053f}{\index{Mission@{Mission}!get\-Access\-Energie@{get\-Access\-Energie}}
+\index{get\-Access\-Energie@{get\-Access\-Energie}!Mission@{Mission}}
+\subsubsection[{get\-Access\-Energie}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-::get\-Access\-Energie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_a1fd4aa1e267e0f722f6bdb8891ec053f}
+
+
+Accède à la variable access\-Energie. 
+
+\begin{DoxyReturn}{Returns}
+la valeur de l'énergie nécessaire pour accèder à une mission. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+90                                 \{
+91     \textcolor{keywordflow}{return} \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie};
+92   \}
+\end{DoxyCode}
+\hypertarget{class_mission_ae443e12738d9e3c52f27f3630df68bbf}{\index{Mission@{Mission}!get\-Access\-Force@{get\-Access\-Force}}
+\index{get\-Access\-Force@{get\-Access\-Force}!Mission@{Mission}}
+\subsubsection[{get\-Access\-Force}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-::get\-Access\-Force (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_ae443e12738d9e3c52f27f3630df68bbf}
+
+
+Accède à la variable access\-Force. 
+
+\begin{DoxyReturn}{Returns}
+la valeur de la force nécessaire pour accèder à une mission. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+45                                    \{
+46     \textcolor{keywordflow}{return} \hyperlink{class_mission_a58a62ea21f7c074d87e8592a009dec49}{accessForce};
+47   \}
+\end{DoxyCode}
+\hypertarget{class_mission_ab3ed2d8bde3f15489406775cec6ca3ae}{\index{Mission@{Mission}!get\-Access\-Intel@{get\-Access\-Intel}}
+\index{get\-Access\-Intel@{get\-Access\-Intel}!Mission@{Mission}}
+\subsubsection[{get\-Access\-Intel}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-::get\-Access\-Intel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_ab3ed2d8bde3f15489406775cec6ca3ae}
+
+
+Accède à la variable access\-Intel. 
+
+\begin{DoxyReturn}{Returns}
+la valeur de l'intelligence nécessaire pour accèder à une mission. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+37                                    \{
+38     \textcolor{keywordflow}{return} \hyperlink{class_mission_af93302ac38548302411994e4cbf9b850}{accessIntel};
+39   \}
+\end{DoxyCode}
+\hypertarget{class_mission_af9a813bba373bcac25b42e22c8440c1c}{\index{Mission@{Mission}!get\-Dialogue\-Echec@{get\-Dialogue\-Echec}}
+\index{get\-Dialogue\-Echec@{get\-Dialogue\-Echec}!Mission@{Mission}}
+\subsubsection[{get\-Dialogue\-Echec}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-::get\-Dialogue\-Echec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_af9a813bba373bcac25b42e22c8440c1c}
+
+
+Accède à la variable dialogue\-Echec. 
+
+\begin{DoxyReturn}{Returns}
+Un texte afin d'indiquer si la mission a été échouée. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+82                                     \{
+83         \textcolor{keywordflow}{return} \hyperlink{class_mission_aeb543b4e12125834e6b8901820db243b}{dialogueEchec};
+84     \}
+\end{DoxyCode}
+\hypertarget{class_mission_adedaca4409d2abe41a36c04921440b86}{\index{Mission@{Mission}!get\-Dialogue\-Reussite@{get\-Dialogue\-Reussite}}
+\index{get\-Dialogue\-Reussite@{get\-Dialogue\-Reussite}!Mission@{Mission}}
+\subsubsection[{get\-Dialogue\-Reussite}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-::get\-Dialogue\-Reussite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_adedaca4409d2abe41a36c04921440b86}
+
+
+Accède à la variable dialogue\-Reussite. 
+
+\begin{DoxyReturn}{Returns}
+Un texte afin d'indiquer si la mission a été réussie. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+74                                          \{
+75         \textcolor{keywordflow}{return} \hyperlink{class_mission_a75d8fc66d0ed01f1f1192e03528a2612}{dialogueReussite};
+76     \}
+\end{DoxyCode}
+\hypertarget{class_mission_aa513084d347dc1c4c8a957258c9d3876}{\index{Mission@{Mission}!get\-Etat\-Mission@{get\-Etat\-Mission}}
+\index{get\-Etat\-Mission@{get\-Etat\-Mission}!Mission@{Mission}}
+\subsubsection[{get\-Etat\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat\-Mission} Mission\-::get\-Etat\-Mission (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_aa513084d347dc1c4c8a957258c9d3876}
+
+
+Accède à la variable etat\-Mission. 
+
+\begin{DoxyReturn}{Returns}
+L'état de la mission par exemple pas\-Entame, en\-Cours ou achevee. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+62                                            \{
+63     \textcolor{keywordflow}{return} \hyperlink{class_mission_a7a3a8c801854fdbc1ddfb73d187e5b2e}{etatMission};
+64   \}
+\end{DoxyCode}
+\hypertarget{class_mission_ad6b21ef20ff04bad9769f3b50a3b1218}{\index{Mission@{Mission}!get\-Texte\-Mission@{get\-Texte\-Mission}}
+\index{get\-Texte\-Mission@{get\-Texte\-Mission}!Mission@{Mission}}
+\subsubsection[{get\-Texte\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-::get\-Texte\-Mission (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_ad6b21ef20ff04bad9769f3b50a3b1218}
+
+
+Accède à la variable texte\-Mission. 
+
+\begin{DoxyReturn}{Returns}
+Le texte permettant de choisir une mission par l'utilisateur . 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+70                                        \{
+71     \textcolor{keywordflow}{return} \hyperlink{class_mission_ac289a213c14ea87ba5740be349c23419}{texteMission};
+72   \}
+\end{DoxyCode}
+\hypertarget{class_mission_aac3bc744de87abea4e87db51616dfec5}{\index{Mission@{Mission}!set\-Access\-Age@{set\-Access\-Age}}
+\index{set\-Access\-Age@{set\-Access\-Age}!Mission@{Mission}}
+\subsubsection[{set\-Access\-Age}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-::set\-Access\-Age (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_aac3bc744de87abea4e87db51616dfec5}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable access\-Age. 
+
+
+\begin{DoxyCode}
+49                                             \{
+50       \hyperlink{class_mission_a78226357c57649c261115d34598f9a8e}{accessAge} = new\_var;
+51   \}
+\end{DoxyCode}
+\hypertarget{class_mission_a3b2a2ce4cd3025d2233ff593cd87cae0}{\index{Mission@{Mission}!set\-Access\-Energie@{set\-Access\-Energie}}
+\index{set\-Access\-Energie@{set\-Access\-Energie}!Mission@{Mission}}
+\subsubsection[{set\-Access\-Energie}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-::set\-Access\-Energie (
+\begin{DoxyParamCaption}
+\item[{int}]{var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_a3b2a2ce4cd3025d2233ff593cd87cae0}
+
+
+stock la valeur de la variable var dans la variable access\-Energie. 
+
+
+\begin{DoxyCode}
+86                                         \{
+87     \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie} = var;
+88   \}
+\end{DoxyCode}
+\hypertarget{class_mission_a23c1490b294d170c675279ee9296f1f2}{\index{Mission@{Mission}!set\-Access\-Force@{set\-Access\-Force}}
+\index{set\-Access\-Force@{set\-Access\-Force}!Mission@{Mission}}
+\subsubsection[{set\-Access\-Force}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-::set\-Access\-Force (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_a23c1490b294d170c675279ee9296f1f2}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable access\-Force. 
+
+
+\begin{DoxyCode}
+41                                                \{
+42       \hyperlink{class_mission_a58a62ea21f7c074d87e8592a009dec49}{accessForce} = new\_var;
+43   \}
+\end{DoxyCode}
+\hypertarget{class_mission_a8fb06ed6f8b7bf29b75729548c18c5e9}{\index{Mission@{Mission}!set\-Access\-Intel@{set\-Access\-Intel}}
+\index{set\-Access\-Intel@{set\-Access\-Intel}!Mission@{Mission}}
+\subsubsection[{set\-Access\-Intel}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-::set\-Access\-Intel (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_a8fb06ed6f8b7bf29b75729548c18c5e9}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable access\-Intel. 
+
+
+\begin{DoxyCode}
+33                                               \{
+34       \hyperlink{class_mission_af93302ac38548302411994e4cbf9b850}{accessIntel} = new\_var;
+35   \}
+\end{DoxyCode}
+\hypertarget{class_mission_a168753922a0eaf4fc7ed0a311ac70b46}{\index{Mission@{Mission}!set\-Dialogue\-Reussite@{set\-Dialogue\-Reussite}}
+\index{set\-Dialogue\-Reussite@{set\-Dialogue\-Reussite}!Mission@{Mission}}
+\subsubsection[{set\-Dialogue\-Reussite}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-::set\-Dialogue\-Reussite (
+\begin{DoxyParamCaption}
+\item[{string}]{dialogue\-Reussite}
+\end{DoxyParamCaption}
+)}}\label{class_mission_a168753922a0eaf4fc7ed0a311ac70b46}
+
+
+stock la valeur de la variable dialogue\-Reussite dans la variable dialogue\-Reussite. 
+
+
+\begin{DoxyCode}
+78                                                              \{
+79         this->\hyperlink{class_mission_a75d8fc66d0ed01f1f1192e03528a2612}{dialogueReussite} = \hyperlink{class_mission_a75d8fc66d0ed01f1f1192e03528a2612}{dialogueReussite};
+80     \}
+\end{DoxyCode}
+\hypertarget{class_mission_a5ee38d2b67b7f860fb6a27d486200bec}{\index{Mission@{Mission}!set\-Etat\-Mission@{set\-Etat\-Mission}}
+\index{set\-Etat\-Mission@{set\-Etat\-Mission}!Mission@{Mission}}
+\subsubsection[{set\-Etat\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-::set\-Etat\-Mission (
+\begin{DoxyParamCaption}
+\item[{{\bf Etat\-Mission}}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_a5ee38d2b67b7f860fb6a27d486200bec}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable etat\-Mission. 
+
+
+\begin{DoxyCode}
+57                                                        \{
+58       \hyperlink{class_mission_a7a3a8c801854fdbc1ddfb73d187e5b2e}{etatMission} = new\_var;
+59   \}
+\end{DoxyCode}
+\hypertarget{class_mission_afc0e70a63822f561abf3a7e832f086af}{\index{Mission@{Mission}!set\-Texte\-Mission@{set\-Texte\-Mission}}
+\index{set\-Texte\-Mission@{set\-Texte\-Mission}!Mission@{Mission}}
+\subsubsection[{set\-Texte\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-::set\-Texte\-Mission (
+\begin{DoxyParamCaption}
+\item[{string}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_afc0e70a63822f561abf3a7e832f086af}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable texte\-Mission. 
+
+
+\begin{DoxyCode}
+66                                                    \{
+67       \hyperlink{class_mission_ac289a213c14ea87ba5740be349c23419}{texteMission} = new\_var;
+68   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_mission_a78226357c57649c261115d34598f9a8e}{\index{Mission@{Mission}!access\-Age@{access\-Age}}
+\index{access\-Age@{access\-Age}!Mission@{Mission}}
+\subsubsection[{access\-Age}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-::access\-Age\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mission_a78226357c57649c261115d34598f9a8e}
+
+
+La valeur nécessaire d'âge pour accéder à une mission. 
+
+\hypertarget{class_mission_ae767714f7433f66f519468bc1913a5ef}{\index{Mission@{Mission}!access\-Energie@{access\-Energie}}
+\index{access\-Energie@{access\-Energie}!Mission@{Mission}}
+\subsubsection[{access\-Energie}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-::access\-Energie\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mission_ae767714f7433f66f519468bc1913a5ef}
+
+
+La valeur nécessaire d'énergie pour accéder à une mission. 
+
+\hypertarget{class_mission_a58a62ea21f7c074d87e8592a009dec49}{\index{Mission@{Mission}!access\-Force@{access\-Force}}
+\index{access\-Force@{access\-Force}!Mission@{Mission}}
+\subsubsection[{access\-Force}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-::access\-Force\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mission_a58a62ea21f7c074d87e8592a009dec49}
+
+
+La valeur nécessaire de la force pour accéder à une mission. 
+
+\hypertarget{class_mission_af93302ac38548302411994e4cbf9b850}{\index{Mission@{Mission}!access\-Intel@{access\-Intel}}
+\index{access\-Intel@{access\-Intel}!Mission@{Mission}}
+\subsubsection[{access\-Intel}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-::access\-Intel\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mission_af93302ac38548302411994e4cbf9b850}
+
+
+La valeur nécessaire d'intelligence pour accéder à une mission. 
+
+\hypertarget{class_mission_af6589a43033e50899832cc63939ecb23}{\index{Mission@{Mission}!compteur\-Mission@{compteur\-Mission}}
+\index{compteur\-Mission@{compteur\-Mission}!Mission@{Mission}}
+\subsubsection[{compteur\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-::compteur\-Mission = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_mission_af6589a43033e50899832cc63939ecb23}
+
+
+Le compteur de la mission. 
+
+\hypertarget{class_mission_aeb543b4e12125834e6b8901820db243b}{\index{Mission@{Mission}!dialogue\-Echec@{dialogue\-Echec}}
+\index{dialogue\-Echec@{dialogue\-Echec}!Mission@{Mission}}
+\subsubsection[{dialogue\-Echec}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-::dialogue\-Echec\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mission_aeb543b4e12125834e6b8901820db243b}
+
+
+Un texte renvoyé à l'utilisateur quand celui-\/ci échoue la mission. 
+
+\hypertarget{class_mission_a75d8fc66d0ed01f1f1192e03528a2612}{\index{Mission@{Mission}!dialogue\-Reussite@{dialogue\-Reussite}}
+\index{dialogue\-Reussite@{dialogue\-Reussite}!Mission@{Mission}}
+\subsubsection[{dialogue\-Reussite}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-::dialogue\-Reussite\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mission_a75d8fc66d0ed01f1f1192e03528a2612}
+
+
+Un texte renvoyé à l'utilisateur quand celui-\/ci réussit la mission. 
+
+\hypertarget{class_mission_a7a3a8c801854fdbc1ddfb73d187e5b2e}{\index{Mission@{Mission}!etat\-Mission@{etat\-Mission}}
+\index{etat\-Mission@{etat\-Mission}!Mission@{Mission}}
+\subsubsection[{etat\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat\-Mission} Mission\-::etat\-Mission\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mission_a7a3a8c801854fdbc1ddfb73d187e5b2e}
+
+
+L'état de chaque mission pour savoir si la mission est pas\-Entamee, en\-Cours ou achevée. 
+
+\hypertarget{class_mission_ac289a213c14ea87ba5740be349c23419}{\index{Mission@{Mission}!texte\-Mission@{texte\-Mission}}
+\index{texte\-Mission@{texte\-Mission}!Mission@{Mission}}
+\subsubsection[{texte\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-::texte\-Mission\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_mission_ac289a213c14ea87ba5740be349c23419}
+
+
+Le texte envoyé à l'utilisateur afin qu'il fasse son choix. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{mission_8hpp}{mission.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{mission_8cpp}{mission.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,197 @@
+\hypertarget{class_ecole}{\section{Ecole Class Reference}
+\label{class_ecole}\index{Ecole@{Ecole}}
+}
+
+
+Classe représentant l'école.  
+
+
+
+
+{\ttfamily \#include $<$ecole.\-hpp$>$}
+
+Inheritance diagram for Ecole\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ecole}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ecole_a7bab5ff4118af8c59da282b62151653e}{Ecole} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_ecole_a1630c88a0ebf2ce9e0e5220d1baaa34a}{Ecole} (vector$<$ \hyperlink{class_objet}{Objet} $>$ \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objets\-Dispo}, int \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cash\-Cache}, vector$<$ \hyperlink{class_p_n_j}{P\-N\-J} $>$ \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{liste\-P\-N\-J}, string \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nom\-Lieu}, vector$<$ string $>$ action\-Vec)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_ecole}{Ecole}. \end{DoxyCompactList}\item 
+void \hyperlink{class_ecole_a717229b0b7a96d0093aa8b72db752ccd}{executer\-Action} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_ville}{Ville} $\ast$ville)
+\begin{DoxyCompactList}\small\item\em Exécute une action parmi les actions possibles dans le lieu ecole comme parler à un \hyperlink{class_p_n_j}{P\-N\-J}, Faire du sport, Fouiller, Afficher sac ou Afficher stats du héros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant l'école. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_ecole_a7bab5ff4118af8c59da282b62151653e}{\index{Ecole@{Ecole}!Ecole@{Ecole}}
+\index{Ecole@{Ecole}!Ecole@{Ecole}}
+\subsubsection[{Ecole}]{\setlength{\rightskip}{0pt plus 5cm}Ecole\-::\-Ecole (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ecole_a7bab5ff4118af8c59da282b62151653e}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+19 \{\}
+\end{DoxyCode}
+\hypertarget{class_ecole_a1630c88a0ebf2ce9e0e5220d1baaa34a}{\index{Ecole@{Ecole}!Ecole@{Ecole}}
+\index{Ecole@{Ecole}!Ecole@{Ecole}}
+\subsubsection[{Ecole}]{\setlength{\rightskip}{0pt plus 5cm}Ecole\-::\-Ecole (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Objet} $>$}]{objets\-Dispo, }
+\item[{int}]{cash\-Cache, }
+\item[{vector$<$ {\bf P\-N\-J} $>$}]{liste\-P\-N\-J, }
+\item[{string}]{nom\-Lieu, }
+\item[{vector$<$ string $>$}]{action\-Vec}
+\end{DoxyParamCaption}
+)}}\label{class_ecole_a1630c88a0ebf2ce9e0e5220d1baaa34a}
+
+
+Constructeur de la classe \hyperlink{class_ecole}{Ecole}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objets\-Dispo} & Le vecteur des objets disponibles à l'école. \\
+\hline
+{\em cash\-Cache} & Le cash caché à l'école. \\
+\hline
+{\em liste\-P\-N\-J} & La liste des \hyperlink{class_p_n_j}{P\-N\-J} présents à l'école. \\
+\hline
+{\em nom\-Lieu} & c'est le nom du lieu ou se trouve l'héros ici c'est l'école. \\
+\hline
+{\em action\-Vec} & Le vecteur d'actons possibles à l'école. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+20                                                                                                            
+                   : \hyperlink{class_lieu_a0b3086d598fc1bfc0b4c09ae96304b3a}{Lieu} (\hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}, \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cashCache}, \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}, \textcolor{stringliteral}{"Ecole"}, actionVec)\{
+21     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ecole_a717229b0b7a96d0093aa8b72db752ccd}{\index{Ecole@{Ecole}!executer\-Action@{executer\-Action}}
+\index{executer\-Action@{executer\-Action}!Ecole@{Ecole}}
+\subsubsection[{executer\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Ecole\-::executer\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf Ville} $\ast$}]{ville}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_ecole_a717229b0b7a96d0093aa8b72db752ccd}
+
+
+Exécute une action parmi les actions possibles dans le lieu ecole comme parler à un \hyperlink{class_p_n_j}{P\-N\-J}, Faire du sport, Fouiller, Afficher sac ou Afficher stats du héros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & Un pointeur sur la classe Héros. \\
+\hline
+{\em ville} & Un pointeur sur la classe \hyperlink{class_ville}{Ville}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_lieu_ad5d4e14283df04f0174f090f1614225c}{Lieu}.
+
+
+\begin{DoxyCode}
+35                                                               \{
+36 
+37         \textcolor{keywordtype}{int} i=0, entree = -1 ;
+38     \textcolor{keywordflow}{while} (entree!=i+4) \{
+39 
+40         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( \textcolor{stringliteral}{"Vous êtes dans le lieu suivant : Ecole. Que voulez-vous faire ?
+       (entrée attendue : un numéro)"} );
+41 
+42 
+43         \textcolor{keywordflow}{for} (i=0 ; i < \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}.size(); i++) \{
+44 
+45         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{ecole_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i) + \textcolor{stringliteral}{". Parler à la personne suivante :"} + 
+      \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}.at(i).getNom() );
+46         \}
+47         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{ecole_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i) + \textcolor{stringliteral}{". Faire du sport"} );
+48 
+49         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{ecole_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+1) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Fouiller"} );
+50 
+51         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{ecole_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+2) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Afficher Sac"} );
+52 
+53         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{ecole_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+3) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Afficher Stats du Héros"} );
+54 
+55         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{ecole_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+4) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Quitter"} );
+56 
+57 
+58 
+59         entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(\textcolor{stringliteral}{"Faites votre choix :"});
+60         \textcolor{keywordflow}{while} (entree < 0 or entree > i+4) \{
+61             entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(\textcolor{stringliteral}{"Faites un choix CORRECT :"});
+62         \}
+63 
+64         \textcolor{keywordflow}{if} ( entree >= 0 and entree < i )
+65             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( heros->\hyperlink{class_heros_a4052af6e407ebdf4918e62340d374829}{ParleAPNJ}(&\hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}.at(entree), jeu) ) 
+      ;
+66 
+67         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (entree == i) \{
+68             \textcolor{keywordflow}{if} (heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()>heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()-4) \{
+69             jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(40/heros->\hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}(),\textcolor{stringliteral}{"Vous vous défoulez comme un fou !"});
+70             heros->\hyperlink{class_personnage_a6745d147720906f2c85ddce11981d71f}{setForce}(heros->\hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}()+1);
+71             heros->\hyperlink{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{setEnergie}(heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()-4);
+72             jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(1,\textcolor{stringliteral}{"Vous êtes épuisés ! Vous avez gagné 2 de force mais perdu 5 en énergie."});
+73 
+74             \}
+75             \textcolor{keywordflow}{else} jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Vous n'avez pas assez d'énergie... Allez vous reposer"});
+76         \}
+77         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+1 )\{
+78 
+79             \hyperlink{class_lieu_a90d7fd86c93e59830e20156ddb7aeb50}{fouiller}(jeu, heros);
+80 
+81         \}
+82 
+83         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+2 )\{
+84 
+85             jeu.\hyperlink{class_jeu_a26c7a428a96b1f987150cb708fa7d903}{consommersac}(heros);
+86 
+87         \}
+88 
+89         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+3 )\{
+90 
+91             jeu.\hyperlink{class_jeu_a7f9e3b8e6f3ad5d2c47ae29c54f2bdc4}{affichageStatsHero}(*heros);
+92 
+93         \}
+94 
+95         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+4 )\{
+96             jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(4, \textcolor{stringliteral}{"retour à la ville"});
+97             heros->\hyperlink{class_heros_a8decc0b04f6724de10d2e2a8d1c3395c}{setLieuActuel}(ville);
+98 
+99         \}
+100 
+101         \textcolor{keywordflow}{else} \{\}
+102 
+103 
+104     \}
+105 
+106 
+107     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{ecole_8hpp}{ecole.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{ecole_8cpp}{ecole.\-cpp}\end{DoxyCompactItemize}

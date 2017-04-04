@@ -1,0 +1,328 @@
+\hypertarget{class_banque}{\section{Banque Class Reference}
+\label{class_banque}\index{Banque@{Banque}}
+}
+
+
+Classe représentant la banque.  
+
+
+
+
+{\ttfamily \#include $<$banque.\-hpp$>$}
+
+Inheritance diagram for Banque\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_banque}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_banque_aa15f21fa24ac647319aee3f8beb4b7f8}{Banque} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_banque_ad861c8a9604be0acd1340ce108451b63}{Banque} (vector$<$ \hyperlink{class_objet}{Objet} $>$ \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objets\-Dispo}, int \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cash\-Cache}, vector$<$ \hyperlink{class_p_n_j}{P\-N\-J} $>$ \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{liste\-P\-N\-J}, string \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nom\-Lieu}, vector$<$ string $>$ action\-Vec)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_banque}{Banque}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_banque_a14aaf09b3db8037f8d0007958fa7def2}{$\sim$\-Banque} ()
+\begin{DoxyCompactList}\small\item\em Destructeur par défaut. \end{DoxyCompactList}\item 
+void \hyperlink{class_banque_a24f76bd9177ebdef767e6bcbdc491535}{set\-Cash\-Banque} (int Cash\-Banque)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable Cash\-Banque dans la variable Cash\-Banque. \end{DoxyCompactList}\item 
+void \hyperlink{class_banque_a8b9265c9c4d5df37631054f88ccb5f60}{deposer\-Cash} (\hyperlink{class_heros}{Heros} $\ast$heros, int cash)
+\begin{DoxyCompactList}\small\item\em Incrémente le Cash\-Banque d'une valeur cash de la variable cash. \end{DoxyCompactList}\item 
+int \hyperlink{class_banque_afe8de2a23d1e568be91811734a749197}{get\-Cash\-Banque} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable Cash\-Banque. \end{DoxyCompactList}\item 
+void \hyperlink{class_banque_a8729fd0d7255c82916fab90dd17c995a}{retirer\-Cash} (\hyperlink{class_heros}{Heros} $\ast$heros, int cash)
+\begin{DoxyCompactList}\small\item\em Décrémente le Cash\-Banque d'une valeur cash de la variable cash. \end{DoxyCompactList}\item 
+void \hyperlink{class_banque_ab6c629552a916ee9515a8c85bd5dc311}{executer\-Action} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_ville}{Ville} $\ast$ville)
+\begin{DoxyCompactList}\small\item\em Exécute une action parmi les actions possibles par exemple Déposer, Retirer, Fouiller, Afficher Sac , Afficher stats du héros ou Quitter la banque. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant la banque. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_banque_aa15f21fa24ac647319aee3f8beb4b7f8}{\index{Banque@{Banque}!Banque@{Banque}}
+\index{Banque@{Banque}!Banque@{Banque}}
+\subsubsection[{Banque}]{\setlength{\rightskip}{0pt plus 5cm}Banque\-::\-Banque (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_banque_aa15f21fa24ac647319aee3f8beb4b7f8}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+19 \{this->cashBanque = 0 ;\}
+\end{DoxyCode}
+\hypertarget{class_banque_ad861c8a9604be0acd1340ce108451b63}{\index{Banque@{Banque}!Banque@{Banque}}
+\index{Banque@{Banque}!Banque@{Banque}}
+\subsubsection[{Banque}]{\setlength{\rightskip}{0pt plus 5cm}Banque\-::\-Banque (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Objet} $>$}]{objets\-Dispo, }
+\item[{int}]{cash\-Cache, }
+\item[{vector$<$ {\bf P\-N\-J} $>$}]{liste\-P\-N\-J, }
+\item[{string}]{nom\-Lieu, }
+\item[{vector$<$ string $>$}]{action\-Vec}
+\end{DoxyParamCaption}
+)}}\label{class_banque_ad861c8a9604be0acd1340ce108451b63}
+
+
+Constructeur de la classe \hyperlink{class_banque}{Banque}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objets\-Dispo} & Les objets disponibles à la banque. \\
+\hline
+{\em cashcache} & Le cash caché dans la banque. \\
+\hline
+{\em liste\-P\-N\-J} & Les \hyperlink{class_p_n_j}{P\-N\-J} présents dans la banque. \\
+\hline
+{\em nom\-Lieu} & Le nom de la banque. \\
+\hline
+{\em action\-Vec} & le vecteur des actions disponibles dans la banque. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+20                                                                                                            
+                  :\hyperlink{class_lieu_a0b3086d598fc1bfc0b4c09ae96304b3a}{Lieu}(\hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}, \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cashCache}, \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}, \textcolor{stringliteral}{"Banque"}, actionVec)\{
+21     this->cashBanque = 0 ;\}
+\end{DoxyCode}
+\hypertarget{class_banque_a14aaf09b3db8037f8d0007958fa7def2}{\index{Banque@{Banque}!$\sim$\-Banque@{$\sim$\-Banque}}
+\index{$\sim$\-Banque@{$\sim$\-Banque}!Banque@{Banque}}
+\subsubsection[{$\sim$\-Banque}]{\setlength{\rightskip}{0pt plus 5cm}Banque\-::$\sim$\-Banque (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_banque_a14aaf09b3db8037f8d0007958fa7def2}
+
+
+Destructeur par défaut. 
+
+
+\begin{DoxyCode}
+62 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_banque_a8b9265c9c4d5df37631054f88ccb5f60}{\index{Banque@{Banque}!deposer\-Cash@{deposer\-Cash}}
+\index{deposer\-Cash@{deposer\-Cash}!Banque@{Banque}}
+\subsubsection[{deposer\-Cash}]{\setlength{\rightskip}{0pt plus 5cm}void Banque\-::deposer\-Cash (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{int}]{cash}
+\end{DoxyParamCaption}
+)}}\label{class_banque_a8b9265c9c4d5df37631054f88ccb5f60}
+
+
+Incrémente le Cash\-Banque d'une valeur cash de la variable cash. 
+
+
+\begin{DoxyCode}
+43                                                     \{
+44         \textcolor{keywordflow}{if} (heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}() >= cash) \{
+45             cashBanque+=cash;
+46             heros->\hyperlink{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{setCash}(heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}() - cash);
+47 
+48         \}
+49         \textcolor{keywordflow}{else} \{\}
+50   \}
+\end{DoxyCode}
+\hypertarget{class_banque_ab6c629552a916ee9515a8c85bd5dc311}{\index{Banque@{Banque}!executer\-Action@{executer\-Action}}
+\index{executer\-Action@{executer\-Action}!Banque@{Banque}}
+\subsubsection[{executer\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Banque\-::executer\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf Ville} $\ast$}]{ville}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_banque_ab6c629552a916ee9515a8c85bd5dc311}
+
+
+Exécute une action parmi les actions possibles par exemple Déposer, Retirer, Fouiller, Afficher Sac , Afficher stats du héros ou Quitter la banque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & Une instance de la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_lieu_ad5d4e14283df04f0174f090f1614225c}{Lieu}.
+
+
+\begin{DoxyCode}
+64                                                                    \{
+65 
+66         \textcolor{keywordtype}{int} i=0, entree = -1 ;
+67 
+68     \textcolor{keywordflow}{while} (entree!=i+5) \{
+69 
+70         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( \textcolor{stringliteral}{"Vous êtes dans le lieu suivant : "} + 
+      \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nomLieu} + \textcolor{stringliteral}{". Que voulez-vous faire ? (entrée attendue : un numéro)"} );
+71 
+72 
+73         \textcolor{keywordflow}{for} (i=0 ; i < \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}.size(); i++) \{
+74             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i) + \textcolor{stringliteral}{". Parler à la personne suivante :"} + 
+      \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}.at(i).getNom() );
+75         \}
+76 
+77         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Déposer"} );
+78 
+79         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+1) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Retirer"} );
+80 
+81         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+2) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Fouiller"} );
+82 
+83         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+3) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Afficher Sac"} );
+84 
+85         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+4) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Afficher Stats du Héros"} );
+86 
+87         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+5) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Quitter"} );
+88 
+89 
+90 
+91         entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(\textcolor{stringliteral}{"Faites votre choix :"});
+92         \textcolor{keywordflow}{while} (entree < 0 or entree > i+5) \{
+93             entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(\textcolor{stringliteral}{"Faites un choix CORRECT :"});
+94         \}
+95 
+96         \textcolor{keywordflow}{if} ( entree >= 0 and entree < i )
+97             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( heros->\hyperlink{class_heros_a4052af6e407ebdf4918e62340d374829}{ParleAPNJ}(&\hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}.at(entree), jeu) ) 
+      ;
+98 
+99         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i )\{
+100 
+101             entree = -1 ;
+102 
+103             \textcolor{keywordflow}{while} ( entree < 0 or entree > heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}() ) \{
+104                 entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(\textcolor{stringliteral}{"Votre cash en portefeuille
+       s'élève à : "} + \hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}()) + \textcolor{stringliteral}{". Combien voulez-vous déposer ? Entrez 0 pour annuler"}
+      );
+105             \}
+106 
+107             \hyperlink{class_banque_a8b9265c9c4d5df37631054f88ccb5f60}{deposerCash}(heros, entree);
+108             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Cash déposé: "} + \hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(entree) + \textcolor{stringliteral}{". Nouveau cash en banque: 
+      "} + \hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(cashBanque) + \textcolor{stringliteral}{". Nouveau cash en portefeuille: "} + \hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros->
+      \hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}()));
+109 
+110         \}
+111 
+112         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+1 )\{
+113 
+114             entree = -1 ;
+115 
+116             \textcolor{keywordflow}{while} ( entree < 0 or entree > cashBanque ) \{
+117                 entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(\textcolor{stringliteral}{"Votre cash en banque
+       s'élève à : "} + \hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(cashBanque) + \textcolor{stringliteral}{". Combien voulez-vous retirer ? Entrez 0 pour annuler"});
+118             \}
+119 
+120             \hyperlink{class_banque_a8729fd0d7255c82916fab90dd17c995a}{retirerCash}(heros, entree);
+121             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Cash retiré: "} + \hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(entree) + \textcolor{stringliteral}{". Nouveau cash en banque: 
+      "} + \hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(cashBanque) + \textcolor{stringliteral}{". Nouveau cash en portefeuille: "} + \hyperlink{banque_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros->
+      \hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}()));
+122 
+123 
+124         \}
+125 
+126         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+2 )\{
+127 
+128             \hyperlink{class_lieu_a90d7fd86c93e59830e20156ddb7aeb50}{fouiller}(jeu, heros);
+129 
+130         \}
+131 
+132         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+3 )\{
+133 
+134             jeu.\hyperlink{class_jeu_a26c7a428a96b1f987150cb708fa7d903}{consommersac}(heros);
+135 
+136         \}
+137 
+138         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+4 )\{
+139 
+140             jeu.\hyperlink{class_jeu_a7f9e3b8e6f3ad5d2c47ae29c54f2bdc4}{affichageStatsHero}(*heros);
+141 
+142         \}
+143 
+144         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+5 )\{
+145             jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(4, \textcolor{stringliteral}{"retourn à la ville"});
+146             heros->\hyperlink{class_heros_a8decc0b04f6724de10d2e2a8d1c3395c}{setLieuActuel}(ville);
+147 
+148         \}
+149 
+150         \textcolor{keywordflow}{else} \{\}
+151 
+152     \}
+153     \}
+\end{DoxyCode}
+\hypertarget{class_banque_afe8de2a23d1e568be91811734a749197}{\index{Banque@{Banque}!get\-Cash\-Banque@{get\-Cash\-Banque}}
+\index{get\-Cash\-Banque@{get\-Cash\-Banque}!Banque@{Banque}}
+\subsubsection[{get\-Cash\-Banque}]{\setlength{\rightskip}{0pt plus 5cm}int Banque\-::get\-Cash\-Banque (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_banque_afe8de2a23d1e568be91811734a749197}
+
+
+Accède à la variable Cash\-Banque. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de la variable Cash\-Banque. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+38                                  \{
+39         \textcolor{keywordflow}{return} cashBanque;
+40   \}
+\end{DoxyCode}
+\hypertarget{class_banque_a8729fd0d7255c82916fab90dd17c995a}{\index{Banque@{Banque}!retirer\-Cash@{retirer\-Cash}}
+\index{retirer\-Cash@{retirer\-Cash}!Banque@{Banque}}
+\subsubsection[{retirer\-Cash}]{\setlength{\rightskip}{0pt plus 5cm}void Banque\-::retirer\-Cash (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{int}]{cash}
+\end{DoxyParamCaption}
+)}}\label{class_banque_a8729fd0d7255c82916fab90dd17c995a}
+
+
+Décrémente le Cash\-Banque d'une valeur cash de la variable cash. 
+
+
+\begin{DoxyCode}
+52                                                   \{
+53         \textcolor{keywordflow}{if} (cashBanque >= cash) \{
+54             cashBanque-=cash;
+55             heros->\hyperlink{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{setCash}(heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}() + cash);
+56 
+57         \}
+58         \textcolor{keywordflow}{else} \{\}
+59 
+60     \}
+\end{DoxyCode}
+\hypertarget{class_banque_a24f76bd9177ebdef767e6bcbdc491535}{\index{Banque@{Banque}!set\-Cash\-Banque@{set\-Cash\-Banque}}
+\index{set\-Cash\-Banque@{set\-Cash\-Banque}!Banque@{Banque}}
+\subsubsection[{set\-Cash\-Banque}]{\setlength{\rightskip}{0pt plus 5cm}void Banque\-::set\-Cash\-Banque (
+\begin{DoxyParamCaption}
+\item[{int}]{Cash\-Banque}
+\end{DoxyParamCaption}
+)}}\label{class_banque_a24f76bd9177ebdef767e6bcbdc491535}
+
+
+stock la valeur de la variable Cash\-Banque dans la variable Cash\-Banque. 
+
+
+\begin{DoxyCode}
+34                                                 \{
+35             cashBanque = CashBanque;
+36   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{banque_8hpp}{banque.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{banque_8cpp}{banque.\-cpp}\end{DoxyCompactItemize}

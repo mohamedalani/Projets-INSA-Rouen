@@ -1,0 +1,369 @@
+\hypertarget{class_superette}{\section{Superette Class Reference}
+\label{class_superette}\index{Superette@{Superette}}
+}
+
+
+Classe représentant la superette.  
+
+
+
+
+{\ttfamily \#include $<$superette.\-hpp$>$}
+
+Inheritance diagram for Superette\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_superette}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_superette_a83beb054a37acf78f325a11e679d06c6}{Superette} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_superette_af6ecf322ce825777c01851e8b64b9f1c}{Superette} (vector$<$ \hyperlink{class_objet}{Objet} $>$ \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objets\-Dispo}, int \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cash\-Cache}, vector$<$ \hyperlink{class_p_n_j}{P\-N\-J} $>$ \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{liste\-P\-N\-J}, string \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nom\-Lieu}, vector$<$ string $>$ action\-Vec, map$<$ string, \hyperlink{class_objet}{Objet} $>$ objets\-A\-Vendre)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe superette. \end{DoxyCompactList}\item 
+void \hyperlink{class_superette_a6c9124730932bbf721149f5167c0611d}{executer\-Action} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_ville}{Ville} $\ast$ville)
+\begin{DoxyCompactList}\small\item\em Exécute une action parmi les actions possibles. \end{DoxyCompactList}\item 
+void \hyperlink{class_superette_a03c5890e470b71e24e59e2b018286a18}{acheter\-Un\-Objet} (\hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_objet}{Objet} objet)
+\begin{DoxyCompactList}\small\item\em Achète un objet parmi les objets disponibles dans la superette. \end{DoxyCompactList}\item 
+void \hyperlink{class_superette_a4d3c1ec385b042f8cd59f7e592a134f2}{vendre\-Un\-Objet} (\hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_objet}{Objet} objet)
+\begin{DoxyCompactList}\small\item\em Vend un objet parmi les objets disponibles dans le sac. \end{DoxyCompactList}\item 
+const map$<$ string, \hyperlink{class_objet}{Objet} $>$ \& \hyperlink{class_superette_a38f21ad92a08b036ee3b50e3762c02fd}{get\-Objets\-A\-Vendre} () const 
+\begin{DoxyCompactList}\small\item\em Accède à la variable objets\-A\-Vendre. \end{DoxyCompactList}\item 
+void \hyperlink{class_superette_af203c4433fcb6831175aed1d18e7f05b}{set\-Objets\-A\-Vendre} (const map$<$ string, \hyperlink{class_objet}{Objet} $>$ \&objets\-A\-Vendre)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable \& objets\-A\-Vendre dans la variable objets\-A\-Vendre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant la superette. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_superette_a83beb054a37acf78f325a11e679d06c6}{\index{Superette@{Superette}!Superette@{Superette}}
+\index{Superette@{Superette}!Superette@{Superette}}
+\subsubsection[{Superette}]{\setlength{\rightskip}{0pt plus 5cm}Superette\-::\-Superette (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_superette_a83beb054a37acf78f325a11e679d06c6}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+19 \{\}
+\end{DoxyCode}
+\hypertarget{class_superette_af6ecf322ce825777c01851e8b64b9f1c}{\index{Superette@{Superette}!Superette@{Superette}}
+\index{Superette@{Superette}!Superette@{Superette}}
+\subsubsection[{Superette}]{\setlength{\rightskip}{0pt plus 5cm}Superette\-::\-Superette (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Objet} $>$}]{objets\-Dispo, }
+\item[{int}]{cash\-Cache, }
+\item[{vector$<$ {\bf P\-N\-J} $>$}]{liste\-P\-N\-J, }
+\item[{string}]{nom\-Lieu, }
+\item[{vector$<$ string $>$}]{action\-Vec, }
+\item[{map$<$ string, {\bf Objet} $>$}]{objets\-A\-Vendre}
+\end{DoxyParamCaption}
+)}}\label{class_superette_af6ecf322ce825777c01851e8b64b9f1c}
+
+
+Constructeur de la classe superette. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objets\-Dispo} & Le vecteur des objets disponibles dans la superette. \\
+\hline
+{\em cashcache} & La valeur du cash caché dans la superette. \\
+\hline
+{\em liste\-P\-N\-J} & Le vecteur des \hyperlink{class_p_n_j}{P\-N\-J} présents dans la superette. \\
+\hline
+{\em nom\-Lieu} & Le nom de la superette. \\
+\hline
+{\em action\-Vec} & Le vecteur des actions possibles dans la superette. \\
+\hline
+{\em objets\-A\-Vendre} & Un map des objets à vendre dans la superette. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+20                                                                                                            
+                                                           : \hyperlink{class_lieu_a0b3086d598fc1bfc0b4c09ae96304b3a}{Lieu} (\hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}, 
+      \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cashCache}, \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}, \textcolor{stringliteral}{"Superette"}, actionVec)\{
+21     this->objetsAVendre = objetsAVendre;\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_superette_a03c5890e470b71e24e59e2b018286a18}{\index{Superette@{Superette}!acheter\-Un\-Objet@{acheter\-Un\-Objet}}
+\index{acheter\-Un\-Objet@{acheter\-Un\-Objet}!Superette@{Superette}}
+\subsubsection[{acheter\-Un\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Superette\-::acheter\-Un\-Objet (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf Objet}}]{objet}
+\end{DoxyParamCaption}
+)}}\label{class_superette_a03c5890e470b71e24e59e2b018286a18}
+
+
+Achète un objet parmi les objets disponibles dans la superette. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objet} & Un paramètre de la classe \hyperlink{class_objet}{Objet}. \\
+\hline
+{\em heros} & un paramètre de la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+165                                                             \{
+166 
+167         \textcolor{keywordflow}{if} ( heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}() >= objet.\hyperlink{class_objet_a9b36c37091e821bc8f00d6bfd3665a66}{getPrix}() ) \{
+168 \textcolor{comment}{//          cout<<"jsikskqs "<<heros->getCash()<<endl;}
+169 \textcolor{comment}{//          cout<<"jsikskqs "<<objet.getPrix()<<endl;}
+170             heros->\hyperlink{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{setCash} ( heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}() - objet.\hyperlink{class_objet_a9b36c37091e821bc8f00d6bfd3665a66}{getPrix}() ) ;
+171             map<string, Objet*> sacH=heros->\hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}();
+172             sacH[objet.\hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->setQuantiteObjet( heros->
+      \hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}()[objet.\hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->getQuantiteObjet()+1 ) ;
+173             heros->\hyperlink{class_heros_a7d6d86388fe81deca1c5688ed07b2167}{setSac}(sacH);
+174         \}
+175     \}
+\end{DoxyCode}
+\hypertarget{class_superette_a6c9124730932bbf721149f5167c0611d}{\index{Superette@{Superette}!executer\-Action@{executer\-Action}}
+\index{executer\-Action@{executer\-Action}!Superette@{Superette}}
+\subsubsection[{executer\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Superette\-::executer\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf Ville} $\ast$}]{ville}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_superette_a6c9124730932bbf721149f5167c0611d}
+
+
+Exécute une action parmi les actions possibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Un paramètre de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & un paramètre de la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_lieu_ad5d4e14283df04f0174f090f1614225c}{Lieu}.
+
+
+\begin{DoxyCode}
+42                                                                       \{
+43 
+44         \textcolor{keywordtype}{int} i=0, entree = -1 ;
+45     \textcolor{keywordflow}{while} (entree!=i+5) \{
+46 
+47         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( \textcolor{stringliteral}{"Vous êtes dans le lieu suivant : "} + 
+      \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nomLieu} + \textcolor{stringliteral}{". Que voulez-vous faire ? (entrée attendue : un numéro)"} );
+48 
+49 
+50         \textcolor{keywordflow}{for} (i=0 ; i < \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}.size(); i++) \{
+51 
+52         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i) + \textcolor{stringliteral}{". Parler à la personne suivante :"} + 
+      \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}.at(i).getNom() );
+53         \}
+54 
+55         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Acheter"} );
+56 
+57         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+1) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Vendre"} );
+58 
+59         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+2) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Fouiller"} );
+60 
+61         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+3) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Afficher Sac"} );
+62 
+63         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+4) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Afficher Stats du Héros"} );
+64 
+65         jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(i+5) + \textcolor{stringliteral}{". "} + \textcolor{stringliteral}{"Quitter"} );
+66 
+67 
+68 
+69         entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(\textcolor{stringliteral}{"Faites votre choix :"});
+70         \textcolor{keywordflow}{while} (entree < 0 or entree > i+5) \{
+71             entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(\textcolor{stringliteral}{"Faites un choix CORRECT :"});
+72         \}
+73 
+74         \textcolor{keywordflow}{if} ( entree >= 0 and entree < i )
+75             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( heros->\hyperlink{class_heros_a4052af6e407ebdf4918e62340d374829}{ParleAPNJ}(&\hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ}.at(entree), jeu) ) 
+      ;
+76 
+77         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i )\{
+78 
+79             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( \textcolor{stringliteral}{"Voici les objets à acheter :"} );
+80             map<std::string,Objet>::iterator iit = objetsAVendre.begin();
+81             map<std::string,Objet>::iterator iitt = objetsAVendre.end();
+82             \textcolor{keywordflow}{while} ( iit != iitt )
+83             \{
+84                 jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( (*iit).first + \textcolor{stringliteral}{" - Prix: "} +  
+      \hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}((*iit).second.getPrix())   );
+85                 iit++;
+86             \}
+87 
+88             \textcolor{keywordtype}{string} choixObjet ;
+89 
+90             \textcolor{keywordflow}{do} \{
+91             choixObjet = jeu.\hyperlink{class_jeu_a4b70e906117c6a21b989ad3ab672c83c}{demanderStringUtilisateur}(\textcolor{stringliteral}{"Quel objet voulez-vous
+       acheter ? Ecrivez un objet valide, ou q pour retourner au menu"});
+92             \} \textcolor{keywordflow}{while} ( choixObjet!=\textcolor{stringliteral}{"q"} && objetsAVendre.find(choixObjet) == objetsAVendre.end() );
+93 
+94             \textcolor{keywordflow}{if} (choixObjet!=\textcolor{stringliteral}{"q"}) \{
+95                 \hyperlink{class_superette_a03c5890e470b71e24e59e2b018286a18}{acheterUnObjet}(heros, objetsAVendre[choixObjet]);
+96                 jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Vous avez acheté: "} + choixObjet + \textcolor{stringliteral}{". Nouvelle quantité de
+       l'objet: "} + \hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros->\hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}()[choixObjet]->getQuantiteObjet()) + \textcolor{stringliteral}{". Nouveau cash: "} + 
+      \hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}()));
+97             \}
+98 
+99         \}
+100 
+101         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+1 )\{
+102 
+103             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( \textcolor{stringliteral}{"Voici vos objets que vous pouvez vendre :"} );
+104             map<string, Objet*> sacH = heros->\hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}();
+105             map<string, Objet*>::iterator it = sacH.begin();
+106             map<string, Objet*>::iterator iitt = sacH.end();
+107             \textcolor{keywordflow}{while} ( it != iitt )
+108             \{
+109                 \textcolor{keywordflow}{if} ((*it).second->getQuantiteObjet() > 0)
+110                     jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}( (*it).first + \textcolor{stringliteral}{" - Prix: "} +  
+      \hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}((*it).second->getPrix())   + \textcolor{stringliteral}{" - Qté restante: "} +  \hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}((*it).second->getQuantiteObjet()) );
+111                 it++;
+112             \}
+113 
+114             \textcolor{keywordtype}{string} choixObjet ;
+115 
+116 \textcolor{comment}{//          choixObjet = jeu.demanderStringUtilisateur("Quel objet voulez-vous vendre ? Ecrivez un objet
+       valide, ou quitter pour retourner au menu");}
+117 \textcolor{comment}{//                      vendreUnObjet(heros, heros->getSac()[choixObjet]);}
+118 
+119             \textcolor{keywordflow}{do} \{
+120                 choixObjet = jeu.\hyperlink{class_jeu_a4b70e906117c6a21b989ad3ab672c83c}{demanderStringUtilisateur}(\textcolor{stringliteral}{"Quel objet voulez-vous
+       vendre ? Ecrivez un objet valide, ou q pour retourner au menu"});
+121             \} \textcolor{keywordflow}{while} ( choixObjet!=\textcolor{stringliteral}{"q"} && sacH.find(choixObjet) == sacH.end() );
+122 
+123             \textcolor{keywordflow}{if} (choixObjet!=\textcolor{stringliteral}{"q"}) \{
+124                 \textcolor{keywordflow}{if} ( objetsAVendre[choixObjet].getQuantiteObjet() > 0) \{
+125                     \hyperlink{class_superette_a4d3c1ec385b042f8cd59f7e592a134f2}{vendreUnObjet}(heros, *sacH[choixObjet]);
+126                     jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Vous avez vendu: "} + choixObjet + \textcolor{stringliteral}{". Nouvelle quantité
+       de l'objet: "} + \hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(sacH[choixObjet]->getQuantiteObjet()) + \textcolor{stringliteral}{". Nouveau cash: "} + 
+      \hyperlink{superette_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}()));
+127 
+128                 \}
+129                 \textcolor{keywordflow}{else} jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Vous n'avez pas cet objet"});
+130 
+131             \}
+132 
+133         \}
+134 
+135         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+2 )\{
+136 
+137             \hyperlink{class_lieu_a90d7fd86c93e59830e20156ddb7aeb50}{fouiller}(jeu, heros);
+138 
+139         \}
+140 
+141         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+3 )\{
+142 
+143             jeu.\hyperlink{class_jeu_a26c7a428a96b1f987150cb708fa7d903}{consommersac}(heros);
+144 
+145         \}
+146 
+147         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+4 )\{
+148 
+149             jeu.\hyperlink{class_jeu_a7f9e3b8e6f3ad5d2c47ae29c54f2bdc4}{affichageStatsHero}(*heros);
+150 
+151         \}
+152 
+153         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( entree == i+5 )\{
+154             jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(4, \textcolor{stringliteral}{"retour à la ville"});
+155             heros->\hyperlink{class_heros_a8decc0b04f6724de10d2e2a8d1c3395c}{setLieuActuel}(ville);
+156 
+157         \}
+158 
+159         \textcolor{keywordflow}{else} \{\}
+160 
+161     \}
+162     \}
+\end{DoxyCode}
+\hypertarget{class_superette_a38f21ad92a08b036ee3b50e3762c02fd}{\index{Superette@{Superette}!get\-Objets\-A\-Vendre@{get\-Objets\-A\-Vendre}}
+\index{get\-Objets\-A\-Vendre@{get\-Objets\-A\-Vendre}!Superette@{Superette}}
+\subsubsection[{get\-Objets\-A\-Vendre}]{\setlength{\rightskip}{0pt plus 5cm}const map$<$ string, {\bf Objet} $>$ \& Superette\-::get\-Objets\-A\-Vendre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_superette_a38f21ad92a08b036ee3b50e3762c02fd}
+
+
+Accède à la variable objets\-A\-Vendre. 
+
+\begin{DoxyReturn}{Returns}
+Le map des objets à vendre. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+34                                                             \{
+35         \textcolor{keywordflow}{return} objetsAVendre;
+36     \}
+\end{DoxyCode}
+\hypertarget{class_superette_af203c4433fcb6831175aed1d18e7f05b}{\index{Superette@{Superette}!set\-Objets\-A\-Vendre@{set\-Objets\-A\-Vendre}}
+\index{set\-Objets\-A\-Vendre@{set\-Objets\-A\-Vendre}!Superette@{Superette}}
+\subsubsection[{set\-Objets\-A\-Vendre}]{\setlength{\rightskip}{0pt plus 5cm}void Superette\-::set\-Objets\-A\-Vendre (
+\begin{DoxyParamCaption}
+\item[{const map$<$ string, {\bf Objet} $>$ \&}]{objets\-A\-Vendre}
+\end{DoxyParamCaption}
+)}}\label{class_superette_af203c4433fcb6831175aed1d18e7f05b}
+
+
+stock la valeur de la variable \& objets\-A\-Vendre dans la variable objets\-A\-Vendre. 
+
+
+\begin{DoxyCode}
+38                                                                             \{
+39         this->objetsAVendre = objetsAVendre;
+40     \}
+\end{DoxyCode}
+\hypertarget{class_superette_a4d3c1ec385b042f8cd59f7e592a134f2}{\index{Superette@{Superette}!vendre\-Un\-Objet@{vendre\-Un\-Objet}}
+\index{vendre\-Un\-Objet@{vendre\-Un\-Objet}!Superette@{Superette}}
+\subsubsection[{vendre\-Un\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Superette\-::vendre\-Un\-Objet (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf Objet}}]{objet}
+\end{DoxyParamCaption}
+)}}\label{class_superette_a4d3c1ec385b042f8cd59f7e592a134f2}
+
+
+Vend un objet parmi les objets disponibles dans le sac. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objet} & Un paramètre de la classe \hyperlink{class_objet}{Objet}. \\
+\hline
+{\em heros} & un paramètre de la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+177                                                            \{
+178         
+179         \textcolor{keywordflow}{if} ( heros->\hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}()[objet.\hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->getQuantiteObjet() > 0 ) \{
+180         
+181             heros->\hyperlink{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{setCash} ( heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}() + objet.\hyperlink{class_objet_a9b36c37091e821bc8f00d6bfd3665a66}{getPrix}() ) ;
+182             map<string, Objet*> sacH=heros->\hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}();
+183             sacH[objet.\hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->setQuantiteObjet( heros->
+      \hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}()[objet.\hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->getQuantiteObjet()-1 ) ;
+184             heros->\hyperlink{class_heros_a7d6d86388fe81deca1c5688ed07b2167}{setSac}(sacH);
+185 
+186         \}
+187     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{superette_8hpp}{superette.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{superette_8cpp}{superette.\-cpp}\end{DoxyCompactItemize}

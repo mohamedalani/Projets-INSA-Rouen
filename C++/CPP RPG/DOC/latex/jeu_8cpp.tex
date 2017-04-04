@@ -1,0 +1,314 @@
+\hypertarget{jeu_8cpp}{\section{/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/jeu.cpp File Reference}
+\label{jeu_8cpp}\index{/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/jeu.\-cpp@{/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/jeu.\-cpp}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}jeu.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}heros.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lieu.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}objet.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}consommable.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}nonconsommable.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mission.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}missionmaths.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}missionobjet.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}missioncombat.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}personnage.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}pnj.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}banque.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ville.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}superette.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}foret.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ecole.\-hpp\char`\"{}}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{jeu_8cpp_a3e030f3bbc16ca2aaff0a16e4b52c81b}{I\-N\-T\-E\-L\-D\-E\-B\-U\-T}~6
+\item 
+\#define \hyperlink{jeu_8cpp_a9d7c6bcc45075584ee24bdacc0e529cb}{F\-O\-R\-C\-E\-D\-E\-B\-U\-T}~5
+\item 
+\#define \hyperlink{jeu_8cpp_a86f9fdd9a6f1475942d36b9b192023de}{C\-A\-S\-H\-D\-E\-B\-U\-T}~20
+\item 
+\#define \hyperlink{jeu_8cpp_a2507ddd8559f97e4733e6d841ad95c03}{E\-N\-E\-R\-G\-I\-E}~20
+\item 
+\#define \hyperlink{jeu_8cpp_a9d6989b85af84d4c359c8a47437cf8b7}{I\-N\-T\-E\-L\-F\-I\-N}~50
+\item 
+\#define \hyperlink{jeu_8cpp_ab33c269a96a182fa40c46ae8f0eec850}{F\-O\-R\-C\-E\-F\-I\-N}~20
+\item 
+\#define \hyperlink{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{S\-S\-T\-R}(x)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{jeu_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{jeu_8cpp_a86f9fdd9a6f1475942d36b9b192023de}{\index{jeu.\-cpp@{jeu.\-cpp}!C\-A\-S\-H\-D\-E\-B\-U\-T@{C\-A\-S\-H\-D\-E\-B\-U\-T}}
+\index{C\-A\-S\-H\-D\-E\-B\-U\-T@{C\-A\-S\-H\-D\-E\-B\-U\-T}!jeu.cpp@{jeu.\-cpp}}
+\subsubsection[{C\-A\-S\-H\-D\-E\-B\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-A\-S\-H\-D\-E\-B\-U\-T~20}}\label{jeu_8cpp_a86f9fdd9a6f1475942d36b9b192023de}
+\hypertarget{jeu_8cpp_a2507ddd8559f97e4733e6d841ad95c03}{\index{jeu.\-cpp@{jeu.\-cpp}!E\-N\-E\-R\-G\-I\-E@{E\-N\-E\-R\-G\-I\-E}}
+\index{E\-N\-E\-R\-G\-I\-E@{E\-N\-E\-R\-G\-I\-E}!jeu.cpp@{jeu.\-cpp}}
+\subsubsection[{E\-N\-E\-R\-G\-I\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-N\-E\-R\-G\-I\-E~20}}\label{jeu_8cpp_a2507ddd8559f97e4733e6d841ad95c03}
+\hypertarget{jeu_8cpp_a9d7c6bcc45075584ee24bdacc0e529cb}{\index{jeu.\-cpp@{jeu.\-cpp}!F\-O\-R\-C\-E\-D\-E\-B\-U\-T@{F\-O\-R\-C\-E\-D\-E\-B\-U\-T}}
+\index{F\-O\-R\-C\-E\-D\-E\-B\-U\-T@{F\-O\-R\-C\-E\-D\-E\-B\-U\-T}!jeu.cpp@{jeu.\-cpp}}
+\subsubsection[{F\-O\-R\-C\-E\-D\-E\-B\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-C\-E\-D\-E\-B\-U\-T~5}}\label{jeu_8cpp_a9d7c6bcc45075584ee24bdacc0e529cb}
+\hypertarget{jeu_8cpp_ab33c269a96a182fa40c46ae8f0eec850}{\index{jeu.\-cpp@{jeu.\-cpp}!F\-O\-R\-C\-E\-F\-I\-N@{F\-O\-R\-C\-E\-F\-I\-N}}
+\index{F\-O\-R\-C\-E\-F\-I\-N@{F\-O\-R\-C\-E\-F\-I\-N}!jeu.cpp@{jeu.\-cpp}}
+\subsubsection[{F\-O\-R\-C\-E\-F\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-C\-E\-F\-I\-N~20}}\label{jeu_8cpp_ab33c269a96a182fa40c46ae8f0eec850}
+\hypertarget{jeu_8cpp_a3e030f3bbc16ca2aaff0a16e4b52c81b}{\index{jeu.\-cpp@{jeu.\-cpp}!I\-N\-T\-E\-L\-D\-E\-B\-U\-T@{I\-N\-T\-E\-L\-D\-E\-B\-U\-T}}
+\index{I\-N\-T\-E\-L\-D\-E\-B\-U\-T@{I\-N\-T\-E\-L\-D\-E\-B\-U\-T}!jeu.cpp@{jeu.\-cpp}}
+\subsubsection[{I\-N\-T\-E\-L\-D\-E\-B\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-T\-E\-L\-D\-E\-B\-U\-T~6}}\label{jeu_8cpp_a3e030f3bbc16ca2aaff0a16e4b52c81b}
+\hypertarget{jeu_8cpp_a9d6989b85af84d4c359c8a47437cf8b7}{\index{jeu.\-cpp@{jeu.\-cpp}!I\-N\-T\-E\-L\-F\-I\-N@{I\-N\-T\-E\-L\-F\-I\-N}}
+\index{I\-N\-T\-E\-L\-F\-I\-N@{I\-N\-T\-E\-L\-F\-I\-N}!jeu.cpp@{jeu.\-cpp}}
+\subsubsection[{I\-N\-T\-E\-L\-F\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-T\-E\-L\-F\-I\-N~50}}\label{jeu_8cpp_a9d6989b85af84d4c359c8a47437cf8b7}
+\hypertarget{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{\index{jeu.\-cpp@{jeu.\-cpp}!S\-S\-T\-R@{S\-S\-T\-R}}
+\index{S\-S\-T\-R@{S\-S\-T\-R}!jeu.cpp@{jeu.\-cpp}}
+\subsubsection[{S\-S\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-S\-T\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}}\label{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{dynamic\_cast<} std::ostringstream & \textcolor{keyword}{>}( \(\backslash\)
+        ( std::ostringstream() << std::dec << x ) ).str()
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{jeu_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{jeu.\-cpp@{jeu.\-cpp}!main@{main}}
+\index{main@{main}!jeu.cpp@{jeu.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{jeu_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\begin{DoxyCode}
+43           \{
+44 
+45 srand(time(NULL));
+46 \hyperlink{class_jeu}{Jeu} jeu;
+47 map<string,Objet*> sac;
+48 vector<Objet> vectObj;
+49 vector<PNJ> vectPnj;
+50 vector<string> vectS; \textcolor{comment}{//pas vraiment utile en fait}
+51 vector<Lieu*> vectLieu;
+52 vector<Mission*> vectMissionHeros;
+53 vector<Mission*> vectMission;
+54 
+55 \hyperlink{class_p_n_j}{PNJ} fanny(10,11,2,\textcolor{stringliteral}{"fanny"},vectMission,\textcolor{stringliteral}{"hello, je suis fanny"});
+56 
+57 \hyperlink{class_objet}{Objet} obj;
+58 
+59 
+60 \textcolor{comment}{/* -----------------------Initialisation de Superette--------------------*/}
+61 
+62 vector<Objet> vectObjetSuperette;
+63 
+64 \textcolor{comment}{//Missions}
+65 vector<Mission*> vectMissionVendeuse;
+66 
+67 \hyperlink{class_non_consommable}{NonConsommable} stylo(0, 5, \textcolor{stringliteral}{"stylo"}, 0, 500, 5);
+68 \hyperlink{class_non_consommable}{NonConsommable} styloSac(0, 5, \textcolor{stringliteral}{"stylo"}, 0, 0, 5);
+69 sac[\textcolor{stringliteral}{"stylo"}] = &styloSac;
+70 vectObjetSuperette.push\_back(stylo);
+71 
+72 \hyperlink{class_non_consommable}{NonConsommable} caillou(0,0,\textcolor{stringliteral}{"caillou"},1,500,1);
+73 \hyperlink{class_non_consommable}{NonConsommable} caillouSac(0,0,\textcolor{stringliteral}{"caillou"},1,0,1);
+74 sac[\textcolor{stringliteral}{"caillou"}] = &caillouSac;
+75 vectObjetSuperette.push\_back(caillou);
+76 
+77 \hyperlink{class_consommable}{Consommable} sucette(0,5,\textcolor{stringliteral}{"sucette"},0,500,1,0);
+78 \hyperlink{class_consommable}{Consommable} sucetteSac(0, 0,\textcolor{stringliteral}{"sucette"}, 0, 0, 1, 0);
+79 sac[\textcolor{stringliteral}{"sucette"}] = &sucetteSac;
+80 vectObjetSuperette.push\_back(sucette);
+81 
+82 
+83 
+84 \hyperlink{class_mission_objet}{MissionObjet} miss1(1 \textcolor{comment}{/*accIntel*/},  1 \textcolor{comment}{/*accForce*/},  0 \textcolor{comment}{/*accAge*/}, 3 \textcolor{comment}{/*accEnergie*/}, \textcolor{stringliteral}{"j'ai
+       perdu mon stylo, je ne pourrais plus faire mes comptes !! retrouve le, une récompense t'attend !!"} \textcolor{comment}{/*
+      texteMission*/}, 5 \textcolor{comment}{/* recCash*/}, \textcolor{stringliteral}{"Bravo !!!"} \textcolor{comment}{/*dialogueR*/}, \textcolor{stringliteral}{"Tu n'as pas mon stylo :'( reviens quand tu l'auras trouvé"} \textcolor{comment}{
+      /*dialogueE*/}, sucette \textcolor{comment}{/*objRec*/}, stylo \textcolor{comment}{/*objATrouver*/});
+85 vectMissionVendeuse.push\_back(&miss1);
+86 
+87 \textcolor{comment}{// PNJ}
+88 \hyperlink{class_p_n_j}{PNJ} vendeuse(10,30,30,\textcolor{stringliteral}{"Jeannette la vendeuse"}, vectMissionVendeuse, \textcolor{stringliteral}{"Bienvenue à la supérette ! Jetez un
+       coup d'oeil aux objets à vendre, je suis sûre que quelques uns pourraient vous intéresser."});
+89 vector<PNJ> vectPNJSuperette;
+90 vectPNJSuperette.push\_back(vendeuse);
+91 
+92 \textcolor{comment}{//Objets}
+93 map<string,Objet> objAvendre;
+94 
+95 \hyperlink{class_consommable}{Consommable} pain(0, 10, \textcolor{stringliteral}{"pain"}, 0, 500, 5, 0);
+96 \hyperlink{class_consommable}{Consommable} painSac(0, 10, \textcolor{stringliteral}{"pain"}, 0, 3, 5, 0);
+97 sac[\textcolor{stringliteral}{"pain"}]= &painSac;
+98 objAvendre[\textcolor{stringliteral}{"pain"}]= pain;
+99 
+100 \hyperlink{class_consommable}{Consommable} potionForce(14, 200, \textcolor{stringliteral}{"potion de force"}, 5, 500, 0, 0);
+101 \hyperlink{class_consommable}{Consommable} potionForceSac(14, 200, \textcolor{stringliteral}{"potion de force"}, 5, 0, 0, 0);
+102 sac[\textcolor{stringliteral}{"potion de force"}]=&potionForceSac;
+103 objAvendre[\textcolor{stringliteral}{"potion de force"}]= potionForce;
+104 
+105 \hyperlink{class_consommable}{Consommable} potionIntel(14, 200, \textcolor{stringliteral}{"potion de force"}, 0, 500, 0, 5);
+106 \hyperlink{class_consommable}{Consommable} potionIntelSac(14, 200, \textcolor{stringliteral}{"potion d'intelligence"}, 0, 0, 0, 5 );
+107 sac[\textcolor{stringliteral}{"potion d'intelligence"}]=&potionIntelSac;
+108 objAvendre[\textcolor{stringliteral}{"potion d'intelligence"}]=potionIntel;
+109 
+110 \hyperlink{class_non_consommable}{NonConsommable} epee(15, 300, \textcolor{stringliteral}{"épee"}, 10, 500, 3);
+111 \hyperlink{class_non_consommable}{NonConsommable} epeeSac(15, 300, \textcolor{stringliteral}{"épee"}, 10, 0, 3);
+112 sac[\textcolor{stringliteral}{"épee"}]=&epeeSac;
+113 objAvendre[\textcolor{stringliteral}{"épee"}]=epee;
+114 
+115 
+116 \textcolor{comment}{//Supérette}
+117 \hyperlink{class_superette}{Superette} superette(vectObjetSuperette, 50, vectPNJSuperette, \textcolor{stringliteral}{"superette"}, vectS, objAvendre );
+118 
+119 vector<QCM> qcm2;
+120 \hyperlink{struct_q_c_m}{QCM} q3;
+121 q3.\hyperlink{struct_q_c_m_a6d24b233b44048c23595712c0e03fb47}{exo}= \textcolor{stringliteral}{"Combien d'objets sont disponibles à la vente ?"};
+122 q3.\hyperlink{struct_q_c_m_ad90e9b83f64b15f51e3f920922670fa4}{answer} = objAvendre.size();
+123 qcm2.push\_back(q3);
+124 \hyperlink{class_mission_maths}{MissionMaths} miss2(0 \textcolor{comment}{/*accessintel*/} , 0 \textcolor{comment}{/*accForce*/},0 \textcolor{comment}{/*accAge*/}, 3 \textcolor{comment}{/*accEnergie*/} ,\textcolor{stringliteral}{"Au
+       secours ! Mon ordinateur a crashé !! Pourrais-tu compter le nombre d'objets que j'ai en vente ? Je te donnerai un
+       précieux conseil."}\textcolor{comment}{/*nom*/}, 1 \textcolor{comment}{/*recIntel*/}, \textcolor{stringliteral}{"Mercii tu me sauves mon magasin ! Je te conseille de faire un
+       peu de sport avant d'essayer de combattre les voyous de la Forêt..."} \textcolor{comment}{/*dialogueR*/}, \textcolor{stringliteral}{"Tu ne sais même pas
+       compter ?? CHAUUUD..."} \textcolor{comment}{/*dialogueE*/});
+125 miss2.setQuestion(qcm2);
+126 
+127 \textcolor{comment}{/*----------------------Initialisation de Banque ------------------------*/}
+128 
+129 \hyperlink{class_p_n_j}{PNJ} banquier(40,5,25,\textcolor{stringliteral}{"Banko le banquier"}, vectMission, \textcolor{stringliteral}{"Bienvenue à la banque ! Ici vous pouvez déposer
+       et retirer de l'argent en toute sécurité."});
+130 vector<PNJ> vectPNJBanque;
+131 vectPNJBanque.push\_back(banquier);
+132 \hyperlink{class_banque}{Banque} banque(vectObjetSuperette, 50,vectPNJBanque, \textcolor{stringliteral}{"banque"}, vectS );
+133 
+134 \textcolor{comment}{/*----------------------Initialisation de Forêt ------------------------*/}
+135 
+136 \hyperlink{class_mission_combat}{MissionCombat} miss3(0,5,12,3,\textcolor{stringliteral}{"Viens te battre, amateur"},3,25,\textcolor{stringliteral}{"Pfff..."},\textcolor{stringliteral}{"Tu es très faible, wow
+      "});
+137 vector<Mission*> vectMissionVoyou1;
+138 vectMissionVoyou1.push\_back(&miss3);
+139 \hyperlink{class_mission_combat}{MissionCombat} miss4(0,7,12,4,\textcolor{stringliteral}{"Viens te battre, amateur"},4,40,\textcolor{stringliteral}{"Pfff..."},\textcolor{stringliteral}{"Tu es très faible, wow
+      "});
+140 vector<Mission*> vectMissionVoyou2;
+141 vectMissionVoyou2.push\_back(&miss4);
+142 \hyperlink{class_mission_combat}{MissionCombat} miss5(0,10,12,5,\textcolor{stringliteral}{"Viens te battre, amateur"},5,60,\textcolor{stringliteral}{"Pfff..."},\textcolor{stringliteral}{"Tu es très faible,
+       wow"});
+143 vector<Mission*> vectMissionVoyou3;
+144 vectMissionVoyou3.push\_back(&miss5);
+145 \hyperlink{class_mission_combat}{MissionCombat} miss6(0,15,12,6,\textcolor{stringliteral}{"Viens te battre, amateur"},6,100,\textcolor{stringliteral}{"Pfff, bravo tu peux te
+       considérer comme un voyou de la galaxie..."},\textcolor{stringliteral}{"Tu es très faible, wow"});
+146 vector<Mission*> vectMissionVoyou4;
+147 vectMissionVoyou4.push\_back(&miss6);
+148 
+149 \hyperlink{class_p_n_j}{PNJ} voyou1(5, 10,15,\textcolor{stringliteral}{"voyou des rues"},vectMissionVoyou1, \textcolor{stringliteral}{"Wesh t'as un problème ou quoi ?"});
+150 \hyperlink{class_p_n_j}{PNJ} voyou2(5, 15,15,\textcolor{stringliteral}{"voyou des champs"},vectMissionVoyou2, \textcolor{stringliteral}{"Wesh tu veux te battre ou quoi ?"});
+151 \hyperlink{class_p_n_j}{PNJ} voyou3(5, 20,15,\textcolor{stringliteral}{"voyou des villes"},vectMissionVoyou3, \textcolor{stringliteral}{"Wesh c'est quoi ton problème ?"});
+152 \hyperlink{class_p_n_j}{PNJ} voyou4(5, 25,15,\textcolor{stringliteral}{"voyou de la galaxie"},vectMissionVoyou4, \textcolor{stringliteral}{"Wesh tu veux morfler ?"});
+153 vector<PNJ> vectPNJForet;
+154 vectPNJForet.push\_back(voyou1);
+155 vectPNJForet.push\_back(voyou2);
+156 vectPNJForet.push\_back(voyou3);
+157 vectPNJForet.push\_back(voyou4);
+158 
+159 \hyperlink{class_foret}{Foret} foret(vectObjetSuperette, 50, vectPNJForet, \textcolor{stringliteral}{"forêt"}, vectS);
+160 
+161 \textcolor{comment}{/*----------------------Initialisation de Ecole ------------------------*/}
+162 
+163 vector<QCM> qcm3;
+164 \hyperlink{struct_q_c_m}{QCM} q4,q5;
+165 q4.\hyperlink{struct_q_c_m_a6d24b233b44048c23595712c0e03fb47}{exo}= \textcolor{stringliteral}{"5x-10=0, que vaut x ?"};
+166 q4.\hyperlink{struct_q_c_m_ad90e9b83f64b15f51e3f920922670fa4}{answer}=2;
+167 q5.\hyperlink{struct_q_c_m_a6d24b233b44048c23595712c0e03fb47}{exo}= \textcolor{stringliteral}{"3x-3=-3, que vaut x ?"};
+168 q5.\hyperlink{struct_q_c_m_ad90e9b83f64b15f51e3f920922670fa4}{answer}=0;
+169 qcm3.push\_back(q4);
+170 qcm3.push\_back(q5);
+171 \hyperlink{class_mission_maths}{MissionMaths} miss7(5 \textcolor{comment}{/*accessintel*/} , 0 \textcolor{comment}{/*accForce*/},5 \textcolor{comment}{/*accAge*/}, 4 \textcolor{comment}{/*accEnergie*/} ,\textcolor{stringliteral}{"Bonjour,
+       voici une question que je vous propose :"}\textcolor{comment}{/*nom*/}, 2 \textcolor{comment}{/*recIntel*/}, \textcolor{stringliteral}{"Bravo !"} \textcolor{comment}{/*dialogueR*/}, \textcolor{stringliteral}{"wow t'es nul"} \textcolor{comment}{
+      /*dialogueE*/});
+172 vector<Mission*> vectMissionPNJprof;
+173 miss7.setQuestion(qcm3);
+174 vectMissionPNJprof.push\_back(&miss7);
+175 
+176 \hyperlink{class_p_n_j}{PNJ} prof(50,20,40,\textcolor{stringliteral}{"professeur"},vectMissionPNJprof, \textcolor{stringliteral}{"Bonjour, jeune élève."});
+177 vector<PNJ> vectPNJEcole;
+178 vectPNJEcole.push\_back(prof);
+179 
+180 \hyperlink{class_ecole}{Ecole} ecole(vectObjetSuperette, 50, vectPNJEcole, \textcolor{stringliteral}{"Ecole"}, vectS);
+181 
+182 
+183 
+184 \textcolor{comment}{/*----------------------Initialisation de Ville --------------------------*/}
+185 vectLieu.push\_back(&superette);
+186 vectLieu.push\_back(&banque);
+187 vectLieu.push\_back(&foret);
+188 vectLieu.push\_back(&ecole);
+189 
+190 
+191 \hyperlink{class_ville}{Ville} ville(vectObj, 5, vectPnj, \textcolor{stringliteral}{"Ville"}, vectS, vectLieu);
+192 
+193 
+194 
+195 \textcolor{comment}{/*----------------------Initialisation de Heros --------------------------*/}
+196 vectMissionHeros.push\_back(&miss1);
+197 vectMissionHeros.push\_back(&miss2);
+198 vectMissionHeros.push\_back(&miss3);
+199 vectMissionHeros.push\_back(&miss4);
+200 vectMissionHeros.push\_back(&miss5);
+201 vectMissionHeros.push\_back(&miss6);
+202 vectMissionHeros.push\_back(&miss7);
+203 
+204 
+205 \hyperlink{class_heros}{Heros} heros(\hyperlink{jeu_8cpp_a3e030f3bbc16ca2aaff0a16e4b52c81b}{INTELDEBUT} \textcolor{comment}{/*intelh*/}, \hyperlink{jeu_8cpp_a9d7c6bcc45075584ee24bdacc0e529cb}{FORCEDEBUT} \textcolor{comment}{/*forceh*/}, 10 \textcolor{comment}{/*ageh*/}, 
+      \hyperlink{jeu_8cpp_a86f9fdd9a6f1475942d36b9b192023de}{CASHDEBUT} \textcolor{comment}{/* cashh*/} , \hyperlink{jeu_8cpp_a2507ddd8559f97e4733e6d841ad95c03}{ENERGIE} \textcolor{comment}{/*energieh*/}, sac \textcolor{comment}{/*map<string,Objet>*/}, \textcolor{stringliteral}{"heros"}, 
+      vectMissionHeros, &ville);
+206 
+207 \textcolor{comment}{/*-------------------------------------- Boucle principale --------------------------------------*/}
+208 jeu.\hyperlink{class_jeu_ab049953d4de15842e4e3523c4323bc9e}{jouer}(&heros, &ville);
+209 
+210 
+211 
+212 
+213 \textcolor{comment}{/*------------------------------- TESTS UNITAIRES  -----------------------*/}
+214 
+215 vector<QCM> qcm1;
+216 \hyperlink{struct_q_c_m}{QCM} q1,q2;
+217 q1.\hyperlink{struct_q_c_m_a6d24b233b44048c23595712c0e03fb47}{exo}= \textcolor{stringliteral}{"5x-10=0, que vaut x ?"};
+218 q1.\hyperlink{struct_q_c_m_ad90e9b83f64b15f51e3f920922670fa4}{answer}=2;
+219 q2.\hyperlink{struct_q_c_m_a6d24b233b44048c23595712c0e03fb47}{exo}= \textcolor{stringliteral}{"3x-3=-3, que vaut x ?"};
+220 q2.\hyperlink{struct_q_c_m_ad90e9b83f64b15f51e3f920922670fa4}{answer}=0;
+221 qcm1.push\_back(q1);
+222 qcm1.push\_back(q2);
+223 \hyperlink{class_mission_maths}{MissionMaths} missM1(5 \textcolor{comment}{/*accessintel*/} , 0 \textcolor{comment}{/*accForce*/},0 \textcolor{comment}{/*accAge*/}, 10 \textcolor{comment}{/*accEnergie*/} ,\textcolor{stringliteral}{"
+      Bonjour, voici une mission que je vous propose :"}\textcolor{comment}{/*nom*/}, 2 \textcolor{comment}{/*recIntel*/}, \textcolor{stringliteral}{"Bravo !"} \textcolor{comment}{/*dialogueR*/}, \textcolor{stringliteral}{"wow t'es nul"} \textcolor{comment}{
+      /*dialogueE*/});
+224 
+225 \hyperlink{class_mission_objet}{MissionObjet} m2(5 \textcolor{comment}{/*accIntel*/},  0 \textcolor{comment}{/*accForce*/},  0 \textcolor{comment}{/*accAge*/}, 10 \textcolor{comment}{/*accEnergie*/}, \textcolor{stringliteral}{"j'ai perdu
+       mon stylo, retrouve le !!"} \textcolor{comment}{/*texteMission*/}, 5 \textcolor{comment}{/* recCash*/}, \textcolor{stringliteral}{"Bravo !!!"} \textcolor{comment}{/*dialogueR*/}, \textcolor{stringliteral}{"Tu n'as pas mon
+       style :'( reviens quand tu l'auras trouvé"} \textcolor{comment}{/*dialogueE*/}, obj \textcolor{comment}{/*objRec*/}, stylo \textcolor{comment}{/*objATrouver*/});
+226 
+227 \hyperlink{class_mission_combat}{MissionCombat} m3(5, 0, 0, 5, \textcolor{stringliteral}{"Combat"}, 5, 5, \textcolor{stringliteral}{"Pff t'es plus fort que moi"}, \textcolor{stringliteral}{"MOUHAHAHA je t'ai
+       tellement défoncé !!"});
+228 
+229 vector<Mission*> vectMission1;
+230 missM1.setQuestion(qcm1);
+231 vectMission1.push\_back(&missM1);
+232 cout<<vectMission1.at(0)->executerMission(jeu, &heros, &fanny)<<endl;
+233 cout<<missM1.executerMission(jeu, &heros, &fanny)<<endl;
+234 cout<<m3.executerMission(jeu, &heros, &fanny)<<endl;
+235 cout<<m2.executerMission(jeu, &heros, &fanny)<<endl;
+236 
+237 
+238 
+239 
+240 \}
+\end{DoxyCode}

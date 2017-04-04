@@ -1,0 +1,168 @@
+\hypertarget{class_non_consommable}{\section{Non\-Consommable Class Reference}
+\label{class_non_consommable}\index{Non\-Consommable@{Non\-Consommable}}
+}
+
+
+Classe représentant les objets non consommables.  
+
+
+
+
+{\ttfamily \#include $<$nonconsommable.\-hpp$>$}
+
+Inheritance diagram for Non\-Consommable\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_non_consommable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_non_consommable_ab2dcf94cbb47401e632a37b594ae8091}{Non\-Consommable} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_non_consommable_a7c0078a9defcc714a9d6e54b97e57203}{Non\-Consommable} (int acc\-Objet, int p, string nom\-Obj, int vf, int qte\-Obj, int dur\-Vie)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe nonconsommable. \end{DoxyCompactList}\item 
+void \hyperlink{class_non_consommable_acf08bda31a32e15598a71bb28546629d}{setdureevie} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable dureevie. \end{DoxyCompactList}\item 
+int \hyperlink{class_non_consommable_a58c576024c1daba5b28e4c243ded1c18}{getdureevie} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable dureevie. \end{DoxyCompactList}\item 
+void \hyperlink{class_non_consommable_acfb7cfd4a6669eaf4acb1422545ef857}{utiliser\-Objet} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros)
+\begin{DoxyCompactList}\small\item\em Utilise un objet non consommable afin de gagner de la force. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant les objets non consommables. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_non_consommable_ab2dcf94cbb47401e632a37b594ae8091}{\index{Non\-Consommable@{Non\-Consommable}!Non\-Consommable@{Non\-Consommable}}
+\index{Non\-Consommable@{Non\-Consommable}!NonConsommable@{Non\-Consommable}}
+\subsubsection[{Non\-Consommable}]{\setlength{\rightskip}{0pt plus 5cm}Non\-Consommable\-::\-Non\-Consommable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_non_consommable_ab2dcf94cbb47401e632a37b594ae8091}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+\hypertarget{class_non_consommable_a7c0078a9defcc714a9d6e54b97e57203}{\index{Non\-Consommable@{Non\-Consommable}!Non\-Consommable@{Non\-Consommable}}
+\index{Non\-Consommable@{Non\-Consommable}!NonConsommable@{Non\-Consommable}}
+\subsubsection[{Non\-Consommable}]{\setlength{\rightskip}{0pt plus 5cm}Non\-Consommable\-::\-Non\-Consommable (
+\begin{DoxyParamCaption}
+\item[{int}]{acc\-Objet, }
+\item[{int}]{p, }
+\item[{string}]{nom\-Obj, }
+\item[{int}]{vf, }
+\item[{int}]{qte\-Obj, }
+\item[{int}]{dur\-Vie}
+\end{DoxyParamCaption}
+)}}\label{class_non_consommable_a7c0078a9defcc714a9d6e54b97e57203}
+
+
+Constructeur de la classe nonconsommable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acc\-Objet} & L'accessibilité de l'objet à partir d'un certain âge. \\
+\hline
+{\em p} & Le prix de l'objet. \\
+\hline
+{\em nom\-Obj} & Le nom de l'objet. \\
+\hline
+{\em vf} & La valeur de la force que l'héros peut gagner \\
+\hline
+{\em qte\-Obj} & La quantité de l'objet. \\
+\hline
+{\em dur\-Vie} & La durée de vie de l'objet. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+11                                                                                                   : 
+      \hyperlink{class_objet_aefdd826d50085897e4894ffef4597d04}{Objet}(accObjet, p, nomObj, vf, qteObj) \{
+12     dureevie = durVie;\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_non_consommable_a58c576024c1daba5b28e4c243ded1c18}{\index{Non\-Consommable@{Non\-Consommable}!getdureevie@{getdureevie}}
+\index{getdureevie@{getdureevie}!NonConsommable@{Non\-Consommable}}
+\subsubsection[{getdureevie}]{\setlength{\rightskip}{0pt plus 5cm}int Non\-Consommable\-::getdureevie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_non_consommable_a58c576024c1daba5b28e4c243ded1c18}
+
+
+Accède à la variable dureevie. 
+
+\begin{DoxyReturn}{Returns}
+La durée de vie de l'objet non consommable. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+18                                        \{
+19     \textcolor{keywordflow}{return} dureevie;
+20   \}
+\end{DoxyCode}
+\hypertarget{class_non_consommable_acf08bda31a32e15598a71bb28546629d}{\index{Non\-Consommable@{Non\-Consommable}!setdureevie@{setdureevie}}
+\index{setdureevie@{setdureevie}!NonConsommable@{Non\-Consommable}}
+\subsubsection[{setdureevie}]{\setlength{\rightskip}{0pt plus 5cm}void Non\-Consommable\-::setdureevie (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_non_consommable_acf08bda31a32e15598a71bb28546629d}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable dureevie. 
+
+
+\begin{DoxyCode}
+14                                                   \{
+15       dureevie = new\_var;
+16   \}
+\end{DoxyCode}
+\hypertarget{class_non_consommable_acfb7cfd4a6669eaf4acb1422545ef857}{\index{Non\-Consommable@{Non\-Consommable}!utiliser\-Objet@{utiliser\-Objet}}
+\index{utiliser\-Objet@{utiliser\-Objet}!NonConsommable@{Non\-Consommable}}
+\subsubsection[{utiliser\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Non\-Consommable\-::utiliser\-Objet (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_non_consommable_acfb7cfd4a6669eaf4acb1422545ef857}
+
+
+Utilise un objet non consommable afin de gagner de la force. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & un pointeur sur la classe \hyperlink{class_heros}{Heros} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_objet_ab8c32a2e0b236fcf75a06a2edc1f71b6}{Objet}.
+
+
+\begin{DoxyCode}
+21                                                         \{
+22       jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Ce n'est pas un objet consommbale."});
+23       heros->\hyperlink{class_personnage_a6745d147720906f2c85ddce11981d71f}{setForce}(heros->\hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}() + \hyperlink{class_objet_aa819b02977c333c0cc5e116575e951cc}{valeurForce});
+24 
+25 
+26  \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{nonconsommable_8hpp}{nonconsommable.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{nonconsommable_8cpp}{nonconsommable.\-cpp}\end{DoxyCompactItemize}

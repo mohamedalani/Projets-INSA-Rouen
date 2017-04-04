@@ -1,0 +1,289 @@
+\hypertarget{class_mission_maths}{\section{Mission\-Maths Class Reference}
+\label{class_mission_maths}\index{Mission\-Maths@{Mission\-Maths}}
+}
+
+
+Classe représentant les missions de type maths.  
+
+
+
+
+{\ttfamily \#include $<$missionmaths.\-hpp$>$}
+
+Inheritance diagram for Mission\-Maths\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mission_maths}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mission_maths_abe58873e14c757c086ecaf42e581dd20}{Mission\-Maths} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_mission_maths_afd5e073b7a77121cf692925f71b27959}{Mission\-Maths} (int acc\-Intel, int acc\-Force, int acc\-Age, int acc\-Energie, string nom, int rec\-Intel, string dialogue\-R, string dialogue\-E)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe mission maths. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_maths_a29c16120131c778ab70c67f26252ff0c}{set\-Recomp\-Int} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable recomp\-Int. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_maths_a43e24544f6550d8acffb0fd19eefe3a5}{get\-Recomp\-Int} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable recomp\-Int. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_maths_a07c256993831514508290420b4b57bcf}{set\-Question} (vector$<$ \hyperlink{struct_q_c_m}{Q\-C\-M} $>$ new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable question. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{struct_q_c_m}{Q\-C\-M} $>$ \hyperlink{class_mission_maths_a719d59e5c73f690c92417863cec4e747}{get\-Question} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable question. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_maths_a0cc9fd94da2659ec7274693097e93bd3}{get\-Nom\-Mission} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable nom\-Mission. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_maths_a238579d120711f3be1ca9254a5cad214}{set\-Nom\-Mission} (string var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable var dans la variable nom\-Mission. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_maths_aec614bc24cbe313c5ce6d5d76119a041}{executer\-Mission} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_p_n_j}{P\-N\-J} $\ast$pnj)
+\begin{DoxyCompactList}\small\item\em Exécute une mission de type maths. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant les missions de type maths. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mission_maths_abe58873e14c757c086ecaf42e581dd20}{\index{Mission\-Maths@{Mission\-Maths}!Mission\-Maths@{Mission\-Maths}}
+\index{Mission\-Maths@{Mission\-Maths}!MissionMaths@{Mission\-Maths}}
+\subsubsection[{Mission\-Maths}]{\setlength{\rightskip}{0pt plus 5cm}Mission\-Maths\-::\-Mission\-Maths (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_maths_abe58873e14c757c086ecaf42e581dd20}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+15 \{\}
+\end{DoxyCode}
+\hypertarget{class_mission_maths_afd5e073b7a77121cf692925f71b27959}{\index{Mission\-Maths@{Mission\-Maths}!Mission\-Maths@{Mission\-Maths}}
+\index{Mission\-Maths@{Mission\-Maths}!MissionMaths@{Mission\-Maths}}
+\subsubsection[{Mission\-Maths}]{\setlength{\rightskip}{0pt plus 5cm}Mission\-Maths\-::\-Mission\-Maths (
+\begin{DoxyParamCaption}
+\item[{int}]{acc\-Intel, }
+\item[{int}]{acc\-Force, }
+\item[{int}]{acc\-Age, }
+\item[{int}]{acc\-Energie, }
+\item[{string}]{nom, }
+\item[{int}]{rec\-Intel, }
+\item[{string}]{dialogue\-R, }
+\item[{string}]{dialogue\-E}
+\end{DoxyParamCaption}
+)}}\label{class_mission_maths_afd5e073b7a77121cf692925f71b27959}
+
+
+Constructeur de la classe mission maths. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heros} & Un paramètre de la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+{\em acc\-Intel} & La valeur nécessaire d'intelligence pour accéder à une mission. \\
+\hline
+{\em acc\-Force} & La valeur nécessaire de la force pour accéder à une mission. \\
+\hline
+{\em acc\-Age} & La valeur nécessaire d'âge pour accéder à une mission. \\
+\hline
+{\em access\-Energie} & La valeur nécessaire d'énergie pour accéder à une mission. \\
+\hline
+{\em nom} & le nom de la mission. \\
+\hline
+{\em rec\-Intel} & La valeur de la récompense intelligence que l'héros peut gagner. \\
+\hline
+{\em dialogue\-R} & Le dialogue en cas de réussite. \\
+\hline
+{\em dialogue\-E} & Le dialogue en cas d'échec. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+16                                                                                                            
+                                         : \hyperlink{class_mission_aa5a6ff4fc779338ab01b8f6dd470f4df}{Mission}(accIntel,accForce,accAge,accEnergie,nom, dialogueR, 
+      dialogueE)\{
+17     recompInt = recIntel;
+18     niveau = floor(\hyperlink{class_mission_af93302ac38548302411994e4cbf9b850}{accessIntel}/10);
+19 
+20     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mission_maths_aec614bc24cbe313c5ce6d5d76119a041}{\index{Mission\-Maths@{Mission\-Maths}!executer\-Mission@{executer\-Mission}}
+\index{executer\-Mission@{executer\-Mission}!MissionMaths@{Mission\-Maths}}
+\subsubsection[{executer\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-Maths\-::executer\-Mission (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf P\-N\-J} $\ast$}]{pnj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mission_maths_aec614bc24cbe313c5ce6d5d76119a041}
+
+
+Exécute une mission de type maths. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & Un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+{\em pnj} & Un pointeur sur la classe \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un message permettant de savoir si le héros a réussi ou échoué la mission maths et combien de points d'intelligence a-\/t-\/il gagné etc. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_mission_ad4375f925eda8637d6346ef468747f44}{Mission}.
+
+
+\begin{DoxyCode}
+38                                                                       \{
+39 
+40       \textcolor{keywordflow}{if} (heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()> \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie}) \{
+41 
+42       \textcolor{keywordflow}{if} (jeu.\hyperlink{class_jeu_a3aa07b1e7a5e5d82479b8bb2a2841635}{demanderBoolUtilisateur}(\textcolor{stringliteral}{"Voulez vous essayer de répondre à une
+       question de niveau "}+\hyperlink{missionmaths_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(niveau)+\textcolor{stringliteral}{" ? Vous gagnerez ainsi "}+\hyperlink{missionmaths_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(recompInt)+\textcolor{stringliteral}{" points d'intelligence"} ))\{
+43           \hyperlink{class_mission_a5ee38d2b67b7f860fb6a27d486200bec}{setEtatMission}(\hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7aca12092e4757cb029f1b3e1fa95ed277}{enCours});
+44 
+45               heros->\hyperlink{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{setEnergie}(heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()-
+      \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie});
+46               jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Vous venez de perdre "}+\hyperlink{missionmaths_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(
+      \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie})+\textcolor{stringliteral}{" points d'énergie, il vous en reste "}+\hyperlink{missionmaths_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros->
+      \hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()));
+47               jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(1,\textcolor{stringliteral}{""});
+48               jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(3,pnj->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" : Laisse moi réfléchir à une question..."});
+49 
+50           \textcolor{keywordtype}{bool} test = \textcolor{keyword}{true};
+51           \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<question.size() and test==\textcolor{keyword}{true}; i++)\{
+52               \textcolor{keywordtype}{int} entree = jeu.\hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demanderEntreeUtilisateur}(question.at(i).exo);
+53               \textcolor{keywordflow}{if} (entree != question.at(i).answer) \{
+54                   test = \textcolor{keyword}{false};
+55                   jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(2,pnj->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" : Pas du tout ! C'est médiocre ! On s'arrête là."})
+      ;
+56               \}
+57               \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i!= question.size()-1) jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(3,pnj->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" : hum... celle là
+       était simple. Laisse moi réfléchir à une autre question."});
+58           \}
+59           \textcolor{keywordflow}{if} (test==\textcolor{keyword}{true}) \{
+60             heros->\hyperlink{class_personnage_af8b3c4f6c0f7035678d9ecf574976650}{setIntelligence}(heros->\hyperlink{class_personnage_a250eec1aba0df7a105dd564e4cd02b0b}{getIntelligence}()+recompInt);
+61             \textcolor{keywordflow}{return} pnj->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" : "}+\hyperlink{class_mission_adedaca4409d2abe41a36c04921440b86}{getDialogueReussite}()+\textcolor{stringliteral}{"\(\backslash\)nVous avez gagné "}+
+      \hyperlink{missionmaths_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(recompInt)+\textcolor{stringliteral}{" de points d'intelligence"};
+62             \}
+63           \textcolor{keywordflow}{else}
+64             \textcolor{keywordflow}{return} \hyperlink{class_mission_af9a813bba373bcac25b42e22c8440c1c}{getDialogueEchec}();
+65           \}
+66       \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} pnj->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" : Je vois... Vous n'êtes donc pas de taille... Amateur."};
+67       \}
+68       \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Vous n'avez pas assez d'énergie... Dommage."};
+69   \}
+\end{DoxyCode}
+\hypertarget{class_mission_maths_a0cc9fd94da2659ec7274693097e93bd3}{\index{Mission\-Maths@{Mission\-Maths}!get\-Nom\-Mission@{get\-Nom\-Mission}}
+\index{get\-Nom\-Mission@{get\-Nom\-Mission}!MissionMaths@{Mission\-Maths}}
+\subsubsection[{get\-Nom\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-Maths\-::get\-Nom\-Mission (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_maths_a0cc9fd94da2659ec7274693097e93bd3}
+
+
+Accède à la variable nom\-Mission. 
+
+\begin{DoxyReturn}{Returns}
+Le nom de la mission. 
+\end{DoxyReturn}
+\hypertarget{class_mission_maths_a719d59e5c73f690c92417863cec4e747}{\index{Mission\-Maths@{Mission\-Maths}!get\-Question@{get\-Question}}
+\index{get\-Question@{get\-Question}!MissionMaths@{Mission\-Maths}}
+\subsubsection[{get\-Question}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Q\-C\-M} $>$ Mission\-Maths\-::get\-Question (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_maths_a719d59e5c73f690c92417863cec4e747}
+
+
+Accède à la variable question. 
+
+\begin{DoxyReturn}{Returns}
+Le vecteur des questions composé de l'exercice et la réponse. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+34                                              \{
+35     \textcolor{keywordflow}{return} question;
+36   \}
+\end{DoxyCode}
+\hypertarget{class_mission_maths_a43e24544f6550d8acffb0fd19eefe3a5}{\index{Mission\-Maths@{Mission\-Maths}!get\-Recomp\-Int@{get\-Recomp\-Int}}
+\index{get\-Recomp\-Int@{get\-Recomp\-Int}!MissionMaths@{Mission\-Maths}}
+\subsubsection[{get\-Recomp\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-Maths\-::get\-Recomp\-Int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_maths_a43e24544f6550d8acffb0fd19eefe3a5}
+
+
+Accède à la variable recomp\-Int. 
+
+\begin{DoxyReturn}{Returns}
+la valeur de la récompense intelligence. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+26                                       \{
+27     \textcolor{keywordflow}{return} recompInt;
+28   \}
+\end{DoxyCode}
+\hypertarget{class_mission_maths_a238579d120711f3be1ca9254a5cad214}{\index{Mission\-Maths@{Mission\-Maths}!set\-Nom\-Mission@{set\-Nom\-Mission}}
+\index{set\-Nom\-Mission@{set\-Nom\-Mission}!MissionMaths@{Mission\-Maths}}
+\subsubsection[{set\-Nom\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-Maths\-::set\-Nom\-Mission (
+\begin{DoxyParamCaption}
+\item[{string}]{var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_maths_a238579d120711f3be1ca9254a5cad214}
+
+
+stock la valeur de la variable var dans la variable nom\-Mission. 
+
+\hypertarget{class_mission_maths_a07c256993831514508290420b4b57bcf}{\index{Mission\-Maths@{Mission\-Maths}!set\-Question@{set\-Question}}
+\index{set\-Question@{set\-Question}!MissionMaths@{Mission\-Maths}}
+\subsubsection[{set\-Question}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-Maths\-::set\-Question (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Q\-C\-M} $>$}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_maths_a07c256993831514508290420b4b57bcf}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable question. 
+
+
+\begin{DoxyCode}
+30                                                          \{
+31       question = new\_var;
+32   \}
+\end{DoxyCode}
+\hypertarget{class_mission_maths_a29c16120131c778ab70c67f26252ff0c}{\index{Mission\-Maths@{Mission\-Maths}!set\-Recomp\-Int@{set\-Recomp\-Int}}
+\index{set\-Recomp\-Int@{set\-Recomp\-Int}!MissionMaths@{Mission\-Maths}}
+\subsubsection[{set\-Recomp\-Int}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-Maths\-::set\-Recomp\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_maths_a29c16120131c778ab70c67f26252ff0c}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable recomp\-Int. 
+
+
+\begin{DoxyCode}
+22                                                  \{
+23       recompInt = new\_var;
+24   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{missionmaths_8hpp}{missionmaths.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{missionmaths_8cpp}{missionmaths.\-cpp}\end{DoxyCompactItemize}

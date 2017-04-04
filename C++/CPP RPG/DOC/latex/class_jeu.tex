@@ -1,0 +1,395 @@
+\hypertarget{class_jeu}{\section{Jeu Class Reference}
+\label{class_jeu}\index{Jeu@{Jeu}}
+}
+
+
+Classe représentant le jeu.  
+
+
+
+
+{\ttfamily \#include $<$jeu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_jeu_acc5795ee00edf75516d3dfe65be3e6d6}{Jeu} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_ab049953d4de15842e4e3523c4323bc9e}{jouer} (\hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_ville}{Ville} $\ast$ville)
+\begin{DoxyCompactList}\small\item\em Gère le jeu. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_a437282d939ce54d7f3e2eeb56dc0fce7}{initialiser\-Jeu} ()
+\begin{DoxyCompactList}\small\item\em Initialise le jeu. \end{DoxyCompactList}\item 
+bool \hyperlink{class_jeu_a3aa07b1e7a5e5d82479b8bb2a2841635}{demander\-Bool\-Utilisateur} (string texte)
+\begin{DoxyCompactList}\small\item\em Vérifie si les saisies clavier faites par l'utilisateur sont correctes ou pas. \end{DoxyCompactList}\item 
+int \hyperlink{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{demander\-Entree\-Utilisateur} (string texte)
+\begin{DoxyCompactList}\small\item\em Vérifie si les saisies clavier faites par l'utilisateur sont correctes ou pas. \end{DoxyCompactList}\item 
+string \hyperlink{class_jeu_a4b70e906117c6a21b989ad3ab672c83c}{demander\-String\-Utilisateur} (string texte)
+\begin{DoxyCompactList}\small\item\em Demande une saisie clavier à l'utilisateur sous forme d'un texte. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficher\-Texte} (string texte)
+\begin{DoxyCompactList}\small\item\em Affiche le texte saisi par l'utilisateur. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_a26c7a428a96b1f987150cb708fa7d903}{consommersac} (\hyperlink{class_heros}{Heros} $\ast$heros)
+\begin{DoxyCompactList}\small\item\em sert à consommer ou non un objet consommable par le héros. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_ac70f7bfb1945030e04287da3a35973af}{affichersac} (\hyperlink{class_heros}{Heros} $\ast$heros)
+\begin{DoxyCompactList}\small\item\em Affiche le contenu du sac de l'héros. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer} (int temps, string message)
+\begin{DoxyCompactList}\small\item\em Gère le temps de déplacement de l'héros entre les différents lieux ou le temps d'une mission. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_a7f9e3b8e6f3ad5d2c47ae29c54f2bdc4}{affichage\-Stats\-Hero} (\hyperlink{class_heros}{Heros} heros)
+\begin{DoxyCompactList}\small\item\em Affiche les stats de l'héros comme l'énergie, l'intelligence, le cash, la force et l'âge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe représentant le jeu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_jeu_acc5795ee00edf75516d3dfe65be3e6d6}{\index{Jeu@{Jeu}!Jeu@{Jeu}}
+\index{Jeu@{Jeu}!Jeu@{Jeu}}
+\subsubsection[{Jeu}]{\setlength{\rightskip}{0pt plus 5cm}Jeu\-::\-Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_acc5795ee00edf75516d3dfe65be3e6d6}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+254         \{
+255 
+256 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_jeu_a7f9e3b8e6f3ad5d2c47ae29c54f2bdc4}{\index{Jeu@{Jeu}!affichage\-Stats\-Hero@{affichage\-Stats\-Hero}}
+\index{affichage\-Stats\-Hero@{affichage\-Stats\-Hero}!Jeu@{Jeu}}
+\subsubsection[{affichage\-Stats\-Hero}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::affichage\-Stats\-Hero (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros}}]{heros}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a7f9e3b8e6f3ad5d2c47ae29c54f2bdc4}
+
+
+Affiche les stats de l'héros comme l'énergie, l'intelligence, le cash, la force et l'âge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heros} & Une instance de la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+374                                         \{
+375     this->\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Voici vos stats: Energie : "} + \hyperlink{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros.
+      \hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()) + \textcolor{stringliteral}{"\(\backslash\)n"} + \textcolor{stringliteral}{"Intelligence : "} + \hyperlink{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros.
+      \hyperlink{class_personnage_a250eec1aba0df7a105dd564e4cd02b0b}{getIntelligence}()) + \textcolor{stringliteral}{"\(\backslash\)n"} + \textcolor{stringliteral}{"Cash : "} + \hyperlink{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros.\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}()) + \textcolor{stringliteral}{"\(\backslash\)n"} + \textcolor{stringliteral}{"Force : "}
+       + \hyperlink{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros.\hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}()) + \textcolor{stringliteral}{"\(\backslash\)n"} + \textcolor{stringliteral}{"Age : "} + \hyperlink{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(heros.\hyperlink{class_personnage_a991d7e1cf4662e245ad72e76b9eb9d53}{getAge}()));
+376     \hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(4,\textcolor{stringliteral}{""});
+377 \}
+\end{DoxyCode}
+\hypertarget{class_jeu_ac70f7bfb1945030e04287da3a35973af}{\index{Jeu@{Jeu}!affichersac@{affichersac}}
+\index{affichersac@{affichersac}!Jeu@{Jeu}}
+\subsubsection[{affichersac}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::affichersac (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros} $\ast$}]{heros}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_ac70f7bfb1945030e04287da3a35973af}
+
+
+Affiche le contenu du sac de l'héros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heros} & Un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+316                                  \{
+317         \textcolor{keywordtype}{string} s ;
+318         map <string, Objet*> sacH=heros->\hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}();
+319 
+320         \textcolor{keywordflow}{for}(map<string,Objet*>::iterator it=sacH.begin(); it!=sacH.end(); ++it) \{
+321             \textcolor{keywordflow}{if}(it->second->getQuantiteObjet()>0) \{
+322                 this->\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"- ("} + \hyperlink{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(it->second->getQuantiteObjet()) + \textcolor{stringliteral}{")"}
+323 + it->first + \textcolor{stringliteral}{"\(\backslash\)n"} );
+324                 \}
+325 
+326         \}
+327 \}
+\end{DoxyCode}
+\hypertarget{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{\index{Jeu@{Jeu}!afficher\-Texte@{afficher\-Texte}}
+\index{afficher\-Texte@{afficher\-Texte}!Jeu@{Jeu}}
+\subsubsection[{afficher\-Texte}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::afficher\-Texte (
+\begin{DoxyParamCaption}
+\item[{string}]{texte}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}
+
+
+Affiche le texte saisi par l'utilisateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texte} & Un texte demandé à l'utilisateur afin qu'il fasse son choix. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+312                                     \{
+313     cout<<texte<<endl;
+314 \}
+\end{DoxyCode}
+\hypertarget{class_jeu_a26c7a428a96b1f987150cb708fa7d903}{\index{Jeu@{Jeu}!consommersac@{consommersac}}
+\index{consommersac@{consommersac}!Jeu@{Jeu}}
+\subsubsection[{consommersac}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::consommersac (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros} $\ast$}]{heros}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a26c7a428a96b1f987150cb708fa7d903}
+
+
+sert à consommer ou non un objet consommable par le héros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heros} & Un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+330                                   \{
+331         this->\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Voici les objets dans le sac"});
+332         this->\hyperlink{class_jeu_ac70f7bfb1945030e04287da3a35973af}{affichersac}(heros);
+333         \textcolor{keywordflow}{if} (\hyperlink{class_jeu_a3aa07b1e7a5e5d82479b8bb2a2841635}{demanderBoolUtilisateur}(\textcolor{stringliteral}{"Consommer un objet ?"}))\{
+334         map<string,Objet*> sac = heros->\hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}();
+335         \textcolor{keywordtype}{string} choix1;
+336         \textcolor{keywordflow}{do}\{
+337          choix1 = this->\hyperlink{class_jeu_a4b70e906117c6a21b989ad3ab672c83c}{demanderStringUtilisateur}(\textcolor{stringliteral}{"Faites votre choix (écrivez le
+       nom de l'objet tel qu'il est orthographié) ou 'q' pour quitter."});
+338 
+339          \textcolor{keywordflow}{if} (choix1==\textcolor{stringliteral}{"q"}) \{\textcolor{keywordflow}{return};\}
+340          \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(sac.find(choix1) == sac.end())
+341                                    \{this->\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Veuillez choisir un objet consommable
+      "});\}
+342         \}\textcolor{keywordflow}{while}(sac.find(choix1) == sac.end() && choix1!=\textcolor{stringliteral}{"q"});
+343 
+344          \textcolor{keywordtype}{bool} choix2 = this->\hyperlink{class_jeu_a3aa07b1e7a5e5d82479b8bb2a2841635}{demanderBoolUtilisateur}(\textcolor{stringliteral}{"Consommer?"} );
+345                  \textcolor{keywordflow}{if}(choix2 == 1)\{
+346 
+347                          sac[choix1]->setQuantiteObjet(sac[choix1]->getQuantiteObjet()-1);
+348                          heros->\hyperlink{class_heros_a7d6d86388fe81deca1c5688ed07b2167}{setSac}(sac);
+349 
+350 
+351                          sac[choix1]->utiliserObjet(*\textcolor{keyword}{this},heros);
+352                  \}\textcolor{keywordflow}{else}
+353                          this->\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Vous avez choisi de ne pas consommer objet"});
+354         \}
+355         \textcolor{keywordflow}{else} \textcolor{keywordflow}{return};
+356 
+357 \}
+\end{DoxyCode}
+\hypertarget{class_jeu_a3aa07b1e7a5e5d82479b8bb2a2841635}{\index{Jeu@{Jeu}!demander\-Bool\-Utilisateur@{demander\-Bool\-Utilisateur}}
+\index{demander\-Bool\-Utilisateur@{demander\-Bool\-Utilisateur}!Jeu@{Jeu}}
+\subsubsection[{demander\-Bool\-Utilisateur}]{\setlength{\rightskip}{0pt plus 5cm}bool Jeu\-::demander\-Bool\-Utilisateur (
+\begin{DoxyParamCaption}
+\item[{string}]{texte}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a3aa07b1e7a5e5d82479b8bb2a2841635}
+
+
+Vérifie si les saisies clavier faites par l'utilisateur sont correctes ou pas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texte} & Un texte correspondant au choix de l'utilisateur. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+262                                               \{
+263 
+264         \textcolor{keywordtype}{string} s;
+265         \textcolor{keywordtype}{int} l;
+266 
+267         \textcolor{keywordtype}{bool} isInt=\textcolor{keyword}{false};
+268 
+269         cout<<texte<<endl<<\textcolor{stringliteral}{"1 : oui, 0 : non"}<<endl;
+270         \textcolor{keywordflow}{do} \{
+271             cin>>s;
+272             istringstream istr(s);
+273             isInt=(istr>>l);
+274             \textcolor{keywordflow}{if} (!isInt or !(l==0 or l==1))
+275                 cout << \textcolor{stringliteral}{"Entrée incorrecte, veuillez recommencer."} << endl ;
+276         \}\textcolor{keywordflow}{while} (!isInt or !(l==0 or l==1));
+277 
+278         \textcolor{keywordflow}{if} (l==0)
+279             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+280         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (l==1)
+281             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+282         \textcolor{keywordflow}{else}\{\}
+283 
+284 \}
+\end{DoxyCode}
+\hypertarget{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}{\index{Jeu@{Jeu}!demander\-Entree\-Utilisateur@{demander\-Entree\-Utilisateur}}
+\index{demander\-Entree\-Utilisateur@{demander\-Entree\-Utilisateur}!Jeu@{Jeu}}
+\subsubsection[{demander\-Entree\-Utilisateur}]{\setlength{\rightskip}{0pt plus 5cm}int Jeu\-::demander\-Entree\-Utilisateur (
+\begin{DoxyParamCaption}
+\item[{string}]{texte}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_ac504a2a26ad7aa3c4281f8ab40cdc445}
+
+
+Vérifie si les saisies clavier faites par l'utilisateur sont correctes ou pas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texte} & Un texte correspondant au choix de l'utilisateur. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+287                                                \{
+288     \textcolor{keywordtype}{string} s;
+289     \textcolor{keywordtype}{int} l;
+290     \textcolor{keywordtype}{bool} isInt=\textcolor{keyword}{false};
+291     cout<<texte<<endl;
+292 
+293     \textcolor{keywordflow}{do} \{
+294         cin>>s;
+295         istringstream istr(s);
+296         isInt=(istr>>l);
+297         \textcolor{keywordflow}{if} (!isInt)
+298             cout << \textcolor{stringliteral}{"Entrée incorrecte, veuillez recommencer."} << endl ;
+299     \}
+300     \textcolor{keywordflow}{while} (!isInt);
+301 
+302     \textcolor{keywordflow}{return} l;
+303 \}
+\end{DoxyCode}
+\hypertarget{class_jeu_a4b70e906117c6a21b989ad3ab672c83c}{\index{Jeu@{Jeu}!demander\-String\-Utilisateur@{demander\-String\-Utilisateur}}
+\index{demander\-String\-Utilisateur@{demander\-String\-Utilisateur}!Jeu@{Jeu}}
+\subsubsection[{demander\-String\-Utilisateur}]{\setlength{\rightskip}{0pt plus 5cm}string Jeu\-::demander\-String\-Utilisateur (
+\begin{DoxyParamCaption}
+\item[{string}]{texte}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a4b70e906117c6a21b989ad3ab672c83c}
+
+
+Demande une saisie clavier à l'utilisateur sous forme d'un texte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texte} & Un texte correspondant à la saisie clavier de l'utilisateur. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+305                                                   \{
+306     cout<<texte<<endl;
+307     \textcolor{keywordtype}{string} l;
+308     cin>>l;
+309     \textcolor{keywordflow}{return} l;
+310 \}
+\end{DoxyCode}
+\hypertarget{class_jeu_a437282d939ce54d7f3e2eeb56dc0fce7}{\index{Jeu@{Jeu}!initialiser\-Jeu@{initialiser\-Jeu}}
+\index{initialiser\-Jeu@{initialiser\-Jeu}!Jeu@{Jeu}}
+\subsubsection[{initialiser\-Jeu}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::initialiser\-Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a437282d939ce54d7f3e2eeb56dc0fce7}
+
+
+Initialise le jeu. 
+
+
+\begin{DoxyCode}
+258                         \{
+259 
+260 \} 
+\end{DoxyCode}
+\hypertarget{class_jeu_ab049953d4de15842e4e3523c4323bc9e}{\index{Jeu@{Jeu}!jouer@{jouer}}
+\index{jouer@{jouer}!Jeu@{Jeu}}
+\subsubsection[{jouer}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::jouer (
+\begin{DoxyParamCaption}
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf Ville} $\ast$}]{ville}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_ab049953d4de15842e4e3523c4323bc9e}
+
+
+Gère le jeu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heros} & Un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+{\em ville} & Un pointeur sur la classe \hyperlink{class_ville}{Ville}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+242                                          \{
+243 
+244     \textcolor{keywordflow}{while}(heros->\hyperlink{class_personnage_a250eec1aba0df7a105dd564e4cd02b0b}{getIntelligence}() < \hyperlink{jeu_8cpp_a9d6989b85af84d4c359c8a47437cf8b7}{INTELFIN} || heros->
+      \hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}() < \hyperlink{jeu_8cpp_ab33c269a96a182fa40c46ae8f0eec850}{FORCEFIN} )\{
+245         heros->\hyperlink{class_heros_abb2a8141e5e2761b1eba4a902deca4ed}{getLieuActuel}()->\hyperlink{class_lieu_ad5d4e14283df04f0174f090f1614225c}{executerAction}(*\textcolor{keyword}{this}, heros, ville);
+246     \}
+247 
+248     \textcolor{keywordflow}{if}(heros->\hyperlink{class_personnage_a250eec1aba0df7a105dd564e4cd02b0b}{getIntelligence}()>=\hyperlink{jeu_8cpp_a9d6989b85af84d4c359c8a47437cf8b7}{INTELFIN} )\{
+249         \hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Bravo, vous avez terminé le jeu, vous avez atteint "}+
+      \hyperlink{jeu_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(\hyperlink{jeu_8cpp_a9d6989b85af84d4c359c8a47437cf8b7}{INTELFIN})+\textcolor{stringliteral}{" d'intelligence, vous avez le droit à une banane !"});
+250     \}
+251 \}
+\end{DoxyCode}
+\hypertarget{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{\index{Jeu@{Jeu}!timer@{timer}}
+\index{timer@{timer}!Jeu@{Jeu}}
+\subsubsection[{timer}]{\setlength{\rightskip}{0pt plus 5cm}void Jeu\-::timer (
+\begin{DoxyParamCaption}
+\item[{int}]{temps, }
+\item[{string}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_jeu_a52ce4fb6c415b45209db13a589c9d675}
+
+
+Gère le temps de déplacement de l'héros entre les différents lieux ou le temps d'une mission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temps} & Un temps correspondant à la durée du timer. \\
+\hline
+{\em message} & Un texte permettant de savoir ce qui est en train de se passer pendant le temps temps. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+360                                         \{
+361     time\_t \hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer};
+362     \textcolor{keywordtype}{double} t =time(&timer);
+363     \hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(message);
+364     \textcolor{keywordtype}{int} i=1;
+365     \textcolor{keywordflow}{while}(time(&timer)-t<temps) \{
+366         \textcolor{keywordflow}{if} (time(&timer)-t == i)\{
+367             cout<<\textcolor{stringliteral}{"."}<<endl;
+368             i++;
+369         \}
+370     \}
+371     \textcolor{keywordflow}{return};
+372 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{jeu_8hpp}{jeu.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{jeu_8cpp}{jeu.\-cpp}\end{DoxyCompactItemize}

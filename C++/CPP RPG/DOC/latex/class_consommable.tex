@@ -1,0 +1,215 @@
+\hypertarget{class_consommable}{\section{Consommable Class Reference}
+\label{class_consommable}\index{Consommable@{Consommable}}
+}
+
+
+Classe représentant les objets consommables.  
+
+
+
+
+{\ttfamily \#include $<$consommable.\-hpp$>$}
+
+Inheritance diagram for Consommable\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_consommable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_consommable_a690f64c7cd8eaa64f4db98f170706864}{Consommable} (int acc\-Objet, int p, string nom\-Obj, int vf, int qte\-Obj, int valeur\-Energie, int valeur\-Intel)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_consommable}{Consommable}. \end{DoxyCompactList}\item 
+\hyperlink{class_consommable_ad87f63d0fef7c1424270bdf334857d4d}{Consommable} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+void \hyperlink{class_consommable_a23a0a6e80f5cb5ff1269514389d70413}{set\-Valeur\-Intel} (int valeur\-Intel)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable valeur\-Intel dans la variable valeur\-Intel. \end{DoxyCompactList}\item 
+int \hyperlink{class_consommable_aafb68bb944bfc5c3fee60d8d3ffba241}{get\-Valeur\-Intel} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable valeur\-Intel. \end{DoxyCompactList}\item 
+void \hyperlink{class_consommable_ac70bcac8ceed2be2a4b09a36874bc752}{set\-Valeur\-Energie} (int var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable var dans la variable valeur\-Intel. \end{DoxyCompactList}\item 
+int \hyperlink{class_consommable_a14eacc0565fc9afb5b2f2b510f8daff7}{get\-Valeur\-Energie} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable valeur\-Energie. \end{DoxyCompactList}\item 
+void \hyperlink{class_consommable_ab2105902385a78cbca8496fdde262d2f}{utiliser\-Objet} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros)
+\begin{DoxyCompactList}\small\item\em En consommant l'objet, permet à l'héros de gagner de l'énergie, de la force et de l'intelligence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant les objets consommables. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_consommable_a690f64c7cd8eaa64f4db98f170706864}{\index{Consommable@{Consommable}!Consommable@{Consommable}}
+\index{Consommable@{Consommable}!Consommable@{Consommable}}
+\subsubsection[{Consommable}]{\setlength{\rightskip}{0pt plus 5cm}Consommable\-::\-Consommable (
+\begin{DoxyParamCaption}
+\item[{int}]{acc\-Objet, }
+\item[{int}]{p, }
+\item[{string}]{nom\-Obj, }
+\item[{int}]{vf, }
+\item[{int}]{qte\-Obj, }
+\item[{int}]{valeur\-Energie, }
+\item[{int}]{valeur\-Intel}
+\end{DoxyParamCaption}
+)}}\label{class_consommable_a690f64c7cd8eaa64f4db98f170706864}
+
+
+Constructeur de la classe \hyperlink{class_consommable}{Consommable}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acc\-Objet} & L'accessibilité de l'objet à partir d'un certain âge. \\
+\hline
+{\em p} & Le prix de l'objet. \\
+\hline
+{\em nom\-Obj} & Le nom de l'objet. \\
+\hline
+{\em vf} & La valeur force que l'héros gagne en consommant l'objet. \\
+\hline
+{\em qte\-Obj} & La quantité de l'objet. \\
+\hline
+{\em valeur\-Energie} & La valeur d'énergie que l'héros gagne en consommant l'objet. \\
+\hline
+{\em valeur\-Intel} & La valeur d'intelligence que l'héros gagne en consomment l'objet. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+13                                                                                                            
+         : \hyperlink{class_objet_aefdd826d50085897e4894ffef4597d04}{Objet}(accObjet, p, nomObj, vf, qteObj) \{
+14     valeurIntel = valIntel;
+15     valeurEnergie = valEnergie;
+16     \}
+\end{DoxyCode}
+\hypertarget{class_consommable_ad87f63d0fef7c1424270bdf334857d4d}{\index{Consommable@{Consommable}!Consommable@{Consommable}}
+\index{Consommable@{Consommable}!Consommable@{Consommable}}
+\subsubsection[{Consommable}]{\setlength{\rightskip}{0pt plus 5cm}Consommable\-::\-Consommable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_consommable_ad87f63d0fef7c1424270bdf334857d4d}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+12 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_consommable_a14eacc0565fc9afb5b2f2b510f8daff7}{\index{Consommable@{Consommable}!get\-Valeur\-Energie@{get\-Valeur\-Energie}}
+\index{get\-Valeur\-Energie@{get\-Valeur\-Energie}!Consommable@{Consommable}}
+\subsubsection[{get\-Valeur\-Energie}]{\setlength{\rightskip}{0pt plus 5cm}int Consommable\-::get\-Valeur\-Energie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_consommable_a14eacc0565fc9afb5b2f2b510f8daff7}
+
+
+Accède à la variable valeur\-Energie. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de la variable valeur\-Energie. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+29                                    \{
+30     \textcolor{keywordflow}{return} valeurEnergie;
+31   \}
+\end{DoxyCode}
+\hypertarget{class_consommable_aafb68bb944bfc5c3fee60d8d3ffba241}{\index{Consommable@{Consommable}!get\-Valeur\-Intel@{get\-Valeur\-Intel}}
+\index{get\-Valeur\-Intel@{get\-Valeur\-Intel}!Consommable@{Consommable}}
+\subsubsection[{get\-Valeur\-Intel}]{\setlength{\rightskip}{0pt plus 5cm}int Consommable\-::get\-Valeur\-Intel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_consommable_aafb68bb944bfc5c3fee60d8d3ffba241}
+
+
+Accède à la variable valeur\-Intel. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de la variable valeur\-Intel. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+22                                        \{
+23     \textcolor{keywordflow}{return} valeurIntel;
+24   \}
+\end{DoxyCode}
+\hypertarget{class_consommable_ac70bcac8ceed2be2a4b09a36874bc752}{\index{Consommable@{Consommable}!set\-Valeur\-Energie@{set\-Valeur\-Energie}}
+\index{set\-Valeur\-Energie@{set\-Valeur\-Energie}!Consommable@{Consommable}}
+\subsubsection[{set\-Valeur\-Energie}]{\setlength{\rightskip}{0pt plus 5cm}void Consommable\-::set\-Valeur\-Energie (
+\begin{DoxyParamCaption}
+\item[{int}]{var}
+\end{DoxyParamCaption}
+)}}\label{class_consommable_ac70bcac8ceed2be2a4b09a36874bc752}
+
+
+stock la valeur de la variable var dans la variable valeur\-Intel. 
+
+
+\begin{DoxyCode}
+26                                             \{
+27     valeurEnergie=var;
+28   \}
+\end{DoxyCode}
+\hypertarget{class_consommable_a23a0a6e80f5cb5ff1269514389d70413}{\index{Consommable@{Consommable}!set\-Valeur\-Intel@{set\-Valeur\-Intel}}
+\index{set\-Valeur\-Intel@{set\-Valeur\-Intel}!Consommable@{Consommable}}
+\subsubsection[{set\-Valeur\-Intel}]{\setlength{\rightskip}{0pt plus 5cm}void Consommable\-::set\-Valeur\-Intel (
+\begin{DoxyParamCaption}
+\item[{int}]{valeur\-Intel}
+\end{DoxyParamCaption}
+)}}\label{class_consommable_a23a0a6e80f5cb5ff1269514389d70413}
+
+
+stock la valeur de la variable valeur\-Intel dans la variable valeur\-Intel. 
+
+
+\begin{DoxyCode}
+18                                                       \{
+19       this->valeurIntel = valeurIntel;
+20   \}
+\end{DoxyCode}
+\hypertarget{class_consommable_ab2105902385a78cbca8496fdde262d2f}{\index{Consommable@{Consommable}!utiliser\-Objet@{utiliser\-Objet}}
+\index{utiliser\-Objet@{utiliser\-Objet}!Consommable@{Consommable}}
+\subsubsection[{utiliser\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Consommable\-::utiliser\-Objet (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_consommable_ab2105902385a78cbca8496fdde262d2f}
+
+
+En consommant l'objet, permet à l'héros de gagner de l'énergie, de la force et de l'intelligence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & Un pointeur sur la classe Héros. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_objet_ab8c32a2e0b236fcf75a06a2edc1f71b6}{Objet}.
+
+
+\begin{DoxyCode}
+32                                                       \{
+33       heros->\hyperlink{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{setEnergie}(heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()+ valeurEnergie);
+34       heros->\hyperlink{class_personnage_af8b3c4f6c0f7035678d9ecf574976650}{setIntelligence}(heros->\hyperlink{class_personnage_a250eec1aba0df7a105dd564e4cd02b0b}{getIntelligence}() + valeurIntel);
+35       heros->\hyperlink{class_personnage_a6745d147720906f2c85ddce11981d71f}{setForce}(heros->\hyperlink{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}{getForce}() + \hyperlink{class_objet_aa819b02977c333c0cc5e116575e951cc}{valeurForce});
+36       jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Vous avez gagné "} + \hyperlink{consommable_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(valeurEnergie) + \textcolor{stringliteral}{" En energie et "} + 
+      \hyperlink{consommable_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(valeurIntel)  + \textcolor{stringliteral}{" En Intelligence"});
+37   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{consommable_8hpp}{consommable.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{consommable_8cpp}{consommable.\-cpp}\end{DoxyCompactItemize}

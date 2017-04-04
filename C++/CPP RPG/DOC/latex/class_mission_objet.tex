@@ -1,0 +1,300 @@
+\hypertarget{class_mission_objet}{\section{Mission\-Objet Class Reference}
+\label{class_mission_objet}\index{Mission\-Objet@{Mission\-Objet}}
+}
+
+
+Classe représentant les missions de type objet.  
+
+
+
+
+{\ttfamily \#include $<$missionobjet.\-hpp$>$}
+
+Inheritance diagram for Mission\-Objet\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mission_objet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mission_objet_a318a1e74b1c2fb4a5c4f9e8c1307cb5d}{Mission\-Objet} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_mission_objet_a3622eac0551933b75a5d11c93ceba22f}{Mission\-Objet} (int acc\-Intel, int acc\-Force, int acc\-Age, int acc\-Energie, string nom, int rec\-Cash, string dialogue\-R, string dialogue\-E, \hyperlink{class_objet}{Objet} obj\-Rec, \hyperlink{class_objet}{Objet} obj\-A\-Trouver)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe mission objet. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_objet_ac8de7ea7c712f4f5db299909043a18b9}{set\-Recomp\-Cash} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable recomp\-Cash. \end{DoxyCompactList}\item 
+int \hyperlink{class_mission_objet_af488361b1557fe4443494479fb5b1861}{get\-Recomp\-Cash} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable recomp\-Cash. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_objet_a0c3e3707924333f8de5b236d172191de}{set\-Recomp\-Objet} (\hyperlink{class_objet}{Objet} new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable recomp\-Objet. \end{DoxyCompactList}\item 
+\hyperlink{class_objet}{Objet} \hyperlink{class_mission_objet_a2bf5716c0c4cb7b6a9239af4c083d26d}{get\-Recomp\-Objet} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable recomp\-Objet. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_objet_a77d2258493308443e34c27beefc6b6e0}{get\-Nom\-Mission} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable nom\-Mission. \end{DoxyCompactList}\item 
+void \hyperlink{class_mission_objet_a62531c502fbc5fb1d5634a69afeaa3d3}{set\-Nom\-Mission} (string var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable var dans la variable nom\-Mission. \end{DoxyCompactList}\item 
+string \hyperlink{class_mission_objet_a49547f2e562b288a9abd640641964f78}{executer\-Mission} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_p_n_j}{P\-N\-J} $\ast$pnj)
+\begin{DoxyCompactList}\small\item\em Exécute une mission de type objet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant les missions de type objet. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mission_objet_a318a1e74b1c2fb4a5c4f9e8c1307cb5d}{\index{Mission\-Objet@{Mission\-Objet}!Mission\-Objet@{Mission\-Objet}}
+\index{Mission\-Objet@{Mission\-Objet}!MissionObjet@{Mission\-Objet}}
+\subsubsection[{Mission\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}Mission\-Objet\-::\-Mission\-Objet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_objet_a318a1e74b1c2fb4a5c4f9e8c1307cb5d}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+15 \{\}
+\end{DoxyCode}
+\hypertarget{class_mission_objet_a3622eac0551933b75a5d11c93ceba22f}{\index{Mission\-Objet@{Mission\-Objet}!Mission\-Objet@{Mission\-Objet}}
+\index{Mission\-Objet@{Mission\-Objet}!MissionObjet@{Mission\-Objet}}
+\subsubsection[{Mission\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}Mission\-Objet\-::\-Mission\-Objet (
+\begin{DoxyParamCaption}
+\item[{int}]{acc\-Intel, }
+\item[{int}]{acc\-Force, }
+\item[{int}]{acc\-Age, }
+\item[{int}]{acc\-Energie, }
+\item[{string}]{nom, }
+\item[{int}]{rec\-Cash, }
+\item[{string}]{dialogue\-R, }
+\item[{string}]{dialogue\-E, }
+\item[{{\bf Objet}}]{obj\-Rec, }
+\item[{{\bf Objet}}]{obj\-A\-Trouver}
+\end{DoxyParamCaption}
+)}}\label{class_mission_objet_a3622eac0551933b75a5d11c93ceba22f}
+
+
+Constructeur de la classe mission objet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acc\-Intel} & La valeur nécessaire d'intelligence pour accéder à une mission. \\
+\hline
+{\em acc\-Force} & La valeur nécessaire de la force pour accéder à une mission. \\
+\hline
+{\em acc\-Age} & La valeur nécessaire d'âge pour accéder à une mission. \\
+\hline
+{\em access\-Energie} & La valeur nécessaire d'énergie pour accéder à une mission. \\
+\hline
+{\em nom} & Le nom de la mission. \\
+\hline
+{\em rec\-Cash} & La valeur de la récompense cash que l'héros peut gagner. \\
+\hline
+{\em dialogue\-R} & Le dialogue en cas de réussite. \\
+\hline
+{\em dialogue\-E} & Le dialogue en cas d'échec. \\
+\hline
+{\em obj\-Rec} & L'objet que l'héros peut gagner. \\
+\hline
+{\em obj\-A\-Trouver} & L'objet que l'héros doit trouver. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+16                                                                                                            
+                                                                       : \hyperlink{class_mission_aa5a6ff4fc779338ab01b8f6dd470f4df}{Mission}(accIntel,accForce,accAge,
+      accEnergie,nom, dialogueR, dialogueE)\{
+17     recompCash = recCash;
+18     recompObjet = objRec;
+19     objetATrouver = objATrouver;
+20     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mission_objet_a49547f2e562b288a9abd640641964f78}{\index{Mission\-Objet@{Mission\-Objet}!executer\-Mission@{executer\-Mission}}
+\index{executer\-Mission@{executer\-Mission}!MissionObjet@{Mission\-Objet}}
+\subsubsection[{executer\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-Objet\-::executer\-Mission (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf P\-N\-J} $\ast$}]{pnj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mission_objet_a49547f2e562b288a9abd640641964f78}
+
+
+Exécute une mission de type objet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & Un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+{\em pnj} & Un pointeur sur la classe \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un texte permettant de savoir si le héros a assez d'énergie pour faire ce type de mission, s'il a réussi ou échoué à faire cette mission etc. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_mission_ad4375f925eda8637d6346ef468747f44}{Mission}.
+
+
+\begin{DoxyCode}
+38                                                                      \{
+39       \textcolor{keywordflow}{if}(jeu.\hyperlink{class_jeu_a3aa07b1e7a5e5d82479b8bb2a2841635}{demanderBoolUtilisateur}(\hyperlink{class_mission_ad6b21ef20ff04bad9769f3b50a3b1218}{getTexteMission}())) \{
+40       \textcolor{keywordflow}{if} (\hyperlink{class_mission_aa513084d347dc1c4c8a957258c9d3876}{getEtatMission}() != \hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7aca12092e4757cb029f1b3e1fa95ed277}{enCours})\{
+41           \hyperlink{class_mission_a5ee38d2b67b7f860fb6a27d486200bec}{setEtatMission}(\hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7aca12092e4757cb029f1b3e1fa95ed277}{enCours});
+42           \textcolor{keywordflow}{if} (heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()> \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie}) \{
+43               heros->\hyperlink{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{setEnergie}(heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}()-
+      \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie});
+44               jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(3,\textcolor{stringliteral}{"Nouvelle mission : vous avez perdu "}+\hyperlink{missionobjet_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(
+      \hyperlink{class_mission_ae767714f7433f66f519468bc1913a5ef}{accessEnergie})+\textcolor{stringliteral}{" d'énergie."});
+45 
+46           \}
+47           \textcolor{keywordflow}{else} \{
+48               \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Vous n'avez pas assez d'énergie, dommage."};
+49           \}
+50 
+51       \}
+52       \textcolor{keywordflow}{else} jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(4,pnj->\hyperlink{class_personnage_a519301399a9bee1557858aa50a04a85a}{getNom}()+\textcolor{stringliteral}{" : Alors, tu as retrouvé : ("}+objetATrouver.
+      \hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()+\textcolor{stringliteral}{") ?\(\backslash\)n Vous cherchez dans votre sac..."});
+53 
+54         map<string,Objet*> sacHeros = heros->\hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}();
+55 
+56         \textcolor{keywordflow}{if} (sacHeros[objetATrouver.\hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->getQuantiteObjet()>0)\{
+57 
+58             sacHeros[objetATrouver.\hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->setQuantiteObjet(sacHeros[objetATrouver.
+      \hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->getQuantiteObjet()-1);
+59 
+60             sacHeros[recompObjet.\hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->setQuantiteObjet(sacHeros[recompObjet.
+      \hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()]->getQuantiteObjet()+1);
+61 
+62             heros->\hyperlink{class_heros_a7d6d86388fe81deca1c5688ed07b2167}{setSac}(sacHeros);
+63             \hyperlink{class_mission_a5ee38d2b67b7f860fb6a27d486200bec}{setEtatMission}(\hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7a9e765bd835523da043a754ce21905cb5}{achevee});
+64             heros->\hyperlink{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{setCash}(heros->\hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{getCash}()+recompCash);
+65             jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(3,\textcolor{stringliteral}{"Vous avez obtenu "}+\hyperlink{missionobjet_8cpp_a0d2f37137ee1fd6ff4a0ef803849dd63}{SSTR}(recompCash)+\textcolor{stringliteral}{" cash et l'objet suivant : ("}+
+      recompObjet.\hyperlink{class_objet_a843e99ecd1e150589f8db23f43dd27b0}{getNomObjet}()+\textcolor{stringliteral}{")"});
+66             \textcolor{keywordflow}{return} \hyperlink{class_mission_a75d8fc66d0ed01f1f1192e03528a2612}{dialogueReussite};
+67         \}
+68 
+69         \textcolor{keywordflow}{else} \{
+70             \textcolor{keywordflow}{return} \hyperlink{class_mission_aeb543b4e12125834e6b8901820db243b}{dialogueEchec};
+71         \}
+72       \}
+73       \textcolor{keywordflow}{else} \{
+74           jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(3,\textcolor{stringliteral}{"Reviens me voir si tu changes d'avis"});
+75           \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+76       \}
+77   \}
+\end{DoxyCode}
+\hypertarget{class_mission_objet_a77d2258493308443e34c27beefc6b6e0}{\index{Mission\-Objet@{Mission\-Objet}!get\-Nom\-Mission@{get\-Nom\-Mission}}
+\index{get\-Nom\-Mission@{get\-Nom\-Mission}!MissionObjet@{Mission\-Objet}}
+\subsubsection[{get\-Nom\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}string Mission\-Objet\-::get\-Nom\-Mission (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_objet_a77d2258493308443e34c27beefc6b6e0}
+
+
+Accède à la variable nom\-Mission. 
+
+\begin{DoxyReturn}{Returns}
+Le nom de la mission. 
+\end{DoxyReturn}
+\hypertarget{class_mission_objet_af488361b1557fe4443494479fb5b1861}{\index{Mission\-Objet@{Mission\-Objet}!get\-Recomp\-Cash@{get\-Recomp\-Cash}}
+\index{get\-Recomp\-Cash@{get\-Recomp\-Cash}!MissionObjet@{Mission\-Objet}}
+\subsubsection[{get\-Recomp\-Cash}]{\setlength{\rightskip}{0pt plus 5cm}int Mission\-Objet\-::get\-Recomp\-Cash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_objet_af488361b1557fe4443494479fb5b1861}
+
+
+Accède à la variable recomp\-Cash. 
+
+\begin{DoxyReturn}{Returns}
+la valeur de la récompense cash. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+26                                        \{
+27     \textcolor{keywordflow}{return} recompCash;
+28   \}
+\end{DoxyCode}
+\hypertarget{class_mission_objet_a2bf5716c0c4cb7b6a9239af4c083d26d}{\index{Mission\-Objet@{Mission\-Objet}!get\-Recomp\-Objet@{get\-Recomp\-Objet}}
+\index{get\-Recomp\-Objet@{get\-Recomp\-Objet}!MissionObjet@{Mission\-Objet}}
+\subsubsection[{get\-Recomp\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Objet} Mission\-Objet\-::get\-Recomp\-Objet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mission_objet_a2bf5716c0c4cb7b6a9239af4c083d26d}
+
+
+Accède à la variable recomp\-Objet. 
+
+\begin{DoxyReturn}{Returns}
+l'objet correspondant à la récompense objet. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+34                                           \{
+35     \textcolor{keywordflow}{return} recompObjet;
+36   \}
+\end{DoxyCode}
+\hypertarget{class_mission_objet_a62531c502fbc5fb1d5634a69afeaa3d3}{\index{Mission\-Objet@{Mission\-Objet}!set\-Nom\-Mission@{set\-Nom\-Mission}}
+\index{set\-Nom\-Mission@{set\-Nom\-Mission}!MissionObjet@{Mission\-Objet}}
+\subsubsection[{set\-Nom\-Mission}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-Objet\-::set\-Nom\-Mission (
+\begin{DoxyParamCaption}
+\item[{string}]{var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_objet_a62531c502fbc5fb1d5634a69afeaa3d3}
+
+
+stock la valeur de la variable var dans la variable nom\-Mission. 
+
+\hypertarget{class_mission_objet_ac8de7ea7c712f4f5db299909043a18b9}{\index{Mission\-Objet@{Mission\-Objet}!set\-Recomp\-Cash@{set\-Recomp\-Cash}}
+\index{set\-Recomp\-Cash@{set\-Recomp\-Cash}!MissionObjet@{Mission\-Objet}}
+\subsubsection[{set\-Recomp\-Cash}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-Objet\-::set\-Recomp\-Cash (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_objet_ac8de7ea7c712f4f5db299909043a18b9}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable recomp\-Cash. 
+
+
+\begin{DoxyCode}
+22                                                   \{
+23       recompCash = new\_var;
+24   \}
+\end{DoxyCode}
+\hypertarget{class_mission_objet_a0c3e3707924333f8de5b236d172191de}{\index{Mission\-Objet@{Mission\-Objet}!set\-Recomp\-Objet@{set\-Recomp\-Objet}}
+\index{set\-Recomp\-Objet@{set\-Recomp\-Objet}!MissionObjet@{Mission\-Objet}}
+\subsubsection[{set\-Recomp\-Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Mission\-Objet\-::set\-Recomp\-Objet (
+\begin{DoxyParamCaption}
+\item[{{\bf Objet}}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_mission_objet_a0c3e3707924333f8de5b236d172191de}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable recomp\-Objet. 
+
+
+\begin{DoxyCode}
+30                                                    \{
+31       recompObjet = new\_var;
+32   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{missionobjet_8hpp}{missionobjet.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{missionobjet_8cpp}{missionobjet.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,482 @@
+\hypertarget{class_heros}{\section{Heros Class Reference}
+\label{class_heros}\index{Heros@{Heros}}
+}
+
+
+Classe représentant l'héros.  
+
+
+
+
+{\ttfamily \#include $<$heros.\-hpp$>$}
+
+Inheritance diagram for Heros\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_heros}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_heros_ab4c8bc5b87a080c5f609a65bfab62c48}{Heros} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_heros_a81e1ae1248debd353171ce44d910258d}{Heros} (int intelh, int forceh, int ageh, int cashh, int energieh, map$<$ string, \hyperlink{class_objet}{Objet} $\ast$ $>$sach, string nomh, vector$<$ \hyperlink{class_mission}{Mission} $\ast$ $>$ missh, \hyperlink{class_lieu}{Lieu} $\ast$lieuh)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_heros}{Heros}. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_mission}{Mission} $\ast$ $>$ \hyperlink{class_heros_a38a959dcbaf42360236c0bb796ed7dcd}{mission\-Disponible} (\hyperlink{class_p_n_j}{P\-N\-J} $\ast$pnj)
+\begin{DoxyCompactList}\small\item\em Retourne les missions disponibles proposées par les \hyperlink{class_p_n_j}{P\-N\-J}. \end{DoxyCompactList}\item 
+void \hyperlink{class_heros_a88e91d926762f89d14b1bbc11ff4ae82}{se\-Deplacer} (\hyperlink{class_lieu}{Lieu} $\ast$lieu)
+\begin{DoxyCompactList}\small\item\em Gère le déplacement de l'héros. \end{DoxyCompactList}\item 
+\hyperlink{class_mission}{Mission} $\ast$ \hyperlink{class_heros_a11ebaa337de66722218930064505ce3c}{mission\-Plusaccess} (vector$<$ \hyperlink{class_mission}{Mission} $\ast$ $>$ miss)
+\begin{DoxyCompactList}\small\item\em Sort la mission la plus adaptée à l'héros en fonction de ces statistiques. \end{DoxyCompactList}\item 
+void \hyperlink{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{set\-Cash} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable cash. \end{DoxyCompactList}\item 
+int \hyperlink{class_heros_a77bdee21cb8c8356448bb6669941441c}{get\-Cash} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable cash. \end{DoxyCompactList}\item 
+void \hyperlink{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{set\-Energie} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable var dans la variable energie. \end{DoxyCompactList}\item 
+int \hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{get\-Energie} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable energie. \end{DoxyCompactList}\item 
+void \hyperlink{class_heros_a7d6d86388fe81deca1c5688ed07b2167}{set\-Sac} (map$<$ string, \hyperlink{class_objet}{Objet} $\ast$ $>$ new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable sac. \end{DoxyCompactList}\item 
+map$<$ string, \hyperlink{class_objet}{Objet} $\ast$ $>$ \hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{get\-Sac} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable sac. \end{DoxyCompactList}\item 
+void \hyperlink{class_heros_a74280cbf77bf35ee84728c989f6400c6}{set\-Nom\-Hero} (string new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable nom\-Hero. \end{DoxyCompactList}\item 
+string \hyperlink{class_heros_a1f950fc56d8c9813c4a7b76dae465478}{get\-Nom\-Hero} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable nom\-Hero. \end{DoxyCompactList}\item 
+void \hyperlink{class_heros_ae144c52184fc352808db4be369ced052}{set\-Missions} (vector$<$ \hyperlink{class_mission}{Mission} $\ast$ $>$ new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable missions. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_mission}{Mission} $\ast$ $>$ \hyperlink{class_heros_aae033294f652c209a599518e9a55fa83}{get\-Missions} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable missions. \end{DoxyCompactList}\item 
+void \hyperlink{class_heros_a8decc0b04f6724de10d2e2a8d1c3395c}{set\-Lieu\-Actuel} (\hyperlink{class_lieu}{Lieu} $\ast$new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable lieu\-Actuel. \end{DoxyCompactList}\item 
+\hyperlink{class_lieu}{Lieu} $\ast$ \hyperlink{class_heros_abb2a8141e5e2761b1eba4a902deca4ed}{get\-Lieu\-Actuel} ()
+\begin{DoxyCompactList}\small\item\em Accède à la variable lieu\-Actuel. \end{DoxyCompactList}\item 
+string \hyperlink{class_heros_a4052af6e407ebdf4918e62340d374829}{Parle\-A\-P\-N\-J} (\hyperlink{class_p_n_j}{P\-N\-J} $\ast$pnj, \hyperlink{class_jeu}{Jeu} jeu)
+\begin{DoxyCompactList}\small\item\em Met en relation l'héros et les \hyperlink{class_p_n_j}{P\-N\-J}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe représentant l'héros. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_heros_ab4c8bc5b87a080c5f609a65bfab62c48}{\index{Heros@{Heros}!Heros@{Heros}}
+\index{Heros@{Heros}!Heros@{Heros}}
+\subsubsection[{Heros}]{\setlength{\rightskip}{0pt plus 5cm}Heros\-::\-Heros (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_heros_ab4c8bc5b87a080c5f609a65bfab62c48}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+19 \{\}
+\end{DoxyCode}
+\hypertarget{class_heros_a81e1ae1248debd353171ce44d910258d}{\index{Heros@{Heros}!Heros@{Heros}}
+\index{Heros@{Heros}!Heros@{Heros}}
+\subsubsection[{Heros}]{\setlength{\rightskip}{0pt plus 5cm}Heros\-::\-Heros (
+\begin{DoxyParamCaption}
+\item[{int}]{intelh, }
+\item[{int}]{forceh, }
+\item[{int}]{ageh, }
+\item[{int}]{cashh, }
+\item[{int}]{energieh, }
+\item[{map$<$ string, {\bf Objet} $\ast$ $>$}]{sach, }
+\item[{string}]{nomh, }
+\item[{vector$<$ {\bf Mission} $\ast$ $>$}]{missh, }
+\item[{{\bf Lieu} $\ast$}]{lieuh}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a81e1ae1248debd353171ce44d910258d}
+
+
+Constructeur de la classe \hyperlink{class_heros}{Heros}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intelh} & La valeur de l'intelligence de l'héros. \\
+\hline
+{\em forceh} & La valeur de la force de l'héros. \\
+\hline
+{\em ageh} & L'âge de l'héros. \\
+\hline
+{\em cashh} & La valeur du cash de l'héros. \\
+\hline
+{\em energieh} & La valeur de l'énergie de l'héros. \\
+\hline
+{\em sach} & Le sac d'objets de l'héros. \\
+\hline
+{\em nomh} & Le nom de l'héros. \\
+\hline
+{\em missh} & Le vecteur missions de l'héros. \\
+\hline
+{\em lieuh} & Un pointeur sur la classe \hyperlink{class_lieu}{Lieu}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+22                                                                           :
+      \hyperlink{class_personnage_abec36eb0310adc71f3375297fc590c65}{Personnage}
+23 (intelh,forceh,ageh,nomh)\{
+24         cash = cashh;
+25         energie = energieh;
+26         sac = sach;
+27         missions = missh;
+28         lieuActuel = lieuh; \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_heros_a77bdee21cb8c8356448bb6669941441c}{\index{Heros@{Heros}!get\-Cash@{get\-Cash}}
+\index{get\-Cash@{get\-Cash}!Heros@{Heros}}
+\subsubsection[{get\-Cash}]{\setlength{\rightskip}{0pt plus 5cm}int Heros\-::get\-Cash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a77bdee21cb8c8356448bb6669941441c}
+
+
+Accède à la variable cash. 
+
+\begin{DoxyReturn}{Returns}
+La valeur du cash de l'héros. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+57                         \{
+58     \textcolor{keywordflow}{return} cash;
+59   \}
+\end{DoxyCode}
+\hypertarget{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{\index{Heros@{Heros}!get\-Energie@{get\-Energie}}
+\index{get\-Energie@{get\-Energie}!Heros@{Heros}}
+\subsubsection[{get\-Energie}]{\setlength{\rightskip}{0pt plus 5cm}int Heros\-::get\-Energie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}
+
+
+Accède à la variable energie. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de l'énergie de l'héros. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+66                            \{
+67     \textcolor{keywordflow}{return} energie;
+68   \}
+\end{DoxyCode}
+\hypertarget{class_heros_abb2a8141e5e2761b1eba4a902deca4ed}{\index{Heros@{Heros}!get\-Lieu\-Actuel@{get\-Lieu\-Actuel}}
+\index{get\-Lieu\-Actuel@{get\-Lieu\-Actuel}!Heros@{Heros}}
+\subsubsection[{get\-Lieu\-Actuel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lieu} $\ast$ Heros\-::get\-Lieu\-Actuel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_heros_abb2a8141e5e2761b1eba4a902deca4ed}
+
+
+Accède à la variable lieu\-Actuel. 
+
+\begin{DoxyReturn}{Returns}
+Un pointeur sur lieu. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+96                                 \{
+97     \textcolor{keywordflow}{return} lieuActuel;
+98   \}
+\end{DoxyCode}
+\hypertarget{class_heros_aae033294f652c209a599518e9a55fa83}{\index{Heros@{Heros}!get\-Missions@{get\-Missions}}
+\index{get\-Missions@{get\-Missions}!Heros@{Heros}}
+\subsubsection[{get\-Missions}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Mission} $\ast$ $>$ Heros\-::get\-Missions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_heros_aae033294f652c209a599518e9a55fa83}
+
+
+Accède à la variable missions. 
+
+\begin{DoxyReturn}{Returns}
+Le vecteur des missions de l'héros. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+87                                           \{
+88     \textcolor{keywordflow}{return} missions;
+89   \}
+\end{DoxyCode}
+\hypertarget{class_heros_a1f950fc56d8c9813c4a7b76dae465478}{\index{Heros@{Heros}!get\-Nom\-Hero@{get\-Nom\-Hero}}
+\index{get\-Nom\-Hero@{get\-Nom\-Hero}!Heros@{Heros}}
+\subsubsection[{get\-Nom\-Hero}]{\setlength{\rightskip}{0pt plus 5cm}string Heros\-::get\-Nom\-Hero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a1f950fc56d8c9813c4a7b76dae465478}
+
+
+Accède à la variable nom\-Hero. 
+
+\begin{DoxyReturn}{Returns}
+Le nom de l'héros. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+30                         \{
+31         \textcolor{keywordflow}{return} \hyperlink{class_personnage_acb7331b96dfc9f2aec78c60799030302}{nom};
+32 \}
+\end{DoxyCode}
+\hypertarget{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{\index{Heros@{Heros}!get\-Sac@{get\-Sac}}
+\index{get\-Sac@{get\-Sac}!Heros@{Heros}}
+\subsubsection[{get\-Sac}]{\setlength{\rightskip}{0pt plus 5cm}map$<$ string, {\bf Objet} $\ast$ $>$ Heros\-::get\-Sac (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}
+
+
+Accède à la variable sac. 
+
+\begin{DoxyReturn}{Returns}
+Un map constitué d'objets et leurs noms. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+77                                       \{
+78     \textcolor{keywordflow}{return} sac;
+79   \}
+\end{DoxyCode}
+\hypertarget{class_heros_a38a959dcbaf42360236c0bb796ed7dcd}{\index{Heros@{Heros}!mission\-Disponible@{mission\-Disponible}}
+\index{mission\-Disponible@{mission\-Disponible}!Heros@{Heros}}
+\subsubsection[{mission\-Disponible}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Mission} $\ast$ $>$ Heros\-::mission\-Disponible (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-N\-J} $\ast$}]{pnj}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a38a959dcbaf42360236c0bb796ed7dcd}
+
+
+Retourne les missions disponibles proposées par les \hyperlink{class_p_n_j}{P\-N\-J}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pnj} & Un pointeur sur la classe \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le vecteur des missions disponibles. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+37                                                    \{
+38 vector<Mission*> miss;
+39 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<pnj->\hyperlink{class_p_n_j_ab947fafa6afecf6640e1279ff05b7941}{getMissionsP}().size(); i++)\{
+40         \textcolor{keywordflow}{if}(pnj->\hyperlink{class_p_n_j_ab947fafa6afecf6640e1279ff05b7941}{getMissionsP}().at(i)->getAccessIntel() <= 
+      \hyperlink{class_personnage_a8e9bc213349fb0553d76d4da6a711231}{intelligence}
+41                 && pnj->\hyperlink{class_p_n_j_ab947fafa6afecf6640e1279ff05b7941}{getMissionsP}().at(i)->getAccessForce () <= 
+      \hyperlink{class_personnage_a823cd88582efee2ea29d199f96dcc677}{force}
+42                 && pnj->\hyperlink{class_p_n_j_ab947fafa6afecf6640e1279ff05b7941}{getMissionsP}().at(i)->getAccessAge() <= \hyperlink{class_personnage_a2aa943e3c255f221eb9e57e8d134641f}{age} && pnj->
+      \hyperlink{class_p_n_j_ab947fafa6afecf6640e1279ff05b7941}{getMissionsP}().at(i)->getEtatMission()!=\hyperlink{mission_8hpp_ace9df1e8554ba5a57340fb42cee370f7a9e765bd835523da043a754ce21905cb5}{achevee})
+43 
+44             miss.push\_back(pnj->\hyperlink{class_p_n_j_ab947fafa6afecf6640e1279ff05b7941}{getMissionsP}().at(i));
+45         \}
+46 \textcolor{keywordflow}{return} miss;
+47 \}
+\end{DoxyCode}
+\hypertarget{class_heros_a11ebaa337de66722218930064505ce3c}{\index{Heros@{Heros}!mission\-Plusaccess@{mission\-Plusaccess}}
+\index{mission\-Plusaccess@{mission\-Plusaccess}!Heros@{Heros}}
+\subsubsection[{mission\-Plusaccess}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mission} $\ast$ Heros\-::mission\-Plusaccess (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Mission} $\ast$ $>$}]{miss}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a11ebaa337de66722218930064505ce3c}
+
+
+Sort la mission la plus adaptée à l'héros en fonction de ces statistiques. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em miss} & Un vecteur de missions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un pointeur sur la classe \hyperlink{class_mission}{Mission}. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+102                                                       \{
+103 \hyperlink{class_mission}{Mission} *min = (miss.at(0));
+104         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<miss.size(); i++)\{
+105         \textcolor{keywordflow}{if}(miss.at(i)->getAccessIntel() + miss.at(i)->getAccessForce() +
+106 miss.at(i)->getAccessAge() < min->\hyperlink{class_mission_ab3ed2d8bde3f15489406775cec6ca3ae}{getAccessIntel}() +
+107 min->\hyperlink{class_mission_ae443e12738d9e3c52f27f3630df68bbf}{getAccessForce}() + min->\hyperlink{class_mission_a3ce0c4da70204a7bd84f9acb6306e43e}{getAccessAge}())
+108                 min = miss.at(i);\}
+109 \textcolor{keywordflow}{return} min;
+110 \}
+\end{DoxyCode}
+\hypertarget{class_heros_a4052af6e407ebdf4918e62340d374829}{\index{Heros@{Heros}!Parle\-A\-P\-N\-J@{Parle\-A\-P\-N\-J}}
+\index{Parle\-A\-P\-N\-J@{Parle\-A\-P\-N\-J}!Heros@{Heros}}
+\subsubsection[{Parle\-A\-P\-N\-J}]{\setlength{\rightskip}{0pt plus 5cm}string Heros\-::\-Parle\-A\-P\-N\-J (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-N\-J} $\ast$}]{pnj, }
+\item[{{\bf Jeu}}]{jeu}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a4052af6e407ebdf4918e62340d374829}
+
+
+Met en relation l'héros et les \hyperlink{class_p_n_j}{P\-N\-J}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pnj} & Un paramètre de la classe \hyperlink{class_p_n_j}{P\-N\-J}. \\
+\hline
+{\em jeu} & Un paramètre de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un texte afin de gérer la communication entre l'héros et les pnj. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+113                                        \{
+114         \textcolor{keywordflow}{if}(this->\hyperlink{class_heros_a38a959dcbaf42360236c0bb796ed7dcd}{missionDisponible}(pnj).empty())\{
+115                 \textcolor{keywordflow}{return} pnj->\hyperlink{class_p_n_j_ac2495e0c6580568cd6299389df128b20}{getDialogueParDefaut}();\}
+116             \textcolor{keywordflow}{else} \{
+117                 \textcolor{keywordflow}{return} this->\hyperlink{class_heros_a11ebaa337de66722218930064505ce3c}{missionPlusaccess}( this->
+      \hyperlink{class_heros_a38a959dcbaf42360236c0bb796ed7dcd}{missionDisponible}(pnj))->\hyperlink{class_mission_ad4375f925eda8637d6346ef468747f44}{executerMission}(jeu, \textcolor{keyword}{this}, pnj);
+118             \}
+119 \}
+\end{DoxyCode}
+\hypertarget{class_heros_a88e91d926762f89d14b1bbc11ff4ae82}{\index{Heros@{Heros}!se\-Deplacer@{se\-Deplacer}}
+\index{se\-Deplacer@{se\-Deplacer}!Heros@{Heros}}
+\subsubsection[{se\-Deplacer}]{\setlength{\rightskip}{0pt plus 5cm}void Heros\-::se\-Deplacer (
+\begin{DoxyParamCaption}
+\item[{{\bf Lieu} $\ast$}]{lieu}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a88e91d926762f89d14b1bbc11ff4ae82}
+
+
+Gère le déplacement de l'héros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lieu} & Un pointeur sur la classe \hyperlink{class_lieu}{Lieu}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+49                                  \{
+50         lieuActuel = lieu;
+51 \}
+\end{DoxyCode}
+\hypertarget{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}{\index{Heros@{Heros}!set\-Cash@{set\-Cash}}
+\index{set\-Cash@{set\-Cash}!Heros@{Heros}}
+\subsubsection[{set\-Cash}]{\setlength{\rightskip}{0pt plus 5cm}void Heros\-::set\-Cash (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_heros_ae87dba7afa03e7fdacfc3a7e82d3a6a3}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable cash. 
+
+
+\begin{DoxyCode}
+53                                   \{
+54       cash = new\_var;
+55   \}
+\end{DoxyCode}
+\hypertarget{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{\index{Heros@{Heros}!set\-Energie@{set\-Energie}}
+\index{set\-Energie@{set\-Energie}!Heros@{Heros}}
+\subsubsection[{set\-Energie}]{\setlength{\rightskip}{0pt plus 5cm}void Heros\-::set\-Energie (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}
+
+
+stock la valeur de la variable var dans la variable energie. 
+
+
+\begin{DoxyCode}
+61                                        \{
+62       energie = new\_var;
+63   \}
+\end{DoxyCode}
+\hypertarget{class_heros_a8decc0b04f6724de10d2e2a8d1c3395c}{\index{Heros@{Heros}!set\-Lieu\-Actuel@{set\-Lieu\-Actuel}}
+\index{set\-Lieu\-Actuel@{set\-Lieu\-Actuel}!Heros@{Heros}}
+\subsubsection[{set\-Lieu\-Actuel}]{\setlength{\rightskip}{0pt plus 5cm}void Heros\-::set\-Lieu\-Actuel (
+\begin{DoxyParamCaption}
+\item[{{\bf Lieu} $\ast$}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a8decc0b04f6724de10d2e2a8d1c3395c}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable lieu\-Actuel. 
+
+
+\begin{DoxyCode}
+91                                             \{
+92       lieuActuel = new\_var;
+93   \}
+\end{DoxyCode}
+\hypertarget{class_heros_ae144c52184fc352808db4be369ced052}{\index{Heros@{Heros}!set\-Missions@{set\-Missions}}
+\index{set\-Missions@{set\-Missions}!Heros@{Heros}}
+\subsubsection[{set\-Missions}]{\setlength{\rightskip}{0pt plus 5cm}void Heros\-::set\-Missions (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Mission} $\ast$ $>$}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_heros_ae144c52184fc352808db4be369ced052}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable missions. 
+
+
+\begin{DoxyCode}
+83                                                      \{
+84       missions = new\_var;
+85   \}
+\end{DoxyCode}
+\hypertarget{class_heros_a74280cbf77bf35ee84728c989f6400c6}{\index{Heros@{Heros}!set\-Nom\-Hero@{set\-Nom\-Hero}}
+\index{set\-Nom\-Hero@{set\-Nom\-Hero}!Heros@{Heros}}
+\subsubsection[{set\-Nom\-Hero}]{\setlength{\rightskip}{0pt plus 5cm}void Heros\-::set\-Nom\-Hero (
+\begin{DoxyParamCaption}
+\item[{string}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a74280cbf77bf35ee84728c989f6400c6}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable nom\-Hero. 
+
+
+\begin{DoxyCode}
+33                                  \{
+34         \hyperlink{class_personnage_acb7331b96dfc9f2aec78c60799030302}{nom} = nomh;\}
+\end{DoxyCode}
+\hypertarget{class_heros_a7d6d86388fe81deca1c5688ed07b2167}{\index{Heros@{Heros}!set\-Sac@{set\-Sac}}
+\index{set\-Sac@{set\-Sac}!Heros@{Heros}}
+\subsubsection[{set\-Sac}]{\setlength{\rightskip}{0pt plus 5cm}void Heros\-::set\-Sac (
+\begin{DoxyParamCaption}
+\item[{map$<$ string, {\bf Objet} $\ast$ $>$}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_heros_a7d6d86388fe81deca1c5688ed07b2167}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable sac. 
+
+
+\begin{DoxyCode}
+72                                                   \{
+73       sac = new\_var;
+74   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{heros_8hpp}{heros.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{heros_8cpp}{heros.\-cpp}\end{DoxyCompactItemize}

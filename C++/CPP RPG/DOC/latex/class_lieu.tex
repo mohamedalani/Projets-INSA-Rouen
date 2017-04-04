@@ -1,0 +1,456 @@
+\hypertarget{class_lieu}{\section{Lieu Class Reference}
+\label{class_lieu}\index{Lieu@{Lieu}}
+}
+
+
+Classe représentant le lieu.  
+
+
+
+
+{\ttfamily \#include $<$lieu.\-hpp$>$}
+
+Inheritance diagram for Lieu\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lieu}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_lieu_a0b3086d598fc1bfc0b4c09ae96304b3a}{Lieu} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_lieu_abb644ef90d500f7b6d7d110b1dc06896}{Lieu} (vector$<$ \hyperlink{class_objet}{Objet} $>$ \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objets\-Dispo}, int \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cash\-Cache}, vector$<$ \hyperlink{class_p_n_j}{P\-N\-J} $>$ \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{liste\-P\-N\-J}, string \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nom\-Lieu}, vector$<$ string $>$ action\-Vec)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe lieu. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_lieu_af0e191bcc85454c9e59d107cfb557b20}{$\sim$\-Lieu} ()
+\begin{DoxyCompactList}\small\item\em Destructeur par défaut. \end{DoxyCompactList}\item 
+void \hyperlink{class_lieu_a7af4284fb6e898e2ef29ad06ea244cc0}{set\-Objets\-Dispo} (vector$<$ \hyperlink{class_objet}{Objet} $>$ new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable objets\-Dispo. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_objet}{Objet} $>$ \hyperlink{class_lieu_ad4fbedc5d8b53c0b79684aa34c6700b8}{get\-Objets\-Dispo} () const 
+\begin{DoxyCompactList}\small\item\em Accède à la variable objets\-Dispo. \end{DoxyCompactList}\item 
+void \hyperlink{class_lieu_af9efb050ea38c72ad7d7bc7e2f128875}{set\-Liste\-P\-N\-J} (vector$<$ \hyperlink{class_p_n_j}{P\-N\-J} $>$ new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable liste\-P\-N\-J. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_p_n_j}{P\-N\-J} $>$ \hyperlink{class_lieu_abfe724c1e50380a4a4c2d5b522dc60d2}{get\-Liste\-P\-N\-J} () const 
+\begin{DoxyCompactList}\small\item\em Accède à la variable liste\-P\-N\-J. \end{DoxyCompactList}\item 
+void \hyperlink{class_lieu_a13f53069b0a2f1b4ef399f2998fbea9b}{set\-Nom\-Lieu} (string new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable nom\-Lieu. \end{DoxyCompactList}\item 
+string \hyperlink{class_lieu_a43de9e65cac7649ab5fd4ea14cde55e3}{get\-Nom\-Lieu} () const 
+\begin{DoxyCompactList}\small\item\em Accède à la variable nom\-Lieu. \end{DoxyCompactList}\item 
+void \hyperlink{class_lieu_ab25609f0f26c916b8e2736ae7f8199fc}{set\-Cash\-Cache} (int new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable Cash\-Cache. \end{DoxyCompactList}\item 
+int \hyperlink{class_lieu_ab6da88a248d20fe79afd6f81c97cf2e9}{get\-Cash\-Cache} () const 
+\begin{DoxyCompactList}\small\item\em Accède à la variable Cash\-Cache. \end{DoxyCompactList}\item 
+void \hyperlink{class_lieu_ae9635e101b08d67adeb02e2f375be0f2}{set\-Liste\-Action} (vector$<$ string $>$ new\-\_\-var)
+\begin{DoxyCompactList}\small\item\em stock la valeur de la variable new\-\_\-var dans la variable liste\-Action. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_lieu_a3200d6c77c575e83a3e1ccb524424e32}{get\-Liste\-Action} () const 
+\begin{DoxyCompactList}\small\item\em Accède à la variable liste\-Action. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_lieu_ad5d4e14283df04f0174f090f1614225c}{executer\-Action} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros, \hyperlink{class_ville}{Ville} $\ast$ville)
+\begin{DoxyCompactList}\small\item\em Exécute une action parmi les actions possibles. \end{DoxyCompactList}\item 
+void \hyperlink{class_lieu_a90d7fd86c93e59830e20156ddb7aeb50}{fouiller} (\hyperlink{class_jeu}{Jeu} jeu, \hyperlink{class_heros}{Heros} $\ast$heros)
+\begin{DoxyCompactList}\small\item\em Fouille un lieu afin de trouver des objets en consommant une certaine énergie et en ajoutant ces objets au sac de l'héros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{class_objet}{Objet} $>$ \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objets\-Dispo}
+\begin{DoxyCompactList}\small\item\em Le vecteur des objets disponibles dans un lieu. \end{DoxyCompactList}\item 
+int \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cash\-Cache}
+\begin{DoxyCompactList}\small\item\em La valeur du cash caché dans un lieu. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_p_n_j}{P\-N\-J} $>$ \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{liste\-P\-N\-J}
+\begin{DoxyCompactList}\small\item\em La liste des \hyperlink{class_p_n_j}{P\-N\-J} présents dans un lieu. \end{DoxyCompactList}\item 
+string \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nom\-Lieu}
+\begin{DoxyCompactList}\small\item\em Le nom du lieu. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_lieu_aeb5471a9b471cea9bfc5c5b9a03e5d0a}{liste\-Action}
+\begin{DoxyCompactList}\small\item\em La liste des actions dans un lieu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe représentant le lieu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_lieu_a0b3086d598fc1bfc0b4c09ae96304b3a}{\index{Lieu@{Lieu}!Lieu@{Lieu}}
+\index{Lieu@{Lieu}!Lieu@{Lieu}}
+\subsubsection[{Lieu}]{\setlength{\rightskip}{0pt plus 5cm}Lieu\-::\-Lieu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_lieu_a0b3086d598fc1bfc0b4c09ae96304b3a}
+
+
+Constructeur par défaut. 
+
+
+\begin{DoxyCode}
+11 \{\hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cashCache} = 0 ;\}
+\end{DoxyCode}
+\hypertarget{class_lieu_abb644ef90d500f7b6d7d110b1dc06896}{\index{Lieu@{Lieu}!Lieu@{Lieu}}
+\index{Lieu@{Lieu}!Lieu@{Lieu}}
+\subsubsection[{Lieu}]{\setlength{\rightskip}{0pt plus 5cm}Lieu\-::\-Lieu (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Objet} $>$}]{objets\-Dispo, }
+\item[{int}]{cash\-Cache, }
+\item[{vector$<$ {\bf P\-N\-J} $>$}]{liste\-P\-N\-J, }
+\item[{string}]{nom\-Lieu, }
+\item[{vector$<$ string $>$}]{action\-Vec}
+\end{DoxyParamCaption}
+)}}\label{class_lieu_abb644ef90d500f7b6d7d110b1dc06896}
+
+
+Constructeur de la classe lieu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objets\-Dispo} & Le vecteur des objets disponibles dans un lieu. \\
+\hline
+{\em cash\-Cashe} & La valeur du cash caché dans un lieu. \\
+\hline
+{\em liste\-P\-N\-J} & Le vecteur des \hyperlink{class_p_n_j}{P\-N\-J} présents dans un lieu. \\
+\hline
+{\em nom\-Lieu} & Le nom du lieu. \\
+\hline
+{\em action\-Vec} & Le vecteurs des actions. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+15                                                                                                         \{
+16     \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo} = objetVec;
+17     \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cashCache} = cash ;
+18     \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ} = pnjVec;
+19     \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nomLieu} = lieu;
+20     \hyperlink{class_lieu_aeb5471a9b471cea9bfc5c5b9a03e5d0a}{listeAction} = actionVec;
+21   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_af0e191bcc85454c9e59d107cfb557b20}{\index{Lieu@{Lieu}!$\sim$\-Lieu@{$\sim$\-Lieu}}
+\index{$\sim$\-Lieu@{$\sim$\-Lieu}!Lieu@{Lieu}}
+\subsubsection[{$\sim$\-Lieu}]{\setlength{\rightskip}{0pt plus 5cm}Lieu\-::$\sim$\-Lieu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_lieu_af0e191bcc85454c9e59d107cfb557b20}
+
+
+Destructeur par défaut. 
+
+
+\begin{DoxyCode}
+13 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_lieu_ad5d4e14283df04f0174f090f1614225c}{\index{Lieu@{Lieu}!executer\-Action@{executer\-Action}}
+\index{executer\-Action@{executer\-Action}!Lieu@{Lieu}}
+\subsubsection[{executer\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Lieu\-::executer\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros, }
+\item[{{\bf Ville} $\ast$}]{ville}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_lieu_ad5d4e14283df04f0174f090f1614225c}
+
+
+Exécute une action parmi les actions possibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+{\em ville} & Un pointeur sur la classe \hyperlink{class_ville}{Ville}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_banque_ab6c629552a916ee9515a8c85bd5dc311}{Banque}, \hyperlink{class_superette_a6c9124730932bbf721149f5167c0611d}{Superette}, \hyperlink{class_foret_a7bde97b50ed9be97d62f84fe4868d44f}{Foret}, \hyperlink{class_ecole_a717229b0b7a96d0093aa8b72db752ccd}{Ecole}, and \hyperlink{class_ville_a7bfe737f37ec9a99bc1e809047ca0e2e}{Ville}.
+
+
+\begin{DoxyCode}
+96                                                                 \{
+97         cout<<\textcolor{stringliteral}{"erreur"};
+98     \}
+\end{DoxyCode}
+\hypertarget{class_lieu_a90d7fd86c93e59830e20156ddb7aeb50}{\index{Lieu@{Lieu}!fouiller@{fouiller}}
+\index{fouiller@{fouiller}!Lieu@{Lieu}}
+\subsubsection[{fouiller}]{\setlength{\rightskip}{0pt plus 5cm}void Lieu\-::fouiller (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu}}]{jeu, }
+\item[{{\bf Heros} $\ast$}]{heros}
+\end{DoxyParamCaption}
+)}}\label{class_lieu_a90d7fd86c93e59830e20156ddb7aeb50}
+
+
+Fouille un lieu afin de trouver des objets en consommant une certaine énergie et en ajoutant ces objets au sac de l'héros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & Une instance de la classe \hyperlink{class_jeu}{Jeu}. \\
+\hline
+{\em heros} & Un pointeur sur la classe \hyperlink{class_heros}{Heros}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+67                                              \{  \textcolor{comment}{// pour fouiller le héros doit avoir au moins 3 pts
+       d'énergie}
+68         jeu.\hyperlink{class_jeu_a52ce4fb6c415b45209db13a589c9d675}{timer}(5,\textcolor{stringliteral}{"Vous fouillez le lieu..."});
+69         \textcolor{keywordflow}{if} (\hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}.size() == 0)
+70             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Il n'y a plus rien ici... :'( "});
+71         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}.size()>0 && heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}() >= 3 ) \{
+72 
+73             srand(time(NULL));
+74             \textcolor{keywordtype}{int} nb = rand() % \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}.size() ;
+75 \textcolor{comment}{//          cout << "objetsDispo.size() " << objetsDispo.size() << endl;}
+76 
+77             map <string, Objet*> sacH = heros->\hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}();
+78             sacH[this->\hyperlink{class_lieu_ad4fbedc5d8b53c0b79684aa34c6700b8}{getObjetsDispo}().at(nb).getNomObjet()]->setQuantiteObjet(heros->
+      \hyperlink{class_heros_a62d8b172e82dbb0a1d2c23da21bdb069}{getSac}()[\hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}.at(nb).getNomObjet()]->getQuantiteObjet()+1 ) ;
+79             heros->\hyperlink{class_heros_a7d6d86388fe81deca1c5688ed07b2167}{setSac}(sacH);
+80 
+81         \textcolor{comment}{//  cout << "objetsDispo.begin() + nb " << objetsDispo.begin()+nb << endl;}
+82             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Bravo ! Votre fouille vous a permis de trouver : "}+
+      \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}.at(nb).getNomObjet());
+83             \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}.erase(\hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo}.begin()+nb);
+84             
+85             heros->\hyperlink{class_heros_a5d4f5d3d3a4db451923f0609a3e1b53c}{setEnergie}( heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}() - 3 ) ;
+86             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Fouiller c'est fatiguant, vous avez perdu 3 d'énergie"});
+87 
+88         \}
+89         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (heros->\hyperlink{class_heros_ae9bbef6d2edcb8b14d9ec3854146a42c}{getEnergie}() < 3)
+90             jeu.\hyperlink{class_jeu_aa09fb40439f16b9665a0d76679f78e4e}{afficherTexte}(\textcolor{stringliteral}{"Vous n'avez pas assez d'énergie... Reposez-vous espèce de
+       faible !"});
+91 
+92         \textcolor{keywordflow}{else} \{\}\textcolor{comment}{//end if}
+93         
+94     \}
+\end{DoxyCode}
+\hypertarget{class_lieu_ab6da88a248d20fe79afd6f81c97cf2e9}{\index{Lieu@{Lieu}!get\-Cash\-Cache@{get\-Cash\-Cache}}
+\index{get\-Cash\-Cache@{get\-Cash\-Cache}!Lieu@{Lieu}}
+\subsubsection[{get\-Cash\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}int Lieu\-::get\-Cash\-Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_lieu_ab6da88a248d20fe79afd6f81c97cf2e9}
+
+
+Accède à la variable Cash\-Cache. 
+
+\begin{DoxyReturn}{Returns}
+La valeur du cash caché. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+54                                     \{
+55     \textcolor{keywordflow}{return} \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cashCache};
+56   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_a3200d6c77c575e83a3e1ccb524424e32}{\index{Lieu@{Lieu}!get\-Liste\-Action@{get\-Liste\-Action}}
+\index{get\-Liste\-Action@{get\-Liste\-Action}!Lieu@{Lieu}}
+\subsubsection[{get\-Liste\-Action}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Lieu\-::get\-Liste\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_lieu_a3200d6c77c575e83a3e1ccb524424e32}
+
+
+Accède à la variable liste\-Action. 
+
+\begin{DoxyReturn}{Returns}
+la liste des actions. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+62                                                  \{
+63     \textcolor{keywordflow}{return} \hyperlink{class_lieu_aeb5471a9b471cea9bfc5c5b9a03e5d0a}{listeAction};
+64   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_abfe724c1e50380a4a4c2d5b522dc60d2}{\index{Lieu@{Lieu}!get\-Liste\-P\-N\-J@{get\-Liste\-P\-N\-J}}
+\index{get\-Liste\-P\-N\-J@{get\-Liste\-P\-N\-J}!Lieu@{Lieu}}
+\subsubsection[{get\-Liste\-P\-N\-J}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf P\-N\-J} $>$ Lieu\-::get\-Liste\-P\-N\-J (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_lieu_abfe724c1e50380a4a4c2d5b522dc60d2}
+
+
+Accède à la variable liste\-P\-N\-J. 
+
+\begin{DoxyReturn}{Returns}
+La liste des \hyperlink{class_p_n_j}{P\-N\-J}. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+38                                            \{
+39     \textcolor{keywordflow}{return} \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ};
+40   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_a43de9e65cac7649ab5fd4ea14cde55e3}{\index{Lieu@{Lieu}!get\-Nom\-Lieu@{get\-Nom\-Lieu}}
+\index{get\-Nom\-Lieu@{get\-Nom\-Lieu}!Lieu@{Lieu}}
+\subsubsection[{get\-Nom\-Lieu}]{\setlength{\rightskip}{0pt plus 5cm}string Lieu\-::get\-Nom\-Lieu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_lieu_a43de9e65cac7649ab5fd4ea14cde55e3}
+
+
+Accède à la variable nom\-Lieu. 
+
+\begin{DoxyReturn}{Returns}
+le nom du lieu. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+46                                      \{
+47     \textcolor{keywordflow}{return} \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nomLieu};
+48   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_ad4fbedc5d8b53c0b79684aa34c6700b8}{\index{Lieu@{Lieu}!get\-Objets\-Dispo@{get\-Objets\-Dispo}}
+\index{get\-Objets\-Dispo@{get\-Objets\-Dispo}!Lieu@{Lieu}}
+\subsubsection[{get\-Objets\-Dispo}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Objet} $>$ Lieu\-::get\-Objets\-Dispo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_lieu_ad4fbedc5d8b53c0b79684aa34c6700b8}
+
+
+Accède à la variable objets\-Dispo. 
+
+\begin{DoxyReturn}{Returns}
+Le vecteur des objets disponibles. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+29                                                  \{
+30     \textcolor{keywordflow}{return} \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo};
+31   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_ab25609f0f26c916b8e2736ae7f8199fc}{\index{Lieu@{Lieu}!set\-Cash\-Cache@{set\-Cash\-Cache}}
+\index{set\-Cash\-Cache@{set\-Cash\-Cache}!Lieu@{Lieu}}
+\subsubsection[{set\-Cash\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}void Lieu\-::set\-Cash\-Cache (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_lieu_ab25609f0f26c916b8e2736ae7f8199fc}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable Cash\-Cache. 
+
+
+\begin{DoxyCode}
+50                                           \{
+51       \hyperlink{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{cashCache} = new\_var;
+52   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_ae9635e101b08d67adeb02e2f375be0f2}{\index{Lieu@{Lieu}!set\-Liste\-Action@{set\-Liste\-Action}}
+\index{set\-Liste\-Action@{set\-Liste\-Action}!Lieu@{Lieu}}
+\subsubsection[{set\-Liste\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void Lieu\-::set\-Liste\-Action (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_lieu_ae9635e101b08d67adeb02e2f375be0f2}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable liste\-Action. 
+
+
+\begin{DoxyCode}
+58                                                        \{
+59       \hyperlink{class_lieu_aeb5471a9b471cea9bfc5c5b9a03e5d0a}{listeAction} = new\_var;
+60   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_af9efb050ea38c72ad7d7bc7e2f128875}{\index{Lieu@{Lieu}!set\-Liste\-P\-N\-J@{set\-Liste\-P\-N\-J}}
+\index{set\-Liste\-P\-N\-J@{set\-Liste\-P\-N\-J}!Lieu@{Lieu}}
+\subsubsection[{set\-Liste\-P\-N\-J}]{\setlength{\rightskip}{0pt plus 5cm}void Lieu\-::set\-Liste\-P\-N\-J (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf P\-N\-J} $>$}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_lieu_af9efb050ea38c72ad7d7bc7e2f128875}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable liste\-P\-N\-J. 
+
+
+\begin{DoxyCode}
+33                                                  \{
+34       \hyperlink{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{listePNJ} = new\_var;
+35   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_a13f53069b0a2f1b4ef399f2998fbea9b}{\index{Lieu@{Lieu}!set\-Nom\-Lieu@{set\-Nom\-Lieu}}
+\index{set\-Nom\-Lieu@{set\-Nom\-Lieu}!Lieu@{Lieu}}
+\subsubsection[{set\-Nom\-Lieu}]{\setlength{\rightskip}{0pt plus 5cm}void Lieu\-::set\-Nom\-Lieu (
+\begin{DoxyParamCaption}
+\item[{string}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_lieu_a13f53069b0a2f1b4ef399f2998fbea9b}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable nom\-Lieu. 
+
+
+\begin{DoxyCode}
+42                                            \{
+43       \hyperlink{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{nomLieu} = new\_var;
+44   \}
+\end{DoxyCode}
+\hypertarget{class_lieu_a7af4284fb6e898e2ef29ad06ea244cc0}{\index{Lieu@{Lieu}!set\-Objets\-Dispo@{set\-Objets\-Dispo}}
+\index{set\-Objets\-Dispo@{set\-Objets\-Dispo}!Lieu@{Lieu}}
+\subsubsection[{set\-Objets\-Dispo}]{\setlength{\rightskip}{0pt plus 5cm}void Lieu\-::set\-Objets\-Dispo (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Objet} $>$}]{new\-\_\-var}
+\end{DoxyParamCaption}
+)}}\label{class_lieu_a7af4284fb6e898e2ef29ad06ea244cc0}
+
+
+stock la valeur de la variable new\-\_\-var dans la variable objets\-Dispo. 
+
+
+\begin{DoxyCode}
+24                                                        \{
+25       \hyperlink{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{objetsDispo} = new\_var;
+26   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}{\index{Lieu@{Lieu}!cash\-Cache@{cash\-Cache}}
+\index{cash\-Cache@{cash\-Cache}!Lieu@{Lieu}}
+\subsubsection[{cash\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}int Lieu\-::cash\-Cache\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_lieu_a90b76b521f92a43626ccd29ed5a29f89}
+
+
+La valeur du cash caché dans un lieu. 
+
+\hypertarget{class_lieu_aeb5471a9b471cea9bfc5c5b9a03e5d0a}{\index{Lieu@{Lieu}!liste\-Action@{liste\-Action}}
+\index{liste\-Action@{liste\-Action}!Lieu@{Lieu}}
+\subsubsection[{liste\-Action}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ Lieu\-::liste\-Action\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_lieu_aeb5471a9b471cea9bfc5c5b9a03e5d0a}
+
+
+La liste des actions dans un lieu. 
+
+\hypertarget{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}{\index{Lieu@{Lieu}!liste\-P\-N\-J@{liste\-P\-N\-J}}
+\index{liste\-P\-N\-J@{liste\-P\-N\-J}!Lieu@{Lieu}}
+\subsubsection[{liste\-P\-N\-J}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf P\-N\-J}$>$ Lieu\-::liste\-P\-N\-J\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_lieu_a8c1e20b105f7972f22d8f16651de4ebd}
+
+
+La liste des \hyperlink{class_p_n_j}{P\-N\-J} présents dans un lieu. 
+
+\hypertarget{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}{\index{Lieu@{Lieu}!nom\-Lieu@{nom\-Lieu}}
+\index{nom\-Lieu@{nom\-Lieu}!Lieu@{Lieu}}
+\subsubsection[{nom\-Lieu}]{\setlength{\rightskip}{0pt plus 5cm}string Lieu\-::nom\-Lieu\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_lieu_a1e48889fe5c581f043b8bd77ca497fc7}
+
+
+Le nom du lieu. 
+
+\hypertarget{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}{\index{Lieu@{Lieu}!objets\-Dispo@{objets\-Dispo}}
+\index{objets\-Dispo@{objets\-Dispo}!Lieu@{Lieu}}
+\subsubsection[{objets\-Dispo}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Objet}$>$ Lieu\-::objets\-Dispo\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_lieu_a3a65fbb8ecba3f2e265905730ad2e631}
+
+
+Le vecteur des objets disponibles dans un lieu. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{lieu_8hpp}{lieu.\-hpp}\item 
+/nfs/usersgm/\-G\-M26/neljibbawe/\-Bureau/\-Projet\-C\-P\-P\-A\-Rendre/\-C\-P\-P R\-P\-G/\-R\-P\-G/\hyperlink{lieu_8cpp}{lieu.\-cpp}\end{DoxyCompactItemize}
